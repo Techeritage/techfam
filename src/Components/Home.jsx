@@ -1,10 +1,13 @@
 import React from 'react';
 import '../Components/CSS/Home.css';
 import Map from '../assets/map.png';
-import AfricaWoman from '../assets/african-woman.png';
 import Education from '../assets/education.png';
 import Connect from '../assets/connect.png';
 import Teacher from '../assets/teacher.png';
+import Ribbon1 from '../assets/ribbon1.jpg';
+import Ribbon2 from '../assets/ribbon2.jpg';
+import Ribbon3 from '../assets/ribbon3.jpg';
+
 
 const Home = () => {
   return (
@@ -29,7 +32,13 @@ const Home = () => {
           </div>
         </div>
         <div className='image-cont'>
-          <img src={Map} />
+          <div className='image-cont-inner'>
+            <img src={Map} />
+            <img src={Ribbon1} className='ribbon1 ribbon'/>
+            <img src={Ribbon2} className='ribbon2 ribbon'/>
+            <img src={Ribbon3} className='ribbon3 ribbon'/>
+          </div>
+          
         </div>
       </div>
 
