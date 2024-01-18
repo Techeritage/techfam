@@ -1,41 +1,45 @@
 import React from 'react';
 import Logo from '../assets/logo.jpg';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Search from '../assets/search.svg';
 import '../Components/CSS/Header.css';
 
 
+
 const Header = () => {
+  const location = useLocation();
   return (
     <div className='header'>
       <div className='logo'>
-        <Link>
+        <Link to="/">
           <img src={Logo} alt="website-logo" />
         </Link>
       </div>
       <div className='header-links'>
         <ul>
-          <Link>
+          <Link to="/about">
             <li>
               About
-            </li>  
+            </li>
+            <div className={location.pathname === '/about' ? 'link-border' : ''}></div>
           </Link> 
-          <Link>
+          <Link to="/areaoffocus">
             <li>
               Area Of Focus
             </li>  
+            <div className={location.pathname === '/areaoffocus' ? 'link-border' : ''}></div>
           </Link> 
-          <Link>
+          <Link to="/blog">
             <li>
               Blog
             </li>  
           </Link> 
-          <Link>
+          <Link to="/contact">
             <li>
               Contact
             </li>  
           </Link> 
-          <Link>
+          <Link to="events">
             <li>
               Events
             </li>  

@@ -5,11 +5,12 @@
 .hero {
   display: flex;
   align-items: center;
+  height: 90vh;
 }
 
 .text-cont {
-  flex-basis: 70%;
-  padding: 50px 20px 70px 10%;
+  flex-basis: 60%;
+  padding: 0 20px 0 10%;
 }
 
 .image-cont-inner {
@@ -22,31 +23,35 @@
 
 .text-cont-heading h1 {
   font-size: 60px;
+  width: 400px;
 }
 
 .text-color {
   color: #d52c3f;
+  white-space: nowrap;
 }
 
 .text-cont-text p {
   line-height: 24px;
   color: #333333;
   letter-spacing: 0.3px;
+  width: 450px;
 }
 
 .image-cont {
-  flex-basis: 30%;
-  padding: 50px 50px 70px 50px;
+  flex-basis: 40%;
+  padding: 0 50px 0 50px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   background: #d6a682;
+  height: 100%;
   /**transform: skewX(10deg);**/
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 
 .image-cont img {
-  width: 500px;
+  width: 350px;
 }
 
 .image-cont-inner .ribbon {
@@ -59,24 +64,41 @@
 }
 
 .ribbon1 {
-  top: 23%;
-  right: 60px;
+  top: 17%;
+  right: 18px;
 }
 
 .ribbon2 {
   left: -5px;
-  top: 18%;
+  top: 5%;
 }
 
 .ribbon3 {
   bottom: 24.5%;
-  left: 190px;
+  left: 100px;
+}
+
+.curve {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: rotate 10s linear infinite;
+  width: 130px;
 }
 
 .area-of-focus {
   width: 100%;
   padding: 100px 10%;
   background: #f5f5f5;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .area-of-focus-heading {
@@ -122,26 +144,42 @@
 }
 .grid-cont {
   display: flex;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.white {
+  background: white;
+  box-shadow: 0 10px 10px #33333325;
+}
+
+.ash {
+  border: 1px solid #c0c0c0;
+}
+
+.grid--img {
+  background: #d52c3f;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  box-shadow: 0 10px 10px #33333325;
-  border-radius: 20px;
-  background: white;
+  margin-bottom: 10px;
 }
 
 .grid-cont img {
-  width: 120px;
+  width: 30px;
 }
 
 .grid-cont h3 {
+  text-align: start;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
 .grid-cont p {
-  text-align: center;
+  text-align: start;
   color: #555555;
   font-size: 15px;
   line-height: 24px;

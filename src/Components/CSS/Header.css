@@ -27,14 +27,30 @@
   list-style: none;
 }
 
+.link-border {
+  background: #d6a682;
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+}
+
 .header-links ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #333333;
   text-decoration: none;
-  padding: 20px 10px;
+  padding: 15px 10px;
   letter-spacing: 0.3px;
   white-space: nowrap;
   margin: 0 15px;
   font-size: 16px;
+  position: relative;
+}
+
+.header-links ul a:hover {
+  
 }
 
 .header-cont3 {
