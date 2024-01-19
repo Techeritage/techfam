@@ -82,8 +82,13 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  animation: rotate 10s linear infinite;
+  animation: rotate 25s linear infinite;
   width: 130px;
+  transition: width 0.2s;
+}
+
+.curve:hover {
+  width: 140px;
 }
 
 .area-of-focus {
@@ -146,6 +151,12 @@
   display: flex;
   padding: 20px;
   border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.grid-cont:hover {
+  transform: scale(1.1);
 }
 
 .white {
@@ -196,4 +207,10 @@
   font-size: 16px;
   cursor: pointer;
   margin-top: 50px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.donate button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 5px #333333;
 }

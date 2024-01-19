@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Components/CSS/Home.css';
 import Map from '../assets/map.png';
 import Ribbon1 from '../assets/ribbon1.jpg';
@@ -10,6 +10,26 @@ import Globe from '../assets/globe.svg';
 import Star from '../assets/star.svg';
 
 const Home = () => {
+
+  //useState for each divs
+  const [background1,setBackground1] = useState(false);
+  const [background2,setBackground2] = useState(false);
+  const [background3,setBackground3] = useState(false);
+
+  useEffect(() => {
+
+    setBackground1(true);
+
+  }, []);
+
+  const areaOfFocus = (setFunction) => {
+    setBackground1(false);
+    setBackground2(false);
+    setBackground3(false);
+
+    setFunction(true);
+  }
+
   return (
     <div className='home'>
       <div className='hero'>
@@ -29,7 +49,7 @@ const Home = () => {
           <div className='donate'>
             <button>
               Apply Now
-            </button>
+            </button> 
           </div>
         </div>
         <div className='image-cont'>
@@ -50,7 +70,7 @@ const Home = () => {
         </div>
 
         <div className='area-of-focus-grid'>
-          <div className='grid-cont white'>
+          <div onClick={() => {areaOfFocus(setBackground1)}} className={`grid-cont ${background1 ? 'white' : 'ash'}`}>
             <div>
               <div className='grid--img'>   
                 <img src={Book} />
@@ -60,7 +80,7 @@ const Home = () => {
             </div>
             
           </div>
-          <div className='grid-cont ash'>
+          <div onClick={() => {areaOfFocus(setBackground2)}} className={`grid-cont ${background2 ? 'white' : 'ash'}`}>
             <div>
               <div className='grid--img'>   
                 <img src={Star} />
@@ -69,9 +89,9 @@ const Home = () => {
               <p>Role models are vital - when you look at someone who looks like you and understands you, they make the potential for success tangible for you.</p>
             </div>
           </div>
-          <div className='grid-cont ash'>
+          <div onClick={() => {areaOfFocus(setBackground3)}} className={`grid-cont ${background3 ? 'white' : 'ash'}`}>
             <div>
-              <div className='grid--img'>   
+              <div className='grid--img'>
                 <img src={Globe} />
               </div>
               <h3>Opportunities</h3>

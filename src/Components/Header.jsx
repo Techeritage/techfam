@@ -4,8 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 import Search from '../assets/search.svg';
 import '../Components/CSS/Header.css';
 
-
-
 const Header = () => {
   const location = useLocation();
   return (
@@ -17,31 +15,31 @@ const Header = () => {
       </div>
       <div className='header-links'>
         <ul>
-          <Link to="/about">
-            <li>
-              About
-            </li>
-            <div className={location.pathname === '/about' ? 'link-border' : ''}></div>
-          </Link> 
           <Link to="/areaoffocus">
             <li>
               Area Of Focus
             </li>  
             <div className={location.pathname === '/areaoffocus' ? 'link-border' : ''}></div>
           </Link> 
+          <Link to="events">
+            <li>
+              Events
+            </li>  
+          </Link> 
           <Link to="/blog">
             <li>
               Blog
             </li>  
           </Link> 
+          <Link to="/about">
+            <li>
+              About
+            </li>
+            <div className={location.pathname === '/about' ? 'link-border' : ''}></div>
+          </Link> 
           <Link to="/contact">
             <li>
               Contact
-            </li>  
-          </Link> 
-          <Link to="events">
-            <li>
-              Events
             </li>  
           </Link> 
         </ul>
