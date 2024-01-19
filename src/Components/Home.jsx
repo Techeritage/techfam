@@ -176,7 +176,10 @@ const Home = () => {
             </div>
           </div>
           <div className='stories'>
-            
+            <div className='event-heading'>
+              <h2>Featured stories</h2>
+              <div className='bottom-border'></div>
+            </div>
           </div>
         </div>
       </section>
