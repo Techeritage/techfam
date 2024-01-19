@@ -214,3 +214,78 @@
   transform: translateY(-10px);
   box-shadow: 0 10px 5px #333333;
 }
+
+.about {
+  padding: 100px 10%;
+  display: flex;
+  justify-content: space-between;
+  background: #d6a6826e;
+}
+
+.about-image-count {
+  flex-basis: 60%;
+}
+
+.about-image-count img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 0 0 20px 20px;
+  overflow-y: hidden;
+}
+
+.about-text-count {
+  flex-basis: 40%;
+}
+
+.about-text-count h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text-count p {
+  text-align: start;
+  color: #555555;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.atcbtn button {
+  margin-top: 10px;
+}
+
+.img1 {
+  animation: upup linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 80%;
+}
+
+.img2 {
+  animation: downdown linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 80%;
+}
+
+@keyframes upup {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes downdown {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+.stories {
+  height: 500px;
+}
