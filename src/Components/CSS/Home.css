@@ -220,7 +220,7 @@
   padding: 100px 10%;
   display: flex;
   justify-content: space-between;
-  
+  /*background: #d6a6824f;*/
 }
 
 .about-image-count {
@@ -289,7 +289,7 @@
 
 .stories-event {
   margin-top: 30px;
-  padding: 100px 10%;
+  padding: 70px 10%;
   display: flex;
   background: #f5f5f5;
   justify-content: space-between;
@@ -311,8 +311,8 @@
 
 .event-heading .bottom-border {
   position: absolute;
-  width: 80px;
-  height: 5px;
+  width: 70px;
+  height: 4px;
   background: #d52c3f;
   bottom: 0;
   left: 0;
@@ -321,7 +321,7 @@
 .event-grid {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 .event-grid-cont {
@@ -332,12 +332,64 @@
   margin-right: 20px;
 }
 
+.event-img img {
+  border-radius: 5px 0 0 5px;
+}
+
 .event-info h4 {
   font-size: 19px;
   font-weight: 600;
   color: #333333;
+  margin-bottom: 5px;
+}
+
+.event-info .date {
+  font-size: 13px;
+}
+
+.event-info .date span {
+  margin: 0 5px;
+}
+
+.event-info .text {
+  text-align: start;
+  color: #555555;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 10px 0;
+  width: 350px;
+}
+
+.event-info a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #d52c3f;
+  font-size: 14px;
 }
 
 .stories {
   flex-basis: 45%;
+}
+
+.story-grid-cont {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px #3333331e;
+  background: #fff;
+}
+
+.story-grid-cont p {
+  padding: 10px;
+  color: #333333;
+  font-size: 15px;
+}
+
+.story-img img {
+  width: 350px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px 5px 0 0;
 }

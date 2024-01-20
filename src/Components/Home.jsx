@@ -11,6 +11,7 @@ import Star from '../assets/star.svg';
 import Techfam1 from '../assets/techfam1.jpg';
 import Techfam2 from '../assets/techfam2.jpg';
 import Event1 from '../assets/event1.webp';
+import Story1 from '../assets/story1.png';
 
 const Home = () => {
 
@@ -144,8 +145,8 @@ const Home = () => {
                 </div>
                 <div className='event-info'>
                   <h4>Training for women</h4>
-                  <p>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                  <p className='date'>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
+                  <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                   <a href="#">Read More</a>
                 </div>
               </div>
@@ -156,8 +157,8 @@ const Home = () => {
                 </div>
                 <div className='event-info'>
                   <h4>Training for women</h4>
-                  <p>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                  <p className='date'>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
+                  <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                   <a href="#">Read More</a>
                 </div>
               </div>
@@ -168,8 +169,8 @@ const Home = () => {
                 </div>
                 <div className='event-info'>
                   <h4>Training for women</h4>
-                  <p>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                  <p className='date'>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
+                  <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                   <a href="#">Read More</a>
                 </div>
               </div>
@@ -179,6 +180,17 @@ const Home = () => {
             <div className='event-heading'>
               <h2>Featured stories</h2>
               <div className='bottom-border'></div>
+            </div>
+            <div className='event-grid'>
+              <div className='story-grid-cont'>
+                <div className='story-img'><img src={Story1} /></div>
+                <p>A.I.S.E Moments with Kelechi</p>
+              </div>
+
+              <div className='story-grid-cont'>
+                <div className='story-img'><img src={Story1} /></div>
+                <p>A.I.S.E Moments with Kelechi</p>
+              </div>
             </div>
           </div>
         </div>

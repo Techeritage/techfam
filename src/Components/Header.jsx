@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/logo.jpg';
+import Logo from '../assets/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import Search from '../assets/search.svg';
 import '../Components/CSS/Header.css';
@@ -24,12 +24,14 @@ const Header = () => {
           <Link to="events">
             <li>
               Events
-            </li>  
+            </li>
+            <div className={location.pathname === '/events' ? 'link-border' : ''}></div>
           </Link> 
           <Link to="/blog">
             <li>
               Blog
-            </li>  
+            </li>
+            <div className={location.pathname === '/blog' ? 'link-border' : ''}></div>
           </Link> 
           <Link to="/about">
             <li>
@@ -41,6 +43,7 @@ const Header = () => {
             <li>
               Contact
             </li>  
+            <div className={location.pathname === '/contact' ? 'link-border' : ''}></div>
           </Link> 
         </ul>
       </div>

@@ -1,0 +1,94 @@
+.footer {
+  display: flex;
+  padding: 70px 10%;
+  justify-content: space-between;
+  background: #333;
+}
+
+.techfam {
+  flex-basis: 30%;
+}
+
+.techfam .logo {
+  width: 200px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  margin: -10px 0 30px -25px;
+}
+
+.techfam p {
+  text-align: start;
+  color: #ffffff79;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.techfam-sm {
+  margin-top: 30px;
+}
+
+.techfam-sm a {
+  margin-right: 10px;
+}
+
+.techfam-sm img {
+  width: 22px;
+}
+
+.links {
+  flex-basis: 30%;
+}
+
+.links h4 {
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.links ul {
+  list-style: none;
+  width: max-content;
+}
+
+.links ul a {
+  text-decoration: none;
+  color: #ffffff79;
+  font-size: 15px;
+  width: 100px;
+}
+
+.links ul a li {
+  margin: 20px 0;
+}
+
+.contact {
+  flex-basis: 30%;
+}
+
+.contact h4 {
+  color: #fff;
+  font-size: 17px;
+  height: 40px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.contact-cont {
+  margin-bottom: 20px;
+}
+
+.contact-cont a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: #ffffff79;
+  font-size: 15px;
+}
+
+.contact-cont img {
+  width: 22px;
+  margin-right: 10px;
+}
