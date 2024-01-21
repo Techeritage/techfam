@@ -112,7 +112,7 @@ const Home = () => {
       </section>
       
       <section>
-        <div className='about'>
+        <div className='about-home'>
           <div className='about-image-count'>
             <img src={Techfam2} className='img1' />
             <img src={Techfam1} className='img2' />

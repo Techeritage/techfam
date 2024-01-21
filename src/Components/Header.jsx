@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../assets/logo.png';
+import Logo1 from '../assets/logo1.png';
 import { Link, useLocation } from 'react-router-dom';
 import Search from '../assets/search.svg';
 import '../Components/CSS/Header.css';
@@ -10,7 +11,7 @@ const Header = () => {
     <div className='header'>
       <div className='logo'>
         <Link to="/">
-          <img src={Logo} alt="website-logo" />
+          <img src={Logo1} alt="website-logo" />
         </Link>
       </div>
       <div className='header-links'>

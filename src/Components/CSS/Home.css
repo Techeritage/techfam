@@ -216,7 +216,7 @@
   box-shadow: 0 10px 5px #333333;
 }
 
-.about {
+.about-home {
   padding: 100px 10%;
   display: flex;
   justify-content: space-between;
@@ -376,7 +376,7 @@
   flex-direction: column;
   width: max-content;
   border-radius: 5px;
-  box-shadow: 0 5px 5px #3333331e;
+  box-shadow: 0 5px 5px #3333330e;
   background: #fff;
 }
 

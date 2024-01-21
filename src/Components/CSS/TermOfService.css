@@ -1,0 +1,34 @@
+.terms-of-service {
+  padding: 100px 10%;
+}
+
+.terms-date p {
+  color: #555555;
+  font-size: 17px;
+}
+
+.terms-heading {
+  margin: 30px 0 50px;
+}
+
+.terms-heading h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.terms-cont {
+  margin-bottom: 30px;
+}
+
+.terms-cont h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.terms-cont p {
+  text-align: start;
+  color: #555555;
+  font-size: 16px;
+  line-height: 24px;
+}

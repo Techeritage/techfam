@@ -6,12 +6,16 @@
   box-shadow: 0 5px 10px #33333325;
 }
 
+
 .logo {
   flex-basis: 10%;
 }
 
 .logo img {
-  width: 150px;
+  width: 220px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .header-links {
