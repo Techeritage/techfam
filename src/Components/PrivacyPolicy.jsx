@@ -17,18 +17,18 @@ const PrivacyPolicy = () => {
       <p>
         If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
       </p>
-      <p>
+      <p className='last'>
         This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that 
         they shared and/or collect in TechFam. This policy is not applicable to any information collected offline or via channels other than this
         website.
       </p>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>Consent</h3>
         <p>
           By using our website, you hereby consent to our Privacy Policy and agree to its terms.
         </p>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>Information we collect</h3>
         <p>
           The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at 
@@ -43,10 +43,10 @@ const PrivacyPolicy = () => {
           address, and telephone number.
         </p>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>How we use your information</h3>
         <p>
-|         We use the information we collect in various ways, including to:
+          We use the information we collect in various ways, including to:
         </p>
         <ul>
           <li>Provide, operate, and maintain our website</li>
@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
           <li>Find and prevent fraud</li>
         </ul>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>Log Files</h3>
         <p>
           TechFam follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do 
@@ -69,7 +69,7 @@ const PrivacyPolicy = () => {
           administering the site, tracking users' movement on the website, and gathering demographic information.
         </p>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>Cookies and Web Beacons</h3>
         <p>
           Like any other website, TechFam uses 'cookies'. These cookies are used to store information including visitors' preferences, and the
@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
           our web page content based on visitors' browser type and/or other information.
         </p>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>Advertising Partners Privacy Policies</h3>
         <p>
           You may consult this list to find the Privacy Policy for each of the advertising partners of TechFam.
@@ -92,7 +92,7 @@ const PrivacyPolicy = () => {
           Note that TechFam has no access to or control over these cookies that are used by third-party advertisers.
         </p>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>Third Party Privacy Policies</h3>
         <p>
           TechFam's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy 
@@ -104,7 +104,7 @@ const PrivacyPolicy = () => {
           with specific web browsers, it can be found at the browsers' respective websites.
         </p>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>
         <p>
           Under the CCPA, among other rights, California consumers have the right to:
@@ -123,7 +123,7 @@ const PrivacyPolicy = () => {
           If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
         </p>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>GDPR Data Protection Rights</h3>
         <p>
           We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
@@ -153,7 +153,7 @@ const PrivacyPolicy = () => {
           If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
         </p>
       </div>
-      <div className='privacy-info'>
+      <div className='terms-cont'>
         <h3>Children's Information</h3>
         <p>
           Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, 

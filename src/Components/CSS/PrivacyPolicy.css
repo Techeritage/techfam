@@ -1,0 +1,15 @@
+.policy {
+  padding: 100px 10%;
+}
+
+.policy p {
+  text-align: start;
+  color: #555555;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.last {
+  margin-bottom: 20px;
+}

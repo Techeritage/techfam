@@ -32,3 +32,18 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+.terms-cont ul {
+  margin: 15px 0 15px 50px;
+}
+
+.terms-cont ul li {
+  color: #555555;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.terms-cont a {
+  color: #d6a682;
+  text-decoration: none;
+}

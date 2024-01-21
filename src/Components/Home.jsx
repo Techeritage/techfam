@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../Components/CSS/Home.css';
 import Map from '../assets/map.png';
 import Ribbon1 from '../assets/ribbon1.jpg';
@@ -14,6 +14,17 @@ import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
 
 const Home = () => {
+  const targetSectionRef = useRef(null);
+ 
+  useEffect(() => {
+    // Scroll to the target section if a fragment identifier is present
+    const urlParams = new URLSearchParams(window.location.search);
+    const scrollTo = urlParams.get('scrollTo');
+
+    if (scrollTo && targetSectionRef.current) {
+      targetSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   //useState for each divs
   const [background1,setBackground1] = useState(false);
@@ -71,7 +82,7 @@ const Home = () => {
       </section>
       
       <section>
-        <div className='area-of-focus'>
+        <div className='area-of-focus' ref={targetSectionRef}>
           <div className='area-of-focus-heading'>
             <h2>Our Areas of <span className='focus'>Focus</span></h2>
             <p>Empower women in tech for diversity, innovation, and equal representation.</p>

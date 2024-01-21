@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from "./Components/Header";
 import Home from './Components/Home';
 import Footer from './Components/Footer';
@@ -10,6 +10,7 @@ import Donate from './Components/Donate';
 import Apply from './Components/Apply';
 import TermsOfService from './Components/TermsOfService';
 import PrivacyPolicy from './Components/PrivacyPolicy';
+import React from 'react';
 
 const App = () => {
   return (
