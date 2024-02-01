@@ -12,6 +12,7 @@ import Techfam1 from '../assets/techfam1.jpg';
 import Techfam2 from '../assets/techfam2.jpg';
 import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
+import CEO from '../assets/ceo.png';
 
 const Home = () => {
   const targetSectionRef = useRef(null);
@@ -50,6 +51,7 @@ const Home = () => {
 
       <section>
         <div className='hero'>
+          <div className='side-curve'></div>
           <img src={CurveText} className='curve'/>
           <div className='text-cont'>
             <div className='text-cont-heading'>
@@ -70,13 +72,19 @@ const Home = () => {
             </div>
           </div>
           <div className='image-cont'>
-            <div className='image-cont-inner'>
+           {/*
+              <div className='image-cont-inner'>
               <img src={Map} />
               <img src={Ribbon1} className='ribbon1 ribbon'/>
               <img src={Ribbon2} className='ribbon2 ribbon'/>
               <img src={Ribbon3} className='ribbon3 ribbon'/>
-            </div>
-            
+              </div> 
+           */}
+           <div className='image-cont-inner'>
+            <div className='in-border'></div>
+            <img src={CEO} />
+           </div>
+           
           </div>
         </div>
       </section>
