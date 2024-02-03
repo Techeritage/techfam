@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../assets/logo.png';
 import Logo1 from '../assets/logo1.png';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Search from '../assets/search.svg';

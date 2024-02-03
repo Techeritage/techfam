@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../Components/CSS/Home.css';
-import Map from '../assets/map.png';
-import Ribbon1 from '../assets/ribbon1.jpg';
-import Ribbon2 from '../assets/ribbon2.jpg';
-import Ribbon3 from '../assets/ribbon3.jpg';
+import Map from '../assets/map2.png';
 import CurveText from '../assets/Curve-text.png';
 import Book from '../assets/book.svg';
 import Globe from '../assets/globe.svg';
@@ -13,6 +10,8 @@ import Techfam2 from '../assets/techfam2.jpg';
 import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
 import CEO from '../assets/ceo.png';
+import Arrow1 from '../assets/arrow1.svg';
+import Chatbox from '../assets/chatbox.svg';
 
 const Home = () => {
   const targetSectionRef = useRef(null);
@@ -55,6 +54,7 @@ const Home = () => {
           <img src={CurveText} className='curve'/>
           <div className='text-cont'>
             <div className='text-cont-heading'>
+              <img src={Map} />
               <h1>
                 Raising Tech Giants From Among <span className='text-color'>African Women</span>
               </h1>
@@ -83,6 +83,10 @@ const Home = () => {
            <div className='image-cont-inner'>
             <div className='in-border'></div>
             <img src={CEO} />
+            <div className='name-title'>
+              <h3>Miss Kelechi Udeh</h3>
+              <p>CEO of <span>TechFam</span></p>
+            </div>
            </div>
            
           </div>
