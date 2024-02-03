@@ -9,7 +9,7 @@ import Techfam1 from '../assets/techfam1.jpg';
 import Techfam2 from '../assets/techfam2.jpg';
 import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
-import CEO from '../assets/ceo.png';
+import CEO from '../assets/ceo1.webp';
 import Arrow1 from '../assets/arrow1.svg';
 import Chatbox from '../assets/chatbox.svg';
 
@@ -104,7 +104,7 @@ const Home = () => {
             <div onClick={() => {areaOfFocus(setBackground1)}} className={`grid-cont ${background1 ? 'white' : 'ash'}`}>
               <div>
                 <div className='grid--img'>   
-                  <img src={Book} />
+                  <img src={Book} loading='lazy' />
                 </div>
                 <h3>Education</h3>
                 <p>We provide education and training opportunities for African women interested in pursuing careers in tech.</p>
@@ -114,7 +114,7 @@ const Home = () => {
             <div onClick={() => {areaOfFocus(setBackground2)}} className={`grid-cont ${background2 ? 'white' : 'ash'}`}>
               <div>
                 <div className='grid--img'>   
-                  <img src={Star} />
+                  <img src={Star} loading='lazy' />
                 </div>
                 <h3>Role Modelling</h3>
                 <p>Role models are vital - when you look at someone who looks like you and understands you, they make the potential for success tangible for you.</p>
@@ -123,7 +123,7 @@ const Home = () => {
             <div onClick={() => {areaOfFocus(setBackground3)}} className={`grid-cont ${background3 ? 'white' : 'ash'}`}>
               <div>
                 <div className='grid--img'>
-                  <img src={Globe} />
+                  <img src={Globe} loading='lazy' />
                 </div>
                 <h3>Opportunities</h3>
                 <p>We connect African women with job opportunities in tech. Also, provide resources to help them succeed.</p>
@@ -137,8 +137,8 @@ const Home = () => {
       <section>
         <div className='about-home'>
           <div className='about-image-count'>
-            <img src={Techfam2} className='img1' />
-            <img src={Techfam1} className='img2' />
+            <img src={Techfam2} className='img1' loading='lazy' />
+            <img src={Techfam1} className='img2' loading='lazy' />
           </div>
           <div className='about-text-count'>
             <h2>TechFam was founded out of a strong desire...</h2>
@@ -164,7 +164,7 @@ const Home = () => {
             <div className='event-grid'>
               <div className='event-grid-cont'>
                 <div className='event-img'>
-                  <img src={Event1} />
+                  <img src={Event1} loading='lazy' />
                 </div>
                 <div className='event-info'>
                   <h4>Training for women</h4>
@@ -176,7 +176,7 @@ const Home = () => {
 
               <div className='event-grid-cont'>
                 <div className='event-img'>
-                  <img src={Event1} />
+                  <img src={Event1} loading='lazy' />
                 </div>
                 <div className='event-info'>
                   <h4>Training for women</h4>
@@ -188,7 +188,7 @@ const Home = () => {
 
               <div className='event-grid-cont'>
                 <div className='event-img'>
-                  <img src={Event1} />
+                  <img src={Event1} loading='lazy' />
                 </div>
                 <div className='event-info'>
                   <h4>Training for women</h4>
@@ -206,12 +206,12 @@ const Home = () => {
             </div>
             <div className='event-grid'>
               <div className='story-grid-cont'>
-                <div className='story-img'><img src={Story1} /></div>
+                <div className='story-img'><img src={Story1} loading='lazy' /></div>
                 <p>A.I.S.E Moments with Kelechi</p>
               </div>
 
               <div className='story-grid-cont'>
-                <div className='story-img'><img src={Story1} /></div>
+                <div className='story-img'><img src={Story1} loading='lazy' /></div>
                 <p>A.I.S.E Moments with Kelechi</p>
               </div>
             </div>
