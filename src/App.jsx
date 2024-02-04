@@ -13,11 +13,9 @@ import PrivacyPolicy from './Components/PrivacyPolicy';
 import { useEffect, useState } from 'react';
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-
     setTimeout(() => {
       setLoading(false);
     }, 5000);
