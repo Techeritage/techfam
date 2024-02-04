@@ -12,19 +12,20 @@ import Story1 from '../assets/story1.png';
 import CEO from '../assets/ceo1.webp';
 import Arrow1 from '../assets/arrow1.svg';
 import Chatbox from '../assets/chatbox.svg';
+import Header from './Header';
+import Footer from './Footer';
+
+
 
 const Home = () => {
-  const targetSectionRef = useRef(null);
- 
-  useEffect(() => {
-    // Scroll to the target section if a fragment identifier is present
-    const urlParams = new URLSearchParams(window.location.search);
-    const scrollTo = urlParams.get('scrollTo');
-
-    if (scrollTo && targetSectionRef.current) {
-      targetSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, []);
+  //scroll to view for arae of focus
+  const areaRef = useRef(null);
+  //scroll to view function
+  const scroll = () => {
+    areaRef.current?.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 
   //useState for each divs
   const [background1,setBackground1] = useState(false);
@@ -47,7 +48,12 @@ const Home = () => {
 
   return (
     <div className='home'>
-
+      <nav>
+        <div>
+            <Header scroll = {scroll} />
+        </div>
+      </nav>
+     
       <section>
         <div className='hero'>
           <div className='side-curve'></div>
@@ -94,7 +100,7 @@ const Home = () => {
       </section>
       
       <section>
-        <div className='area-of-focus' ref={targetSectionRef}>
+        <div className='area-of-focus' ref={areaRef}>
           <div className='area-of-focus-heading'>
             <h2>Our Areas of <span className='focus'>Focus</span></h2>
             <p>Empower women in tech for diversity, innovation, and equal representation.</p>
@@ -216,6 +222,11 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <Footer />
         </div>
       </section>
       

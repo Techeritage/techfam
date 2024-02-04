@@ -1,17 +1,11 @@
 import React from 'react';
 import Logo1 from '../assets/logo1.png';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Search from '../assets/search.svg';
 import '../Components/CSS/Header.css';
 
-const Header = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const handleButtonClick = () => {
-    // Navigate to the home route with the fragment identifier
-    navigate('/?scrollTo=targetSectionRef', { replace: true });
-  };
+const Header = ({scroll}) => {
+  
   return (
     <div className='header'>
       <div className='logo'>
@@ -21,8 +15,8 @@ const Header = () => {
       </div>
       <div className='header-links'>
         <ul>
-          <div className='are-link' onClick={handleButtonClick}>
-            <li>
+          <div className='are-link'>
+            <li onClick={() => {scroll()}}>
               Area Of Focus
             </li>  
             <div className={location.pathname === '/areaoffocus' ? 'link-border' : ''}></div>

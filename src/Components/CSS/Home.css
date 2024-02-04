@@ -1,5 +1,6 @@
 .home {
   margin: 0 0;
+  height: 100vh;
 }
 
 .hero {
@@ -94,7 +95,7 @@
 
 .image-cont img {
  z-index: 10;
- width: 60%;
+ width: 55%;
  object-fit: cover;
  object-position: top;
  margin-top: -100px;
@@ -102,7 +103,7 @@
 
 .image-cont-inner .name-title {
   position: absolute;
-  bottom: 30%;
+  bottom: 25%;
   right: 2%;
 }
 
