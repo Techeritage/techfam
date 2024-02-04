@@ -18,6 +18,8 @@
   top: 0;
   left: -160px;
   border-radius: 0 0 100% 0;
+  opacity: 0;
+  animation: opp 1.5s ease-in forwards;
   /*bottom: 0;
   left: -100px;
   border-radius: 0 100% 0 0;*/
@@ -56,10 +58,23 @@
 }
 
 .text-cont-text p {
+  opacity: 0;
   line-height: 24px;
   color: #333333;
   letter-spacing: 0.3px;
   width: 450px;
+  animation: slideRight 1.5s ease-in-out 2.5s forwards;
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .image-cont {
@@ -81,6 +96,17 @@
   display: flex;
   justify-content: center;
   position: relative;
+  opacity: 0;
+  animation: opp 1.5s ease-in forwards;
+}
+
+@keyframes opp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .in-border {
@@ -94,12 +120,27 @@
 }
 
 .image-cont img {
- z-index: 10;
- width: 55%;
- object-fit: cover;
- object-position: top;
- margin-top: -100px;
+  z-index: 20;
+  width: 55%;
+  object-fit: cover;
+  object-position: top;
+  margin-top: -100px;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: zoomFadeIn 2s ease-in-out forwards;
 }
+
+@keyframes zoomFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 .image-cont-inner .name-title {
   position: absolute;
@@ -117,6 +158,41 @@
   color: #333333;
   font-size: 14px;
   font-style: italic;
+}
+
+.donate button {
+  border: none;
+  outline: none;
+  background: #d52c3f;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.donate button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 5px #333333;
+}
+
+.hero .donate button {
+  opacity: 0;
+  animation: displayBtn 1.5s ease-in-out 3.5s forwards;
+}
+
+@keyframes displayBtn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /*
@@ -148,14 +224,45 @@
 .curve {
   position: absolute;
   left: 45%;
-  animation: rotate 25s linear infinite;
-  width: 130px;
   transition: width 0.2s;
   z-index: 20;
+  animation: dangdang 10s ease-in 5s infinite;
+}
+
+@keyframes dangdang {
+  30% {
+    transform: translate(60px, -50px);
+  }
+  60% {
+    transform: translate(-130px, -200px);
+  }
+  90% {
+    transform: translate(0px, 100px);
+  }
+  
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.curve .curve-text {
+  width: 130px;
+  position: relative;
+  animation: rotate 25s linear infinite;
+}
+
+.curve .ball {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18%;
 }
 
 .curve:hover {
-  width: 140px;
+  
 }
 
 .area-of-focus {
@@ -263,25 +370,6 @@
   color: #555555;
   font-size: 15px;
   line-height: 24px;
-}
-
-.donate button {
-  border: none;
-  outline: none;
-  background: #d52c3f;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 50px;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.donate button:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 5px #333333;
 }
 
 .about-home {

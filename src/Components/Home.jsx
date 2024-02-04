@@ -12,12 +12,61 @@ import Story1 from '../assets/story1.png';
 import CEO from '../assets/ceo1.webp';
 import Arrow1 from '../assets/arrow1.svg';
 import Chatbox from '../assets/chatbox.svg';
+import Ball from '../assets/ball.jpg';
 import Header from './Header';
 import Footer from './Footer';
 
 
 
 const Home = () => {
+  //hero text animation 
+  const textToType = 'Raising Tech Giants From Among <span class="text-color">African Women</span>';
+
+  const [displayedText, setDisplayedText] = useState('');
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = 50;
+
+    const animatedTyping = setInterval(() => {
+      const currentSlice = textToType.slice(0, currentIndex);
+      setDisplayedText(currentSlice);
+      currentIndex++;
+
+      if (currentIndex > textToType.length) {
+        clearInterval(animatedTyping);
+      } else if (textToType[currentIndex - 1] === '<') {
+        // Skip the span tag for typing animation
+        currentIndex = textToType.indexOf('>', currentIndex) + 1;
+      }
+    }, typingInterval);
+
+    return () => clearInterval(animatedTyping);
+  }, [textToType]);
+
+
+ /* useEffect(()=> {
+    console.log('Typing Animation Effect');
+    let currentIndex = 0;
+    const typingInterval = 100;
+
+    let animatedTyping = setInterval(() => {
+      console.log('Updating displayedText:', textToType.slice(0, currentIndex));
+      setDisplayedText(textToType.slice(0, currentIndex));
+      currentIndex++;
+
+      if(currentIndex > textToType.length) {
+        clearInterval(animatedTyping);
+      }
+    }, typingInterval);
+    
+    return () => {
+      console.log('Cleaning up Typing Animation');  
+      clearInterval(animatedTyping);
+    }
+
+  }, [textToType]); */
+
   //scroll to view for arae of focus
   const areaRef = useRef(null);
   //scroll to view function
@@ -57,13 +106,15 @@ const Home = () => {
       <section>
         <div className='hero'>
           <div className='side-curve'></div>
-          <img src={CurveText} className='curve'/>
+          <div className='curve'>
+            <img src={CurveText} className='curve-text'/>
+            <img src={Ball} className='ball' />
+          </div>
+          
           <div className='text-cont'>
             <div className='text-cont-heading'>
               <img src={Map} />
-              <h1>
-                Raising Tech Giants From Among <span className='text-color'>African Women</span>
-              </h1>
+              <h1 dangerouslySetInnerHTML={{ __html: displayedText }} />
             </div>
             <div className='text-cont-text'>
               <p>
@@ -87,9 +138,9 @@ const Home = () => {
               </div> 
            */}
            <div className='image-cont-inner'>
-            <div className='in-border'></div>
-            <img src={CEO} />
-            <div className='name-title'>
+              <div className='in-border'></div>
+              <img src={CEO} />
+              <div className='name-title'>
               <h3>Miss Kelechi Udeh</h3>
               <p>CEO of <span>TechFam</span></p>
             </div>

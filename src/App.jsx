@@ -18,14 +18,14 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 3000);
   }, []);
 
   return (
     <div className='app'>
       {
         loading ?
-        <HashLoader color={'#d52c3f'} loading={loading} size={50}/>
+        <HashLoader color={'#d52c3f'} loading={loading} size={100}/>
           :
         <Router>
           <div>
