@@ -15,6 +15,7 @@ import Chatbox from '../assets/chatbox.svg';
 import Techfam3 from '../assets/techfam3.webp';
 import Techfam4 from '../assets/techfam4.webp';
 import Techfam5 from '../assets/techfam5.webp';
+import Dots from '../assets/dots.svg';
 import Ball from '../assets/ball.png';
 import Header from './Header';
 import Footer from './Footer';
@@ -86,7 +87,7 @@ const Home = () => {
 
   useEffect(() => {
 
-    setBackground1(true);
+    setBackground2(true);
 
   }, []);
 
@@ -155,16 +156,17 @@ const Home = () => {
       <section>
         <div className='about1'>
           <div className='about1-img-cont'>
+            <img src={Techfam1} className='imga' loading='lazy' />
             <div className='about1-inner'>
-              <img src={Techfam1} className='imga'/>
-              <img src={Techfam2} className='imgb'/>
+              <img src={Techfam2} className='imgb' loading='lazy' />
             </div>
-           
+            <img src={Dots} className='imgc' loading='lazy' />
           </div>
           <div className='about1-text-cont'>
            <h4>Welcome to Techfam</h4>
            <h2>
             Who are we?
+            <div className='waw'></div>
            </h2>
            <p className='str-text'>
             TechFam strives to promote gender inclusivity in the field of technology
@@ -173,13 +175,23 @@ const Home = () => {
             we foster an entrepreneurial mindset in young African women, and equip them with high-demand digital skills in order to achieve/gain 
             financial independence. Through collaboration with other groups, we hope to provide career opportunities for young African women.
            </p>
+           <div className='donate'>
+            <button>
+              Learn more
+            </button>
+           </div>
           </div>
         </div>
       </section>
       <section>
         <div className='area-of-focus' ref={areaRef}>
           <div className='area-of-focus-heading'>
-            <h2>Our Areas of <span className='focus'>Focus</span></h2>
+            <div>
+              <h2>Our Areas of <span>Focus</span></h2>
+              <div className='waw-cont'>
+                <div className='waw'></div>
+              </div>
+            </div>
             <p>Empower women in tech for diversity, innovation, and equal representation.</p>
           </div>
 
