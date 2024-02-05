@@ -12,7 +12,10 @@ import Story1 from '../assets/story1.png';
 import CEO from '../assets/ceo1.webp';
 import Arrow1 from '../assets/arrow1.svg';
 import Chatbox from '../assets/chatbox.svg';
-import Ball from '../assets/ball.jpg';
+import Techfam3 from '../assets/techfam3.webp';
+import Techfam4 from '../assets/techfam4.webp';
+import Techfam5 from '../assets/techfam5.webp';
+import Ball from '../assets/ball.png';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -141,15 +144,38 @@ const Home = () => {
               <div className='in-border'></div>
               <img src={CEO} />
               <div className='name-title'>
-              <h3>Miss Kelechi Udeh</h3>
-              <p>CEO of <span>TechFam</span></p>
+                <h3>Miss Kelechi Udeh</h3>
+                <p>CEO, TechFam.</p>
             </div>
            </div>
            
           </div>
         </div>
       </section>
-      
+      <section>
+        <div className='about1'>
+          <div className='about1-img-cont'>
+            <div className='about1-inner'>
+              <img src={Techfam1} className='imga'/>
+              <img src={Techfam2} className='imgb'/>
+            </div>
+           
+          </div>
+          <div className='about1-text-cont'>
+           <h4>Welcome to Techfam</h4>
+           <h2>
+            Who are we?
+           </h2>
+           <p className='str-text'>
+            TechFam strives to promote gender inclusivity in the field of technology
+           </p>
+           <p>
+            we foster an entrepreneurial mindset in young African women, and equip them with high-demand digital skills in order to achieve/gain 
+            financial independence. Through collaboration with other groups, we hope to provide career opportunities for young African women.
+           </p>
+          </div>
+        </div>
+      </section>
       <section>
         <div className='area-of-focus' ref={areaRef}>
           <div className='area-of-focus-heading'>
@@ -190,12 +216,11 @@ const Home = () => {
         
         </div>
       </section>
-      
       <section>
         <div className='about-home'>
           <div className='about-image-count'>
-            <img src={Techfam2} className='img1' loading='lazy' />
-            <img src={Techfam1} className='img2' loading='lazy' />
+            <img src={Techfam5} className='img1' loading='lazy' />
+            <img src={Techfam4} className='img2' loading='lazy' />
           </div>
           <div className='about-text-count'>
             <h2>TechFam was founded out of a strong desire...</h2>

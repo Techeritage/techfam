@@ -226,7 +226,7 @@
   left: 45%;
   transition: width 0.2s;
   z-index: 20;
-  animation: dangdang 10s ease-in 5s infinite;
+  
 }
 
 @keyframes dangdang {
@@ -252,17 +252,83 @@
 }
 
 .curve .ball {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 18%;
+  top: 33%;
 }
 
 .curve:hover {
   
+}
+
+.about1 {
+  display: flex;
+  padding: 100px 10%;
+  justify-content: space-between;
+  /**background: linear-gradient(to bottom right, #d6a68257, white);**/
+}
+
+.about1-img-cont {
+  flex-basis: 48%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.about1-inner {
+  width: max-content;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.about1-img-cont .imga {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  position: absolute;
+  border: 5px solid white;
+  top: -10%;
+  left: -30%;
+}
+
+.about1-img-cont .imgb {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.about1-text-cont {
+  flex-basis: 48%;
+}
+
+.about1-text-cont h4 {
+  color: #555555;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.about1-text-cont h2 {
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  margin: 15px 0;
+}
+
+.about1-text-cont p {
+  text-align: start;
+  color: #333333;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.about1-text-cont .str-text {
+  font-weight: 600;
+  color: #d52c3f;
+  font-size: 17px;
 }
 
 .area-of-focus {
