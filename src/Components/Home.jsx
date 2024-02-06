@@ -17,6 +17,7 @@ import Techfam4 from '../assets/techfam4.webp';
 import Techfam5 from '../assets/techfam5.webp';
 import Dots from '../assets/dots.svg';
 import Ball from '../assets/ball.png';
+import Splash from '../assets/splash.svg';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -30,7 +31,7 @@ const Home = () => {
 
   useEffect(() => {
     let currentIndex = 0;
-    const typingInterval = 50;
+    const typingInterval = 40;
 
     const animatedTyping = setInterval(() => {
       const currentSlice = textToType.slice(0, currentIndex);
@@ -112,7 +113,6 @@ const Home = () => {
           <div className='side-curve'></div>
           <div className='curve'>
             <img src={CurveText} className='curve-text'/>
-            <img src={Ball} className='ball' />
           </div>
           
           <div className='text-cont'>
@@ -156,14 +156,13 @@ const Home = () => {
       <section>
         <div className='about1'>
           <div className='about1-img-cont'>
-            <img src={Techfam1} className='imga' loading='lazy' />
+            <img src={Techfam3} className='imga' loading='lazy' />
             <div className='about1-inner'>
-              <img src={Techfam2} className='imgb' loading='lazy' />
+              <img src={Techfam4} className='imgb' loading='lazy' />
             </div>
             <img src={Dots} className='imgc' loading='lazy' />
           </div>
           <div className='about1-text-cont'>
-           <h4>Welcome to Techfam</h4>
            <h2>
             Who are we?
             <div className='waw'></div>
@@ -177,7 +176,7 @@ const Home = () => {
            </p>
            <div className='donate'>
             <button>
-              Learn more
+              About Us
             </button>
            </div>
           </div>
@@ -187,10 +186,7 @@ const Home = () => {
         <div className='area-of-focus' ref={areaRef}>
           <div className='area-of-focus-heading'>
             <div>
-              <h2>Our Areas of <span>Focus</span></h2>
-              <div className='waw-cont'>
-                <div className='waw'></div>
-              </div>
+              <h2>Our Areas of <span className='focus'>Focus</span></h2>
             </div>
             <p>Empower women in tech for diversity, innovation, and equal representation.</p>
           </div>
@@ -208,20 +204,20 @@ const Home = () => {
             </div>
             <div onClick={() => {areaOfFocus(setBackground2)}} className={`grid-cont ${background2 ? 'white' : 'ash'}`}>
               <div>
-                <div className='grid--img'>   
-                  <img src={Star} loading='lazy' />
-                </div>
-                <h3>Role Modelling</h3>
-                <p>Role models are vital - when you look at someone who looks like you and understands you, they make the potential for success tangible for you.</p>
-              </div>
-            </div>
-            <div onClick={() => {areaOfFocus(setBackground3)}} className={`grid-cont ${background3 ? 'white' : 'ash'}`}>
-              <div>
                 <div className='grid--img'>
                   <img src={Globe} loading='lazy' />
                 </div>
                 <h3>Opportunities</h3>
                 <p>We connect African women with job opportunities in tech. Also, provide resources to help them succeed.</p>
+              </div>
+            </div>
+            <div onClick={() => {areaOfFocus(setBackground3)}} className={`grid-cont ${background3 ? 'white' : 'ash'}`}>
+              <div>
+                <div className='grid--img'>   
+                  <img src={Star} loading='lazy' />
+                </div>
+                <h3>Role Modelling</h3>
+                <p>Role models are vital - when you look at someone who looks like you and understands you, they make the potential for success tangible for you.</p>
               </div>
             </div>
           </div>
@@ -235,13 +231,13 @@ const Home = () => {
             <img src={Techfam4} className='img2' loading='lazy' />
           </div>
           <div className='about-text-count'>
-            <h2>TechFam was founded out of a strong desire...</h2>
+            <h2>TechFam was founded from a strong desire...</h2>
             <p>…to bring as many young African women and girls into the tech space as possible. We equip them with some of the most in-demand 
               skills in today's world, especially now that the world has evolved, where most women are typically independent on men to survive.</p>
             <p>The field of technology is vast, with a diverse set of talents that are both lucrative and primarily remote.</p>
             <div className='donate atcbtn'>
               <button>
-                Apply Now
+                Donate
               </button>
             </div>
           </div>
