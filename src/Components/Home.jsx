@@ -100,6 +100,19 @@ const Home = () => {
     setFunction(true);
   }
 
+  const screenHeight = window.innerHeight;
+
+  let imageClassName = '';
+
+  // Apply different CSS classes based on screen height
+  if (screenHeight <= 600) {
+    imageClassName = 'image-small';
+  } else if (screenHeight <= 900) {
+    imageClassName = 'image-medium';
+  } else {
+    imageClassName = 'image-large';
+  }
+
   return (
     <div className='home'>
       <nav>
@@ -143,7 +156,7 @@ const Home = () => {
            */}
            <div className='image-cont-inner'>
               <div className='in-border'></div>
-              <img src={CEO} />
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-300,fo-auto/ceo%20(1)%20(1).webp?updatedAt=1707346997256" className={imageClassName} />
               <div className='name-title'>
                 <h3>Miss Kelechi Udeh</h3>
                 <p>CEO, TechFam.</p>

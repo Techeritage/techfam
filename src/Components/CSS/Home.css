@@ -89,6 +89,7 @@
 }
 
 .image-cont-inner {
+  position: relative;
   background: #e5d5c1;
   width: 85%;
   height: 85%;
@@ -120,11 +121,10 @@
 }
 
 .image-cont img {
+  position: absolute;
+  height: 115%;
   z-index: 20;
-  width: 55%;
-  object-fit: cover;
-  object-position: top;
-  margin-top: -100px;
+  bottom: 0;
   opacity: 0;
   transform: scale(0.5);
   animation: zoomFadeIn 2s ease-in-out 2s forwards;
