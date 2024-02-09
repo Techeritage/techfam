@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Components/CSS/Footer.css';
 import Logo from '../assets/logo2.png';
-import Arrow from '../assets/arrow-forward.svg';
+import Plane from '../assets/paper-plane.svg';
 import Phone from '../assets/call.svg';
 import Email from '../assets/mail.svg';
 import Location from '../assets/location.svg';
@@ -95,6 +95,18 @@ const Footer = () => {
               <p>Lekki, Lagos State, Nigeria</p>
             </a>
           </div>
+        </div>
+        <div className='newsletter'>
+          <h4>Newsletter</h4>
+          <p> Stay tuned for upcoming events and opportunities to get involved with our mission</p>
+          <form>
+            <div className='email-cont'>
+              <input type="email" name='email' placeholder='Email Address' />
+              <button>
+                <img src={Plane}  />
+              </button>
+            </div>
+          </form>
         </div>
       </div>
       <div className='footer-copywrite'>

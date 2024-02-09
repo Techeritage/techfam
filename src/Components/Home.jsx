@@ -1,23 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../Components/CSS/Home.css';
-import Map from '../assets/map2.png';
 import CurveText from '../assets/Curve-text.png';
 import Book from '../assets/book.svg';
 import Globe from '../assets/globe.svg';
 import Star from '../assets/star.svg';
-import Techfam1 from '../assets/techfam1.jpg';
-import Techfam2 from '../assets/techfam2.jpg';
 import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
-import CEO from '../assets/ceo1.webp';
-import Arrow1 from '../assets/arrow1.svg';
-import Chatbox from '../assets/chatbox.svg';
-import Techfam3 from '../assets/techfam3.webp';
-import Techfam4 from '../assets/techfam4.webp';
-import Techfam5 from '../assets/techfam5.webp';
 import Dots from '../assets/dots.svg';
-import Ball from '../assets/ball.png';
-import Splash from '../assets/splash.svg';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -31,7 +20,7 @@ const Home = () => {
 
   useEffect(() => {
     let currentIndex = 0;
-    const typingInterval = 40;
+    const typingInterval = 50;
 
     const animatedTyping = setInterval(() => {
       const currentSlice = textToType.slice(0, currentIndex);
@@ -49,29 +38,6 @@ const Home = () => {
     return () => clearInterval(animatedTyping);
   }, [textToType]);
 
-
- /* useEffect(()=> {
-    console.log('Typing Animation Effect');
-    let currentIndex = 0;
-    const typingInterval = 100;
-
-    let animatedTyping = setInterval(() => {
-      console.log('Updating displayedText:', textToType.slice(0, currentIndex));
-      setDisplayedText(textToType.slice(0, currentIndex));
-      currentIndex++;
-
-      if(currentIndex > textToType.length) {
-        clearInterval(animatedTyping);
-      }
-    }, typingInterval);
-    
-    return () => {
-      console.log('Cleaning up Typing Animation');  
-      clearInterval(animatedTyping);
-    }
-
-  }, [textToType]); */
-
   //scroll to view for arae of focus
   const areaRef = useRef(null);
   //scroll to view function
@@ -81,38 +47,6 @@ const Home = () => {
     });
   }
 
-  //useState for each divs
-  const [background1,setBackground1] = useState(false);
-  const [background2,setBackground2] = useState(false);
-  const [background3,setBackground3] = useState(false);
-
-  useEffect(() => {
-
-    setBackground2(true);
-
-  }, []);
-
-  const areaOfFocus = (setFunction) => {
-    setBackground1(false);
-    setBackground2(false);
-    setBackground3(false);
-
-    setFunction(true);
-  }
-
-  const screenHeight = window.innerHeight;
-
-  let imageClassName = '';
-
-  // Apply different CSS classes based on screen height
-  if (screenHeight <= 600) {
-    imageClassName = 'image-small';
-  } else if (screenHeight <= 900) {
-    imageClassName = 'image-medium';
-  } else {
-    imageClassName = 'image-large';
-  }
-
   return (
     <div className='home'>
       <nav>
@@ -120,17 +54,16 @@ const Home = () => {
             <Header scroll = {scroll} />
         </div>
       </nav>
-     
+  
       <section>
         <div className='hero'>
           <div className='side-curve'></div>
           <div className='curve'>
             <img src={CurveText} className='curve-text'/>
           </div>
-          
           <div className='text-cont'>
             <div className='text-cont-heading'>
-              <img src={Map} />
+              <img src='https://ik.imagekit.io/krr3p3joi/tr:w-450,h-500,fo-auto/mapmap-removebg-preview.png?updatedAt=1707429384136' />
               <h1 dangerouslySetInnerHTML={{ __html: displayedText }} />
             </div>
             <div className='text-cont-text'>
@@ -146,76 +79,67 @@ const Home = () => {
             </div>
           </div>
           <div className='image-cont'>
-           {/*
-              <div className='image-cont-inner'>
-              <img src={Map} />
-              <img src={Ribbon1} className='ribbon1 ribbon'/>
-              <img src={Ribbon2} className='ribbon2 ribbon'/>
-              <img src={Ribbon3} className='ribbon3 ribbon'/>
-              </div> 
-           */}
-           <div className='image-cont-inner'>
+            <div className='image-cont-inner'>
               <div className='in-border'></div>
-              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-300,fo-auto/ceo%20(1)%20(1).webp?updatedAt=1707346997256" className={imageClassName} />
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-300,h-680,fo-auto/ceo%20(1)%20(1).webp?updatedAt=1707346997256" />
               <div className='name-title'>
                 <h3>Miss Kelechi Udeh</h3>
                 <p>CEO, TechFam.</p>
+              </div>
             </div>
-           </div>
-           
           </div>
         </div>
       </section>
+
       <section>
         <div className='about1'>
           <div className='about1-img-cont'>
-            <img src={Techfam3} className='imga' loading='lazy' />
+            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-220,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
-              <img src={Techfam4} className='imgb' loading='lazy' />
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-310/IMG_5789.webp?updatedAt=1707475488053" className='imgb' loading='lazy' />
             </div>
             <img src={Dots} className='imgc' loading='lazy' />
           </div>
           <div className='about1-text-cont'>
-           <h2>
-            Who are we?
-            <div className='waw'></div>
-           </h2>
-           <p className='str-text'>
-            TechFam strives to promote gender inclusivity in the field of technology
-           </p>
-           <p>
-            we foster an entrepreneurial mindset in young African women, and equip them with high-demand digital skills in order to achieve/gain 
-            financial independence. Through collaboration with other groups, we hope to provide career opportunities for young African women.
-           </p>
-           <div className='donate'>
-            <button>
-              About Us
-            </button>
-           </div>
+            <h2>
+              Who we are
+              <div className='waw'></div>
+            </h2>
+            <p className='str-text'>
+              TechFam strives to promote gender inclusivity in the field of technology
+            </p>
+            <p>
+              we foster an entrepreneurial mindset in young African women, and equip them with high-demand digital skills in order to achieve/gain 
+              financial independence. Through collaboration with other groups, we hope to provide career opportunities for young African women.
+            </p>
+            <div className='donate'>
+              <button>
+                About Us
+              </button>
+            </div>
           </div>
         </div>
       </section>
+
       <section>
         <div className='area-of-focus' ref={areaRef}>
           <div className='area-of-focus-heading'>
             <div>
-              <h2>Our Areas of <span className='focus'>Focus</span></h2>
+              <h2>Our Areas of <span className='volvol'>Focus</span></h2>
             </div>
             <p>Empower women in tech for diversity, innovation, and equal representation.</p>
           </div>
-
           <div className='area-of-focus-grid'>
-            <div onClick={() => {areaOfFocus(setBackground1)}} className={`grid-cont ${background1 ? 'white' : 'ash'}`}>
+            <div className='grid-cont ash'>
               <div>
                 <div className='grid--img'>   
                   <img src={Book} loading='lazy' />
                 </div>
                 <h3>Education</h3>
                 <p>We provide education and training opportunities for African women interested in pursuing careers in tech.</p>
-              </div>
-              
+              </div> 
             </div>
-            <div onClick={() => {areaOfFocus(setBackground2)}} className={`grid-cont ${background2 ? 'white' : 'ash'}`}>
+            <div className='grid-cont white'>
               <div>
                 <div className='grid--img'>
                   <img src={Globe} loading='lazy' />
@@ -224,7 +148,7 @@ const Home = () => {
                 <p>We connect African women with job opportunities in tech. Also, provide resources to help them succeed.</p>
               </div>
             </div>
-            <div onClick={() => {areaOfFocus(setBackground3)}} className={`grid-cont ${background3 ? 'white' : 'ash'}`}>
+            <div className='grid-cont ash'>
               <div>
                 <div className='grid--img'>   
                   <img src={Star} loading='lazy' />
@@ -234,25 +158,53 @@ const Home = () => {
               </div>
             </div>
           </div>
-        
         </div>
       </section>
+
       <section>
         <div className='about-home'>
           <div className='about-image-count'>
-            <img src={Techfam5} className='img1' loading='lazy' />
-            <img src={Techfam4} className='img2' loading='lazy' />
+            <img src='https://ik.imagekit.io/krr3p3joi/tr:w-300,h-400,fo-auto/IMG_6363%20(1).webp?updatedAt=1707429460862' className='img1' loading='lazy' />
+            <img src='https://ik.imagekit.io/krr3p3joi/tr:w-300,h-400,fo-auto/IMG_6202%20(1)%20(1).webp?updatedAt=1707429462023' className='img2' loading='lazy' />
           </div>
           <div className='about-text-count'>
-            <h2>TechFam was founded from a strong desire...</h2>
-            <p>…to bring as many young African women and girls into the tech space as possible. We equip them with some of the most in-demand 
-              skills in today's world, especially now that the world has evolved, where most women are typically independent on men to survive.</p>
-            <p>The field of technology is vast, with a diverse set of talents that are both lucrative and primarily remote.</p>
+            <h2>At TechFam, our journey began with a profound mission...</h2>
+            <p>
+              ...to empower young African women and girls by bridging the tech industry gap. We equip them with essential skills for today's digital 
+              landscape. As norms shift towards gender equality, our mission gains relevance. In tech, lucrative careers and remote work opportunities 
+              abound. By providing access to tech skills, we foster diversity and inclusion. 
+              At TechFam, we nurture an environment for women to excel in tech leadership.
+            </p>
+            <p>
+              Your donation drives our mission to empower female tech leaders and create an inclusive tech community. 
+              Join us in realizing women's full potential in the digital age.
+            </p>
             <div className='donate atcbtn'>
               <button>
-                Donate
+                Donate Now
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className='volunteer'>
+          <div className='volunteer-text-cont'>
+            <h2>
+              Empower Change: <span className='volvol'>Volunteer</span> Today
+            </h2>
+            <p>
+            At <span>Techfam</span>, we believe in the power of community and the impact that volunteers can make in changing lives. 
+            Join us in our mission to empower African women through technology education and make a difference in the world.
+            </p>
+            <div className='donate'>
+              <button>Get Started</button>
+            </div>
+            
+          </div>
+          <div className='volunteer-img-cont'>
+            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-500,h-350,fo-auto/8702816_3979852.jpg?updatedAt=1707471459804" loading='lazy'/>
           </div>
         </div>
       </section>
@@ -276,7 +228,6 @@ const Home = () => {
                   <a href="#">Read More</a>
                 </div>
               </div>
-
               <div className='event-grid-cont'>
                 <div className='event-img'>
                   <img src={Event1} loading='lazy' />
@@ -288,7 +239,6 @@ const Home = () => {
                   <a href="#">Read More</a>
                 </div>
               </div>
-
               <div className='event-grid-cont'>
                 <div className='event-img'>
                   <img src={Event1} loading='lazy' />
@@ -321,12 +271,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section>
         <div>
           <Footer />
         </div>
-      </section>
-      
+      </section> 
     </div>
   )
 }
