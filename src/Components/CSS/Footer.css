@@ -1,11 +1,12 @@
 .footer-copywrite {
-  padding: 20px 10%;
-  background: #f5f5f5;
+  padding: 10px 10%;
+  background: #333333;
+  border-top: 1px solid #ffffff79;
 }
 
 .footer-copywrite p {
   font-size: 15px;
-   
+  color: #fff;
 }
 
 .footer-cont {

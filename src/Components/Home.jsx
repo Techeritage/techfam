@@ -13,6 +13,32 @@ import Footer from './Footer';
 
 
 const Home = () => {
+    useEffect(() => {
+      const checkBoxes = () => {
+        const trigger = window.innerHeight / 5 * 4;
+        const sections = document.querySelectorAll('.box');
+  
+        sections.forEach((section) => {
+          const boxTop = section.getBoundingClientRect().top;
+  
+          if (boxTop < trigger) {
+            section.classList.add('show');
+            console.log('hello');
+          } else {
+            section.classList.remove('show');
+          }
+        });
+      };
+  
+      window.addEventListener('scroll', checkBoxes);
+  
+      // Cleanup function to remove the event listener when component unmounts
+      return () => {
+        window.removeEventListener('scroll', checkBoxes);
+      };
+    }, []);
+
+
   //hero text animation 
   const textToType = 'Raising Tech Giants From Among <span class="text-color">African Women</span>';
 
@@ -20,7 +46,7 @@ const Home = () => {
 
   useEffect(() => {
     let currentIndex = 0;
-    const typingInterval = 50;
+    const typingInterval = 30;
 
     const animatedTyping = setInterval(() => {
       const currentSlice = textToType.slice(0, currentIndex);
@@ -81,7 +107,7 @@ const Home = () => {
           <div className='image-cont'>
             <div className='image-cont-inner'>
               <div className='in-border'></div>
-              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-300,h-680,fo-auto/ceo%20(1)%20(1).webp?updatedAt=1707346997256" />
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-300,h-600,fo-auto/ceo%20(1)%20(1).webp?updatedAt=1707346997256" />
               <div className='name-title'>
                 <h3>Miss Kelechi Udeh</h3>
                 <p>CEO, TechFam.</p>
@@ -91,12 +117,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className='box'>
         <div className='about1'>
           <div className='about1-img-cont'>
             <img src="https://ik.imagekit.io/krr3p3joi/tr:w-220,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
-              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-310/IMG_5789.webp?updatedAt=1707475488053" className='imgb' loading='lazy' />
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-300/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
             </div>
             <img src={Dots} className='imgc' loading='lazy' />
           </div>
@@ -121,7 +147,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section  className='box'>
         <div className='area-of-focus' ref={areaRef}>
           <div className='area-of-focus-heading'>
             <div>
@@ -161,7 +187,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className='box'>
         <div className='about-home'>
           <div className='about-image-count'>
             <img src='https://ik.imagekit.io/krr3p3joi/tr:w-300,h-400,fo-auto/IMG_6363%20(1).webp?updatedAt=1707429460862' className='img1' loading='lazy' />
@@ -170,10 +196,8 @@ const Home = () => {
           <div className='about-text-count'>
             <h2>At TechFam, our journey began with a profound mission...</h2>
             <p>
-              ...to empower young African women and girls by bridging the tech industry gap. We equip them with essential skills for today's digital 
-              landscape. As norms shift towards gender equality, our mission gains relevance. In tech, lucrative careers and remote work opportunities 
-              abound. By providing access to tech skills, we foster diversity and inclusion. 
-              At TechFam, we nurture an environment for women to excel in tech leadership.
+              ...to empower African women with tech skills, bridging industry gaps. As norms evolve, our mission gains significance, 
+              fostering diversity and leadership.
             </p>
             <p>
               Your donation drives our mission to empower female tech leaders and create an inclusive tech community. 
@@ -188,7 +212,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className='box'>
         <div className='volunteer'>
           <div className='volunteer-text-cont'>
             <h2>
@@ -209,7 +233,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className='box'>
         <div className='stories-event'>
           <div className='event'>
             <div className='event-heading'>
@@ -272,7 +296,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className='box'>
         <div>
           <Footer />
         </div>

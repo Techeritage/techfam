@@ -1,13 +1,42 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Logo1 from '../assets/logo1.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Search from '../assets/search.svg';
 import '../Components/CSS/Header.css';
 
 const Header = ({scroll}) => {
+  const elementRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log('Element is in view');
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver(callback, options);
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
   
   return (
-    <div className='header'>
+    
+    <div className={`header ${isVisible ? 'visible' : ''}`} ref={elementRef}>
       <div className='logo'>
         <Link to="/">
           <img src={Logo1} alt="website-logo" />

@@ -3,6 +3,27 @@
   height: 100vh;
 }
 
+/*.visible {
+  animation: observer 2s forwards;
+}
+
+@keyframes observer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}*/
+.box {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -38,21 +59,21 @@
 
 .text-cont-heading img {
   position: absolute;
-  /*width: 95%;
-  left: 10%; */
-  top: -18%;
+  /*width: 95%; */
+  top: -11%;
+  left: -12%;
   opacity: 0;
   transform: scale(0.5);
-  animation: zoomFadeIn2 2s ease-in-out 1s forwards;
+  animation: zoomFadeIn2 1.5s ease-in-out 0.3s forwards;
 }
 
 @keyframes zoomFadeIn2 {
   from {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(0.8);
   }
   to {
-    opacity: 0.08;
+    opacity: 0.05;
     transform: scale(1);
   }
 }
@@ -70,10 +91,10 @@
 .text-cont-text p {
   opacity: 0;
   line-height: 24px;
-  color: #333333;
+  color: #181818;
   letter-spacing: 0.3px;
   width: 450px;
-  animation: slideRight 1s ease-in 2.5s forwards;
+  animation: slideRight 0.5s ease-in 1.4s forwards;
 }
 
 @keyframes slideRight {
@@ -134,7 +155,7 @@
   bottom: 0;
   opacity: 0;
   transform: scale(0.5);
-  animation: zoomFadeIn 2s ease-in-out 1s forwards;
+  animation: zoomFadeIn 1.5s ease-in-out forwards;
 }
 
 @keyframes zoomFadeIn {
@@ -188,7 +209,7 @@
 
 .hero .donate button {
   opacity: 0;
-  animation: displayBtn 1s ease-in 3.5s forwards;
+  animation: displayBtn 0.5s ease-in 2s forwards;
 }
 
 @keyframes displayBtn {
@@ -207,6 +228,7 @@
   left: 45%;
   transition: width 0.2s;
   z-index: 20;
+  animation: opp 1.5s ease-in forwards;
 }
 
 .curve .curve-text {
@@ -219,11 +241,16 @@
   
 }
 
+.section-translate {
+  opacity: 0;
+}
+
 .about1 {
   display: flex;
   padding: 120px 10%;
   justify-content: space-between;
   background: #e5d5c1;
+  overflow-x: hidden;
 }
 
 .about1-img-cont {
@@ -243,7 +270,7 @@
 .about1-img-cont .imga {
   position: absolute;
   border: 7px solid white;
-  top: -28%;
+  top: -15%;
   left: 0;
   z-index: 20;
 }
@@ -271,6 +298,24 @@
   width: max-content;
 }
 
+/*ANIMATION ARENA */
+.about1-text-cont h2, .area-of-focus-heading h2, .about-text-count h2, .volunteer-text-cont h2, .event-heading h2 {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+
+.box.show .about1-text-cont h2, .box.show .area-of-focus-heading h2, .box.show .about-text-count h2, .box.show .volunteer-text-cont h2, .box.show .event-heading h2 {
+  animation: headview 0.5s ease 0.3s forwards;
+}
+
+@keyframes headview {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .waw {
   background: #d6a682;
   height: 10px;
@@ -282,6 +327,20 @@
   color: #555555;
   font-size: 16px;
   line-height: 24px;
+}
+
+.about1-text-cont p, .about-text-count p, .grid-cont:nth-child(3) {
+  transform: translateX(400%);
+  transition: transform 0.5s;
+}
+
+.volunteer .volunteer-text-cont p, .grid-cont:nth-child(1) {
+  transform: translateX(-400%);
+  transition: transform 0.5s;
+}
+
+.box.show .about1-text-cont p, .box.show .about-text-count p, .box.show .volunteer .volunteer-text-cont p, .box.show .grid-cont:nth-child(1), .box.show .grid-cont:nth-child(3) {
+  transform: translateX(0);
 }
 
 .about1-text-cont .str-text {
@@ -296,6 +355,7 @@
   padding: 70px 10%;
   background: white;
   margin-bottom: 20px;
+  overflow-x: hidden;
 }
 
 @keyframes rotate {
@@ -351,14 +411,9 @@
 }
 .grid-cont {
   display: flex;
-  padding: 20px;
+  padding: 30px 25px;
   border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.grid-cont:hover {
-  transform: scale(1.1);
 }
 
 .grid--img {
@@ -485,7 +540,7 @@
 }
 
 .volunteer {
-  padding: 70px 10%;
+  padding: 70px 10% 50px;
   display: flex;
   justify-content: space-between;
 }
