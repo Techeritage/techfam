@@ -63,7 +63,7 @@
 
 .text-cont-heading img {
   position: absolute;
-  /*width: 95%; */
+  width: 95%;
   top: -11%;
   left: -12%;
   opacity: 0;
@@ -738,21 +738,26 @@
   }
 
   .text-cont-heading h1 {
-    font-size: 28px;
+    font-size: 30px;
     width: 70%;
     white-space: wrap;
+  }
+
+  .text-cont-heading img {
+    width: 70%;
+    left: -20%;
   }
 
   .image-cont-inner .name-title {
     width: max-content;
     position: absolute;
     bottom: 5%;
-    left: -17%;
+    left: -19%;
   }
 
   .side-curve {
-    top: 0;
-    left: -5%;
+    top: -30px;
+    left: -8%;
     height: 20%;
   }
 
@@ -768,15 +773,62 @@
   
   .about1 {
     flex-direction: column;
-    padding: 0;
+    padding: 20px 3%;
+    overflow-y: hidden;
   }
+
+  .about1-text-count {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .about1-text-cont .donate {
+    display: flex;
+    justify-content: end;
+  }
+
+  .about1-text-cont .donate button{
+    margin-top: 20px;
+  }
+
+  .about1-img-cont.ab1-mobile {
+    flex-basis: 100%;
+  }
+
+  .about1-img-cont .imga {
+    width: 150px;
+    top: 0%;
+  }
+
+  .about1-img-cont .imgb {
+    z-index: 10;
+  }
+
+  .about1-img-cont .imgc {
+    width: 100px;
+    position: absolute;
+    left: -40px;
+  }
+
+  .ab1-inner {
+    width: max-content;
+    position: relative;
+  }
+
+  .dot-desktop {
+    display: none;
+  }
+  
 
   .ab1-desktop {
     display: none;
   }
 
   .about1-inner {
-    display: none;
+    padding: 50px 0;
+    justify-content: end;
   }
 
   .area-of-focus {

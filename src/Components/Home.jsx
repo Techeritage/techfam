@@ -87,8 +87,7 @@ const Home = () => {
           </div>
           <div className='text-cont'>
             <div className='text-cont-heading'>
-              <img srcSet='https://ik.imagekit.io/krr3p3joi/tr:w-450,h-500,fo-auto/mapmap-removebg-preview.png?updatedAt=1707429384136 1200w,
-              https://ik.imagekit.io/krr3p3joi/tr:w-100,h-100,fo-auto/mapmap-removebg-preview.png?updatedAt=1707429384136 390w' />
+              <img srcSet='https://ik.imagekit.io/krr3p3joi/tr:w-450,h-500,fo-auto/mapmap-removebg-preview.png?updatedAt=1707429384136 1200w' />
               <h1 dangerouslySetInnerHTML={{ __html: displayedText }} />
             </div>
             <div className='text-cont-text'>
@@ -149,9 +148,12 @@ const Home = () => {
           <div className='about1-img-cont ab1-mobile'>
             <img src="https://ik.imagekit.io/krr3p3joi/tr:w-220,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
-              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-300/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
+              <div className='ab1-inner'>
+                <img src="https://ik.imagekit.io/krr3p3joi/tr:w-310,h-200/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
+                <img src={Dots} className='imgc dot-mobile' loading='lazy' />
+              </div>
             </div>
-            <img src={Dots} className='imgc' loading='lazy' />
+            <img src={Dots} className='imgc dot-desktop' loading='lazy' />
           </div>
         </div>
       </section>

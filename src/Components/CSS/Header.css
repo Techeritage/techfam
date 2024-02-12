@@ -123,5 +123,6 @@
 
   .logo img {
     width: 180px;
+    margin-left: -20px;
   }
 }
