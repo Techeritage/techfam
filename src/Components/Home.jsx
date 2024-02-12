@@ -10,8 +10,6 @@ import Dots from '../assets/dots.svg';
 import Header from './Header';
 import Footer from './Footer';
 
-
-
 const Home = () => {
     useEffect(() => {
       const checkBoxes = () => {
@@ -89,13 +87,17 @@ const Home = () => {
           </div>
           <div className='text-cont'>
             <div className='text-cont-heading'>
-              <img src='https://ik.imagekit.io/krr3p3joi/tr:w-450,h-500,fo-auto/mapmap-removebg-preview.png?updatedAt=1707429384136' />
+              <img srcSet='https://ik.imagekit.io/krr3p3joi/tr:w-450,h-500,fo-auto/mapmap-removebg-preview.png?updatedAt=1707429384136 1200w,
+              https://ik.imagekit.io/krr3p3joi/tr:w-100,h-100,fo-auto/mapmap-removebg-preview.png?updatedAt=1707429384136 390w' />
               <h1 dangerouslySetInnerHTML={{ __html: displayedText }} />
             </div>
             <div className='text-cont-text'>
-              <p>
+              <p className='desktop-p'>
                 TechFam aims to change the skills landscape in Africa through various initiatives with objective to help African 
                 acquire digital skills for today's workspaces and tomorrow's needs. We hope to influence the now and set the tone for the future.
+              </p>
+              <p className='mobile-p'>
+                TechFam aims to reshape Africa's skills landscape, empowering Africans with digital skills for current and future workplaces.
               </p>
             </div>
             <div className='donate'>
@@ -228,7 +230,7 @@ const Home = () => {
             
           </div>
           <div className='volunteer-img-cont'>
-            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-500,h-350,fo-auto/8702816_3979852.jpg?updatedAt=1707471459804" loading='lazy'/>
+            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-100,h-350,fo-auto/8702816_3979852.jpg?updatedAt=1707471459804" loading='lazy'/>
           </div>
         </div>
       </section>

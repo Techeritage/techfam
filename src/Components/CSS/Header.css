@@ -111,3 +111,17 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 576px) {
+  .header-links {
+    display: none;
+  }
+
+  .header-cont3 {
+    display: none;
+  }
+
+  .logo img {
+    width: 180px;
+  }
+}

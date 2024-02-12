@@ -7,7 +7,6 @@ import '../Components/CSS/Header.css';
 const Header = ({scroll}) => {
   const elementRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     const options = {
       root: null,

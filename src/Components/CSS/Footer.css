@@ -133,3 +133,9 @@
   padding: 10px 15px;
   border-radius: 0 5px 5px 0;
 }
+
+@media only screen and (max-width: 576px) {
+  .footer-cont {
+    flex-direction: column;
+  }
+}
