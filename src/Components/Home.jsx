@@ -121,7 +121,7 @@ const Home = () => {
 
       <section className='box'>
         <div className='about1'>
-          <div className='about1-img-cont'>
+          <div className='about1-img-cont ab1-desktop'>
             <img src="https://ik.imagekit.io/krr3p3joi/tr:w-220,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
               <img src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-300/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
@@ -145,6 +145,13 @@ const Home = () => {
                 About Us
               </button>
             </div>
+          </div>
+          <div className='about1-img-cont ab1-mobile'>
+            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-220,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
+            <div className='about1-inner'>
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-300/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
+            </div>
+            <img src={Dots} className='imgc' loading='lazy' />
           </div>
         </div>
       </section>
