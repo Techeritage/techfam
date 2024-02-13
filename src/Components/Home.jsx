@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Components/CSS/Home.css';
 import CurveText from '../assets/Curve-text.png';
 import Book from '../assets/book.svg';
@@ -119,6 +121,10 @@ const Home = () => {
 
       <section className='box'>
         <div className='about1'>
+          <h2>
+            Who we are
+            <div className='waw'></div>
+          </h2>
           <div className='about1-img-cont ab1-desktop'>
             <img src="https://ik.imagekit.io/krr3p3joi/tr:w-280,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
@@ -126,11 +132,26 @@ const Home = () => {
             </div>
             <img src={Dots} className='imgc' loading='lazy' />
           </div>
-          <div className='about1-text-cont'>
-            <h2>
-              Who we are
-              <div className='waw'></div>
-            </h2>
+          <div className='about1-img-cont ab1-mobile'>
+            <div className='ab1.inner'>
+              <Carousel indicators={true}>
+                <Carousel.Item>
+                  <img 
+                  className='d-block'
+                  alt='First slide'
+                  src="https://ik.imagekit.io/krr3p3joi/tr:w-340,h-200,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" loading='lazy' />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img 
+                  className='d-block'
+                  alt='Second slide'
+                  src="https://ik.imagekit.io/krr3p3joi/tr:w-340,h-200,fo-auto/IMG_6345.jpg?updatedAt=1707566632571" loading='lazy' />
+                </Carousel.Item>
+              </Carousel>
+            </div>
+          </div>
+          <div className='about1-text-cont box'>
+            
             <p className='str-text'>
               TechFam strives to promote gender inclusivity in the field of technology
             </p>
@@ -144,13 +165,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className='about1-img-cont ab1-mobile'>
-            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-220,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
-            <div className='about1-inner'>
-              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-310,h-200/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
-            </div>
-            <img src={Dots} className='imgc dot-mobile' loading='lazy' /> 
-          </div>
+         
         </div>
       </section>
 
