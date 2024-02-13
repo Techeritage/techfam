@@ -253,7 +253,7 @@
   display: flex;
   padding: 120px 10%;
   justify-content: space-between;
-  background: #e5d5c1;
+  background: rgba(229, 213, 193, 0.2);
   overflow-x: hidden;
 }
 
@@ -740,7 +740,8 @@
 
   .text-cont-text p {
     background: rgba(255, 255, 255, 0.103);
-    width: 60%;
+    width: 50%;
+    font-size: 14px;
   }
 
   .text-cont-heading h1 {
@@ -752,7 +753,12 @@
   .text-cont-heading img {
     width: 70%;
     left: -20%;
-    top: -30%;
+    top: -45%;
+  }
+
+  .donate button {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 
   .image-cont-inner .name-title {
@@ -865,7 +871,7 @@
   }
 
   .area-of-focus {
-    padding: 30px 3%;
+    padding: 50px 3% 30px;
   }
 
   .area-of-focus-heading h2 {
