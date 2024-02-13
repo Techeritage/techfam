@@ -139,13 +139,13 @@ const Home = () => {
                   <img 
                   className='d-block'
                   alt='First slide'
-                  src="https://ik.imagekit.io/krr3p3joi/tr:w-340,h-200,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" loading='lazy' />
+                  src="https://ik.imagekit.io/krr3p3joi/tr:w-350,h-220,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" loading='lazy' />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img 
                   className='d-block'
                   alt='Second slide'
-                  src="https://ik.imagekit.io/krr3p3joi/tr:w-340,h-200,fo-auto/IMG_6345.jpg?updatedAt=1707566632571" loading='lazy' />
+                  src="https://ik.imagekit.io/krr3p3joi/tr:w-350,h-220,fo-auto/IMG_6345.jpg?updatedAt=1707566632571" loading='lazy' />
                 </Carousel.Item>
               </Carousel>
             </div>

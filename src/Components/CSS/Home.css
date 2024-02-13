@@ -727,7 +727,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     padding: 20px 0 20px 3%;
-    border-bottom: 1px solid #7777772a;
+    border-bottom: 1px solid #77777736;
   }
 
   .image-cont {
@@ -765,11 +765,19 @@
     width: 70%;
     left: -20%;
     top: -45%;
+    display: none;
   }
 
   .donate button {
     font-size: 14px;
     padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #d52c3f;
+    color: black;
+  }
+
+  .image-cont-inner {
+    background: none;
   }
 
   .image-cont-inner .name-title {
@@ -800,9 +808,11 @@
     flex-direction: column;
     padding: 0;
     margin: 30px 3%;
+    padding-bottom: 20px;
     overflow-y: hidden;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #77777736;
   }
 
   .about1-text-cont {
@@ -830,7 +840,7 @@
   }
 
   .about1 h2 {
-    font-size: 28px;
+    font-size: 26px;
     max-width: fit-content;
     display: flex;
     justify-content: center;
@@ -852,9 +862,9 @@
   }
 
   .waw {
-    width: 0%;
+    width: 30%;
     height: 3px;
-    margin-top: 0px;
+    margin-top: 3px;
     background: #d52c3f;
   }
 
@@ -877,11 +887,10 @@
   .area-of-focus {
     padding: 50px 3% 30px;
     background: #ffffff;
-    border-top: 1px solid #3333330e;
   }
 
   .area-of-focus-heading h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .volvol::before {
