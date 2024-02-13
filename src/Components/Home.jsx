@@ -21,7 +21,6 @@ const Home = () => {
   
           if (boxTop < trigger) {
             section.classList.add('show');
-            console.log('hello');
           } else {
             section.classList.remove('show');
           }
@@ -121,7 +120,7 @@ const Home = () => {
       <section className='box'>
         <div className='about1'>
           <div className='about1-img-cont ab1-desktop'>
-            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-220,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
+            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-280,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
               <img src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-300/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
             </div>
@@ -148,12 +147,9 @@ const Home = () => {
           <div className='about1-img-cont ab1-mobile'>
             <img src="https://ik.imagekit.io/krr3p3joi/tr:w-220,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
-              <div className='ab1-inner'>
-                <img src="https://ik.imagekit.io/krr3p3joi/tr:w-310,h-200/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
-                <img src={Dots} className='imgc dot-mobile' loading='lazy' />
-              </div>
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-310,h-200/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
             </div>
-            <img src={Dots} className='imgc dot-desktop' loading='lazy' />
+            <img src={Dots} className='imgc dot-mobile' loading='lazy' /> 
           </div>
         </div>
       </section>
@@ -168,7 +164,7 @@ const Home = () => {
           </div>
           <div className='area-of-focus-grid'>
             <div className='grid-cont ash'>
-              <div>
+              <div className='area-kk'>
                 <div className='grid--img'>   
                   <img src={Book} loading='lazy' />
                 </div>
@@ -177,7 +173,7 @@ const Home = () => {
               </div> 
             </div>
             <div className='grid-cont white'>
-              <div>
+              <div className='area-kk'>
                 <div className='grid--img'>
                   <img src={Globe} loading='lazy' />
                 </div>
@@ -186,7 +182,7 @@ const Home = () => {
               </div>
             </div>
             <div className='grid-cont ash'>
-              <div>
+              <div className='area-kk'>
                 <div className='grid--img'>   
                   <img src={Star} loading='lazy' />
                 </div>

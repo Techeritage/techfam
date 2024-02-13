@@ -64,11 +64,15 @@
 .text-cont-heading img {
   position: absolute;
   width: 95%;
-  top: -11%;
+  top: -20%;
   left: -12%;
   opacity: 0;
   transform: scale(0.5);
   animation: zoomFadeIn2 1.5s ease-in-out 0.3s forwards;
+}
+
+.about1-img-cont.ab1-mobile {
+  display: none;
 }
 
 @keyframes zoomFadeIn2 {
@@ -721,10 +725,12 @@
     height: 100%;
     right: -40%;
     z-index: -1;
+    bottom: -10px;
   }
 
   .image-cont img {
     margin-right: 18%;
+    width: 65%;
   }
 
   .text-cont {
@@ -746,6 +752,7 @@
   .text-cont-heading img {
     width: 70%;
     left: -20%;
+    top: -30%;
   }
 
   .image-cont-inner .name-title {
@@ -773,15 +780,14 @@
   
   .about1 {
     flex-direction: column;
-    padding: 20px 3%;
+    padding: 20px 3% 0;
     overflow-y: hidden;
   }
 
-  .about1-text-count {
+  .about1-text-cont {
     flex-basis: 100%;
-    display: flex;
-    justify-content: center;
     padding: 20px 0;
+    margin-bottom: 20px;
   }
 
   .about1-text-cont .donate {
@@ -790,7 +796,7 @@
   }
 
   .about1-text-cont .donate button{
-    margin-top: 20px;
+    display: none;
   }
 
   .about1-img-cont.ab1-mobile {
@@ -799,22 +805,44 @@
 
   .about1-img-cont .imga {
     width: 150px;
-    top: 0%;
+    top: 5%;
   }
 
   .about1-img-cont .imgb {
-    z-index: 10;
+    width: 90%;
   }
 
   .about1-img-cont .imgc {
     width: 100px;
     position: absolute;
-    left: -40px;
+    bottom: 10%;
+    left: 1%;
+  }
+
+  .about1-text-cont h2 {
+    font-size: 24px;
+  }
+
+  .about1-text-cont .str-text {
+    font-size: 16px;
+  }
+
+  .about1-text-cont p {
+    font-size: 14px;
+  }
+
+  .waw {
+    height: 5px;
+    margin-top: -7px;
+  }
+
+  .about1-img-cont.ab1-mobile {
+    display: flex;
+    padding: 30px 10px;
   }
 
   .ab1-inner {
     width: max-content;
-    position: relative;
   }
 
   .dot-desktop {
@@ -827,16 +855,55 @@
   }
 
   .about1-inner {
-    padding: 50px 0;
+    margin: 50px 0;
     justify-content: end;
   }
 
   .area-of-focus {
-    padding: 0;
+    padding: 30px 3%;
+  }
+
+  .area-of-focus-heading h2 {
+    font-size: 24px;
+  }
+
+  .volvol::before {
+    height: 5px;
+    bottom: 1%;
+  }
+
+  .area-of-focus-heading p {
+    font-size: 10px;
   }
 
   .area-of-focus-grid {
     grid-template-columns: 1fr;
+    margin-top: 40px;
+    row-gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-cont {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .grid-cont .area-kk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-cont p {
+    text-align: center;
+  }
+
+  .white.grid-cont {
+    transform: scale(1);
   }
 
   .stories-event {
