@@ -719,7 +719,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     padding: 20px 0 20px 3%;
-    border-bottom: 0.5px solid #7777772a;
+    border-bottom: 1px solid #7777772a;
   }
 
   .image-cont {
@@ -743,7 +743,8 @@
   .text-cont-text p {
     width: 50%;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
+    color: #555555;
   }
 
   .text-cont-heading h1 {
@@ -801,7 +802,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0d9bf;
+    background-color: #d6a682;
     padding: 10px;
   }
 
@@ -833,17 +834,18 @@
   }
 
   .about1-text-cont h2 {
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
+  }
+
+  .about1 .about1-text-cont p {
+    text-align: center;
+    color: black;
   }
 
   .about1-text-cont .str-text {
     font-size: 16px;
-    text-align: center;
-  }
-
-  .about1-text-cont p {
-    font-size: 14px;
+    color: #333333;
     text-align: center;
   }
 
@@ -858,6 +860,7 @@
     flex: 1;
     display: flex;
     padding: 30px 10px;
+    padding-right: 0;
     border: 1px solid #e0e0e0;
     border-top: none;
     border-radius: 0 0 20px 20px;
@@ -887,7 +890,7 @@
   }
 
   .area-of-focus-heading h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .volvol::before {
