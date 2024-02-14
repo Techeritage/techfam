@@ -756,7 +756,7 @@
   }
 
   .text-cont-heading h1 {
-    font-size: 30px;
+    font-size: 32px;
     width: 70%;
     white-space: wrap;
   }
@@ -771,9 +771,7 @@
   .donate button {
     font-size: 14px;
     padding: 10px 20px;
-    background: transparent;
-    border: 2px solid #d52c3f;
-    color: black;
+    background: #d52c3f;
   }
 
   .image-cont-inner {
@@ -823,6 +821,7 @@
     align-items: center;
     background-color: #f0d9bf;
     padding: 10px;
+    margin-bottom: 20px;
     border-radius: 20px;
   }
 
@@ -862,7 +861,7 @@
   }
 
   .waw {
-    width: 30%;
+    width: 0%;
     height: 3px;
     margin-top: 3px;
     background: #d52c3f;

@@ -132,7 +132,22 @@ const Home = () => {
             </div>
             <img src={Dots} className='imgc' loading='lazy' />
           </div>
-          <div className='about1-img-cont ab1-mobile'>
+          <div className='about1-text-cont'>
+            
+            <p className='str-text'>
+              TechFam strives to promote gender inclusivity in the field of technology
+            </p>
+            <p>
+              we foster an entrepreneurial mindset in young African women, and equip them with high-demand digital skills in order to achieve/gain 
+              financial independence. Through collaboration with other groups, we hope to provide career opportunities for young African women.
+            </p>
+            <div className='donate'>
+              <button>
+                About Us
+              </button>
+            </div>
+          </div>
+          <div className='about1-img-cont ab1-mobile box'>
             <div className='ab1.inner'>
               <Carousel indicators={true}>
                 <Carousel.Item>
@@ -150,22 +165,6 @@ const Home = () => {
               </Carousel>
             </div>
           </div>
-          <div className='about1-text-cont box'>
-            
-            <p className='str-text'>
-              TechFam strives to promote gender inclusivity in the field of technology
-            </p>
-            <p>
-              we foster an entrepreneurial mindset in young African women, and equip them with high-demand digital skills in order to achieve/gain 
-              financial independence. Through collaboration with other groups, we hope to provide career opportunities for young African women.
-            </p>
-            <div className='donate'>
-              <button>
-                About Us
-              </button>
-            </div>
-          </div>
-         
         </div>
       </section>
 
