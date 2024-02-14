@@ -750,7 +750,7 @@
 
   .text-cont-text p {
     width: 50%;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: #555555;
   }
@@ -819,10 +819,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0d9bf;
-    padding: 10px;
+    background-color: #d6a682;
+    padding: 20px 10px 10px;
     margin-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 20px 0px;
   }
 
   .about1-text-cont .donate {
@@ -840,6 +840,7 @@
 
   .about1 h2 {
     font-size: 26px;
+    font-weight: 500;
     max-width: fit-content;
     display: flex;
     justify-content: center;
@@ -849,11 +850,13 @@
 
   .about1 .about1-text-cont p {
     text-align: center;
+    color: #333333;
   }
 
   .about1-text-cont .str-text {
     font-size: 16px;
     text-align: center;
+    color: #000000dc;
   }
 
   .ab1-inner {
@@ -869,7 +872,7 @@
 
   .about1-img-cont.ab1-mobile {
     flex: 1;
-    display: block;
+    display: none;
     padding: 20px;
     margin-bottom: 30px;
   }
@@ -884,7 +887,7 @@
   }
 
   .area-of-focus {
-    padding: 50px 3% 30px;
+    padding: 20px 3% 30px;
     background: #ffffff;
   }
 
@@ -916,7 +919,12 @@
     width: 80%;
     padding: 40px 15px;
     position: relative;
+    background: #f5f5f5;
   }
+
+  .box.show .grid-cont:nth-child(odd) {
+    transform: translateX(0);
+}
 
   .grid-cont .area-kk {
     display: flex;
@@ -939,6 +947,7 @@
   .white.grid-cont {
     transform: scale(1);
     background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.103);
   }
 
   .white .grid--img {
@@ -990,8 +999,11 @@
     color: white;
   }
 
-  .carousel-control-next-icon {
-    fill: #d52c3f;
+  .about-text-count h2 {
+    font-size: 32px;
+  }
 
+  .about-text-count p {
+    text-align: start;
   }
 }

@@ -177,7 +177,7 @@ const Home = () => {
             <p>Empower women in tech for diversity, innovation, and equal representation.</p>
           </div>
           <div className='area-of-focus-grid'>
-            <div className='grid-cont ash'>
+            <div className='grid-cont ash box'>
               <div className='area-kk'>
                 <div className='grid--img'>   
                   <img src={Book} loading='lazy' />
@@ -186,7 +186,7 @@ const Home = () => {
                 <p>We provide education and training opportunities for African women interested in pursuing careers in tech.</p>
               </div> 
             </div>
-            <div className='grid-cont white'>
+            <div className='grid-cont white box'>
               <div className='area-kk'>
                 <div className='grid--img'>
                   <img src={Globe} loading='lazy' />
@@ -195,7 +195,7 @@ const Home = () => {
                 <p>We connect African women with job opportunities in tech. Also, provide resources to help them succeed.</p>
               </div>
             </div>
-            <div className='grid-cont ash'>
+            <div className='grid-cont ash box'>
               <div className='area-kk'>
                 <div className='grid--img'>   
                   <img src={Star} loading='lazy' />
