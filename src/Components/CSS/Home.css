@@ -722,11 +722,11 @@
     display: block;
   }
   .hero {
-    height: 55vh;
-    align-items: center;
+    height: 75vh;
+    align-items: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 20px 0 20px 3%;
+    padding: 15% 0 20px 3%;
     border-bottom: 1px solid #77777736;
   }
 
@@ -741,6 +741,7 @@
 
   .image-cont img {
     margin-right: 18%;
+    height: 105%;
   }
 
   .text-cont {
@@ -753,12 +754,14 @@
     font-size: 16px;
     font-weight: 500;
     color: #555555;
+    line-height: 26px;
   }
 
   .text-cont-heading h1 {
-    font-size: 32px;
-    width: 70%;
+    font-size: 36px;
+    width: 85%;
     white-space: wrap;
+    margin-bottom: 10%;
   }
 
   .text-cont-heading img {
@@ -772,6 +775,7 @@
     font-size: 14px;
     padding: 10px 20px;
     background: #d52c3f;
+    margin-top: 10%;
   }
 
   .image-cont-inner {
@@ -782,7 +786,12 @@
     width: max-content;
     position: absolute;
     bottom: 5%;
-    left: -13.5%;
+    left: -25%;
+  }
+
+  .in-border {
+    width: 105%;
+    height: 80%;
   }
 
   .side-curve {
@@ -845,6 +854,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10%;
   }
 
   .about1 .about1-text-cont p {
@@ -971,11 +981,51 @@
 
   .about-home {
     flex-direction: column;
-    padding: 30px 3%;
+    padding: 30px 0;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-image-count {
     display: none;
+  }
+
+  .about-home-bk {
+    overflow-x: hidden;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+  }
+
+  .about-text-count {
+    position: absolute;
+    padding: 20px 3%;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.712), #d6a68269);
+  }
+
+  .about-text-count .donate {
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+  }
+
+  .about-text-count .donate button {
+    margin-top: 5px;
+  }
+
+  .ab-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ab-inner {
+    width: 100%;
   }
 
   .carousel {
@@ -999,10 +1049,12 @@
   }
 
   .about-text-count h2 {
-    font-size: 32px;
+    font-size: 28px;
+    font-weight: 600;
   }
 
   .about-text-count p {
     text-align: start;
+    margin-bottom: 10px;
   }
 }

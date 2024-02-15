@@ -147,24 +147,6 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className='about1-img-cont ab1-mobile box'>
-            <div className='ab1.inner'>
-              <Carousel indicators={true}>
-                <Carousel.Item>
-                  <img 
-                  className='d-block'
-                  alt='First slide'
-                  src="https://ik.imagekit.io/krr3p3joi/tr:w-350,h-220,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" loading='lazy' />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img 
-                  className='d-block'
-                  alt='Second slide'
-                  src="https://ik.imagekit.io/krr3p3joi/tr:w-350,h-220,fo-auto/IMG_6345.jpg?updatedAt=1707566632571" loading='lazy' />
-                </Carousel.Item>
-              </Carousel>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -214,22 +196,41 @@ const Home = () => {
             <img src='https://ik.imagekit.io/krr3p3joi/tr:w-300,h-400,fo-auto/IMG_6363%20(1).webp?updatedAt=1707429460862' className='img1' loading='lazy' />
             <img src='https://ik.imagekit.io/krr3p3joi/tr:w-300,h-400,fo-auto/IMG_6202%20(1)%20(1).webp?updatedAt=1707429462023' className='img2' loading='lazy' />
           </div>
-          <div className='about-text-count'>
-            <h2>At TechFam, our journey began with a profound mission...</h2>
-            <p>
-              ...to empower African women with tech skills, bridging industry gaps. As norms evolve, our mission gains significance, 
-              fostering diversity and leadership.
-            </p>
-            <p>
-              Your donation drives our mission to empower female tech leaders and create an inclusive tech community. 
-              Join us in realizing women's full potential in the digital age.
-            </p>
-            <div className='donate atcbtn'>
-              <button>
-                Donate Now
-              </button>
+          <div className='about-home-bk'>
+            <div className='ab-inner'>
+              <Carousel indicators={true}>
+                <Carousel.Item>
+                  <img 
+                  className='d-block'
+                  alt='First slide'
+                  src="https://ik.imagekit.io/krr3p3joi/tr:w-500,h-500,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" loading='lazy' />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img 
+                  className='d-block'
+                  alt='Second slide'
+                  src="https://ik.imagekit.io/krr3p3joi/tr:w-500,h-500,fo-auto/IMG_6345.jpg?updatedAt=1707566632571" loading='lazy' />
+                </Carousel.Item>
+              </Carousel>
             </div>
+            <div className='about-text-count'>
+              <h2>At TechFam, our journey began with a profound mission...</h2>
+              <p>
+                ...to empower African women with tech skills, bridging industry gaps. As norms evolve, our mission gains significance, 
+                fostering diversity and leadership.
+              </p>
+              <p>
+                Your donation drives our mission to empower female tech leaders and create an inclusive tech community. 
+                Join us in realizing women's full potential in the digital age.
+              </p>
+              <div className='donate atcbtn'>
+                <button>
+                  Donate Now
+                </button>
+              </div>
           </div>
+          </div>
+          
         </div>
       </section>
 
