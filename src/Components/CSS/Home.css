@@ -982,7 +982,13 @@
 
   .volunteer .volunteer-text-cont h2 {
     font-size: 26px;
+    text-align: center;
   }
+
+  .volunteer-img-cont {
+    margin-top: 30px;
+  }
+
 
   .about-home {
     flex-direction: column;
@@ -1006,12 +1012,13 @@
     align-items: center;
     position: relative;
     overflow-y: hidden;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.226), #d6a682c7);
+    background: linear-gradient(to bottom right, #e5d5c1a9, #d6a68285);
   }
 
   .about-text-count {
     position: absolute;
     padding: 20px 3%;
+    z-index: 10;
   }
 
   .about-text-count .donate {
@@ -1062,5 +1069,6 @@
   .about-text-count p {
     text-align: start;
     margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.507);
   }
 }

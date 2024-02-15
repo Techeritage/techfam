@@ -250,7 +250,7 @@ const Home = () => {
             
           </div>
           <div className='volunteer-img-cont'>
-            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-100,h-350,fo-auto/8702816_3979852.jpg?updatedAt=1707471459804" loading='lazy'/>
+            <img src="https://ik.imagekit.io/krr3p3joi/tr:w-300,h-250,fo-auto/8702816_3979852.jpg?updatedAt=1707471459804" loading='lazy'/>
           </div>
         </div>
       </section>
