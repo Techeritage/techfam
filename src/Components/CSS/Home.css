@@ -977,6 +977,11 @@
 
   .volunteer {
     flex-direction: column;
+    padding: 30px 3%;
+  }
+
+  .volunteer .volunteer-text-cont h2 {
+    font-size: 26px;
   }
 
   .about-home {
@@ -1001,12 +1006,12 @@
     align-items: center;
     position: relative;
     overflow-y: hidden;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.226), #d6a682c7);
   }
 
   .about-text-count {
     position: absolute;
     padding: 20px 3%;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.712), #d6a68269);
   }
 
   .about-text-count .donate {
@@ -1026,6 +1031,7 @@
 
   .ab-inner {
     width: 100%;
+    z-index: -1;
   }
 
   .carousel {
