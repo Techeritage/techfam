@@ -987,8 +987,14 @@
 
   .volunteer-img-cont {
     margin-top: 30px;
+    width: 100%;
   }
 
+  .volunteer-img-cont img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+   }
 
   .about-home {
     flex-direction: column;
@@ -997,6 +1003,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #77777736;
+    border-top: 1px solid #77777736;
   }
 
   .about-image-count {
@@ -1063,12 +1071,12 @@
 
   .about-text-count h2 {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .about-text-count p {
     text-align: start;
     margin-bottom: 10px;
-    background: rgba(255, 255, 255, 0.507);
+    background: rgba(255, 255, 255, 0.274);
   }
 }
