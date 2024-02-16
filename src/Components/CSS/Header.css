@@ -25,6 +25,10 @@
   flex-basis: 10%;
 }
 
+.logo .menu {
+  display: none;
+}
+
 .logo img {
   width: 220px;
   height: 40px;
@@ -112,6 +116,10 @@
   cursor: pointer;
 }
 
+.donate-btn.mobil {
+  display: none;
+}
+
 @media only screen and (max-width: 576px) {
   .header-links {
     display: none;
@@ -121,8 +129,29 @@
     display: none;
   }
 
+  .logo {
+    flex: 50%;
+    display: flex;
+  }
+
   .logo img {
     width: 180px;
     margin-left: -20px;
+  }
+
+  .logo .menu {
+    display: inline;
+    width: 20px;
+    margin: 0 5% 0 3%;
+  }
+
+  .donate-btn.mobil {
+    display: block;
+    margin: 1% 0;
+  }
+
+  .donate-btn.mobil button {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }

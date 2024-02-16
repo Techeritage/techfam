@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Logo1 from '../assets/logo1.png';
 import { Link, useLocation } from 'react-router-dom';
 import Search from '../assets/search.svg';
+import Menubar from '../assets/menu.svg';
 import '../Components/CSS/Header.css';
 
 const Header = ({scroll}) => {
@@ -37,6 +38,7 @@ const Header = ({scroll}) => {
     
     <div className={`header ${isVisible ? 'visible' : ''}`} ref={elementRef}>
       <div className='logo'>
+        <img src={Menubar} className='menu' />
         <Link to="/">
           <img src={Logo1} alt="website-logo" />
         </Link>
@@ -84,6 +86,11 @@ const Header = ({scroll}) => {
           </button>
         </div>
       </div>
+      <div className='donate-btn mobil'>
+          <button>
+            Donate
+          </button>
+        </div>
     </div>
   )
 }
