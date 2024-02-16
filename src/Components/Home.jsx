@@ -109,7 +109,7 @@ const Home = () => {
           <div className='image-cont'>
             <div className='image-cont-inner'>
               <div className='in-border'></div>
-              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-300,h-600,fo-auto/ceo%20(1)%20(1).webp?updatedAt=1707346997256" />
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-200,h-400,fo-auto/ceo%20(1)%20(1).webp?updatedAt=1707346997256" />
               <div className='name-title'>
                 <h3>Miss Kelechi Udeh</h3>
                 <p>CEO, TechFam.</p>
