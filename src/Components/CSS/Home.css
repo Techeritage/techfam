@@ -722,7 +722,7 @@
     display: block;
   }
   .hero {
-    height: 90vh;
+    height: 85vh;
     align-items: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
