@@ -16,7 +16,7 @@ const Home = () => {
     useEffect(() => {
       const checkBoxes = () => {
         const trigger = window.innerHeight / 5 * 4;
-        const sections = document.querySelectorAll('.box');
+        const sections = document.querySelectorAll('.box');n
   
         sections.forEach((section) => {
           const boxTop = section.getBoundingClientRect().top;

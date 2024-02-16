@@ -722,7 +722,7 @@
     display: block;
   }
   .hero {
-    height: 75vh;
+    height: 70vh;
     align-items: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -761,7 +761,7 @@
     font-size: 36px;
     width: 90%;
     white-space: wrap;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
 
   .text-cont-heading img {
@@ -775,7 +775,7 @@
     font-size: 14px;
     padding: 10px 20px;
     background: #d52c3f;
-    margin-top: 5%;
+    margin-top: 10%;
   }
 
   .image-cont-inner {
