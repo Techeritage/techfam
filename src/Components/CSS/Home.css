@@ -726,7 +726,7 @@
     align-items: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 10% 0 40% 3%;
+    padding: 10% 0 30% 3%;
     border-bottom: 1px solid #77777736;
   }
 
@@ -1129,4 +1129,21 @@
     margin-bottom: 5px;
     font-size: 15px;
   }
+}
+
+@media only screen and (min-width: 395px) and (max-width: 576px) {
+  .image-cont {
+    right: -34%;
+  }
+
+  .image-cont img {
+    margin-right: 35%;
+    height: 100%;
+  }
+
+  .image-cont-inner .name-title {
+    left: -22%;
+  }
+
+
 }

@@ -258,9 +258,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='box'>
+      <section>
         <div className='stories-event'>
-          <div className='event'>
+          <div className='event box'>
             <div className='event-heading'>
               <h2>Upcoming Events</h2>
               <div className='bottom-border'></div>
@@ -301,7 +301,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='stories'>
+          <div className='stories box'>
             <div className='event-heading'>
               <h2>Featured stories</h2>
               <div className='bottom-border'></div>
