@@ -240,16 +240,19 @@ const Home = () => {
             <h2>
               Empower Change: <span className='volvol'>Volunteer</span> Today
             </h2>
+            <div className='volunteer-img-cont mobile'>
+              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-500,h-250,fo-auto/8702816_3979852.jpg?updatedAt=1707471459804" loading='lazy'/>
+            </div>
             <p>
             At <span>Techfam</span>, we believe in the power of community and the impact that volunteers can make in changing lives. 
             Join us in our mission to empower African women through technology education and make a difference in the world.
             </p>
             <div className='donate'>
-              <button>Get Started</button>
+              <button>Volunteer</button>
             </div>
             
           </div>
-          <div className='volunteer-img-cont'>
+          <div className='volunteer-img-cont desktop'>
             <img src="https://ik.imagekit.io/krr3p3joi/tr:w-500,h-300,fo-auto/8702816_3979852.jpg?updatedAt=1707471459804" loading='lazy'/>
           </div>
         </div>

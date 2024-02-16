@@ -722,11 +722,11 @@
     display: block;
   }
   .hero {
-    height: 75vh;
+    height: 90vh;
     align-items: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 15% 0 20px 3%;
+    padding: 10% 0 20px 3%;
     border-bottom: 1px solid #77777736;
   }
 
@@ -759,7 +759,7 @@
 
   .text-cont-heading h1 {
     font-size: 36px;
-    width: 85%;
+    width: 90%;
     white-space: wrap;
     margin-bottom: 10%;
   }
@@ -786,7 +786,7 @@
     width: max-content;
     position: absolute;
     bottom: 5%;
-    left: -25%;
+    left: -28%;
   }
 
   .in-border {
@@ -961,10 +961,23 @@
 
   .white .grid--img {
     background: #f5f5f5;
-}
+  }
+
+  .event {
+    background: #f5f5f5;
+    padding: 30px 3%;
+  }
+
+  .stories {
+    background: white;
+    padding: 30px 3%;
+  }
 
   .stories-event {
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: none;
   }
 
   .story-img img {
@@ -973,6 +986,29 @@
 
   .event-info .text {
     width: 100px;
+  }
+
+  .event-img img {
+    width: 100%;
+  }
+
+  .event-heading {
+    margin-bottom: 20px;
+  }
+
+  .event-info .text {
+    width: fit-content;
+  }
+
+  .event-heading h2 {
+    font-size: 26px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .bottom-border {
+    display: none;
   }
 
   .volunteer {
@@ -985,15 +1021,24 @@
     text-align: center;
   }
 
-  .volunteer-img-cont {
-    margin-top: 30px;
+  .volunteer-img-cont.mobile {
+    margin: 30px 0;
     width: 100%;
   }
 
-  .volunteer-img-cont img {
+  .volunteer-img-cont.desktop {
+    display: none;
+  }
+
+  .volunteer-img-cont.mobile img {
     width: 100%;
     object-fit: cover;
-    height: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+   }
+
+   .volunteer .donate button {
+    margin-top: 15px;
    }
 
   .about-home {
@@ -1020,13 +1065,16 @@
     align-items: center;
     position: relative;
     overflow-y: hidden;
-    background: linear-gradient(to bottom right, #e5d5c1a9, #d6a68285);
+    background: #d6a682c2;
   }
 
   .about-text-count {
     position: absolute;
-    padding: 20px 3%;
+    margin: 20px 3%;
+    padding: 0 3% 10px;
     z-index: 10;
+    border: 3px solid white;
+    height: 95%;
   }
 
   .about-text-count .donate {
@@ -1071,12 +1119,14 @@
 
   .about-text-count h2 {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: 10px;
   }
 
   .about-text-count p {
+    color: black;
     text-align: start;
-    margin-bottom: 10px;
-    background: rgba(255, 255, 255, 0.274);
+    margin-bottom: 5px;
+    font-size: 15px;
   }
 }
