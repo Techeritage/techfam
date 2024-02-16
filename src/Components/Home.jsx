@@ -15,7 +15,7 @@ import Footer from './Footer';
 const Home = () => {
     useEffect(() => {
       const checkBoxes = () => {
-        const trigger = window.innerHeight / 5 * 4;
+        const trigger = window.innerHeight / 5 * 4.5
         const sections = document.querySelectorAll('.box');
   
         sections.forEach((section) => {

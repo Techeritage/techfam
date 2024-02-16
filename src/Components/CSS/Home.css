@@ -722,11 +722,11 @@
     display: block;
   }
   .hero {
-    height: 70vh;
+    height: fit-content;
     align-items: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 10% 0 20px 3%;
+    padding: 10% 0 40% 3%;
     border-bottom: 1px solid #77777736;
   }
 
@@ -734,13 +734,13 @@
     position: absolute;
     width: 100%;
     height: 80%;
-    right: -48%;
+    right: -45%;
     z-index: -1;
     bottom: 10px;
   }
 
   .image-cont img {
-    margin-right: 40%;
+    margin-right: 38%;
     height: 100%;
   }
 
