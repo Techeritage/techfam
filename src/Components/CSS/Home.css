@@ -734,13 +734,13 @@
     position: absolute;
     width: 100%;
     height: 80%;
-    right: -45%;
+    right: -25%;
     z-index: -1;
-    bottom: 10px;
+    bottom: 0;
   }
 
   .image-cont img {
-    margin-right: 38%;
+    margin-right: 25%;
     height: 100%;
   }
 
@@ -785,8 +785,8 @@
   .image-cont-inner .name-title {
     width: max-content;
     position: absolute;
-    bottom: -4%;
-    left: -28%;
+    bottom: -2%;
+    left: -25%;
   }
 
   .in-border {
