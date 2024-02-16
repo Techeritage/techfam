@@ -134,8 +134,72 @@
   border-radius: 0 5px 5px 0;
 }
 
+.link-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.techfam-sm.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 576px) {
   .footer-cont {
     flex-direction: column;
   }
+  
+  .techfam .logo {
+    margin: -10px 0 10px -25px;
+  }
+
+  .link-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+  }
+
+  .links h4, .contact h4, .newsletter h4 {
+    color: #fff;
+    font-size: 18px;
+    height: fit-content;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .contact-cont {
+    margin-bottom: 10px;
+  }
+
+  .contact-cont a p {
+    margin: 0;
+  }
+
+  .techfam-sm.mobile {
+    display: flex;
+    padding-top: 5%;
+    border-top: 1px solid #ffffff79;
+    margin-top: 10%;
+  }
+
+  .techfam-sm.desktop {
+    display: none;
+  }
+
+  .links ul {
+    margin: 0;
+    padding: 0 3%;
+  }
+
+  .links ul a li {
+    margin: 5% 0;
+  }
+
+  .newsletter {
+    margin-top: 10%;
+  }
+  
+  .footer-copywrite p {
+    margin: 0;
+  }
+
 }
