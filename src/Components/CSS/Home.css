@@ -722,7 +722,7 @@
     display: block;
   }
   .hero {
-    height: 85vh;
+    height: 75vh;
     align-items: flex-start;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -734,13 +734,13 @@
     position: absolute;
     width: 100%;
     height: 80%;
-    right: -35%;
+    right: -48%;
     z-index: -1;
-    bottom: -10px;
+    bottom: 10px;
   }
 
   .image-cont img {
-    margin-right: 18%;
+    margin-right: 40%;
     height: 100%;
   }
 
@@ -761,7 +761,7 @@
     font-size: 36px;
     width: 90%;
     white-space: wrap;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .text-cont-heading img {
@@ -775,7 +775,7 @@
     font-size: 14px;
     padding: 10px 20px;
     background: #d52c3f;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .image-cont-inner {
@@ -785,7 +785,7 @@
   .image-cont-inner .name-title {
     width: max-content;
     position: absolute;
-    bottom: 5%;
+    bottom: -4%;
     left: -28%;
   }
 
