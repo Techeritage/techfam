@@ -47,6 +47,7 @@
   display: flex;
   align-items: center;
   list-style: none;
+  margin-bottom: 0px;
 }
 
 .link-border {

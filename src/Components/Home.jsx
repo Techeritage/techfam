@@ -8,7 +8,6 @@ import Globe from '../assets/globe.svg';
 import Star from '../assets/star.svg';
 import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
-import Dots from '../assets/dots.svg';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -88,7 +87,6 @@ const Home = () => {
           </div>
           <div className='text-cont'>
             <div className='text-cont-heading'>
-              <img srcSet='https://ik.imagekit.io/krr3p3joi/tr:w-450,h-500,fo-auto/mapmap-removebg-preview.png?updatedAt=1707429384136 1200w' />
               <h1 dangerouslySetInnerHTML={{ __html: displayedText }} />
             </div>
             <div className='text-cont-text'>
@@ -121,19 +119,19 @@ const Home = () => {
 
       <section className='box'>
         <div className='about1'>
-          <h2>
+          <h2 className='about1-h2-mob'>
             Who we are
-            <div className='waw'></div>
           </h2>
           <div className='about1-img-cont ab1-desktop'>
             <img src="https://ik.imagekit.io/krr3p3joi/tr:w-280,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
               <img src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-300/IMG_6345.jpg?updatedAt=1707566632571" className='imgb' loading='lazy' />
             </div>
-            <img src={Dots} className='imgc' loading='lazy' />
           </div>
           <div className='about1-text-cont'>
-            
+            <h2 className='about1-h2-desk'>
+              Who we are
+            </h2>
             <p className='str-text'>
               TechFam strives to promote gender inclusivity in the field of technology
             </p>
@@ -154,7 +152,7 @@ const Home = () => {
         <div className='area-of-focus' ref={areaRef}>
           <div className='area-of-focus-heading'>
             <div>
-              <h2>Our Areas of <span className='volvol'>Focus</span></h2>
+              <h2>Our Areas of Focus</h2>
             </div>
             <p>Empower women in tech for diversity, innovation, and equal representation.</p>
           </div>
@@ -197,7 +195,7 @@ const Home = () => {
             <img src='https://ik.imagekit.io/krr3p3joi/tr:w-300,h-400,fo-auto/IMG_6202%20(1)%20(1).webp?updatedAt=1707429462023' className='img2' loading='lazy' />
           </div>
           <div className='about-home-bk'>
-            <div className='ab-inner'>
+            <div className='ab-inner mobile'>
               <Carousel indicators={true}>
                 <Carousel.Item>
                   <img 
@@ -210,6 +208,22 @@ const Home = () => {
                   className='d-block'
                   alt='Second slide'
                   src="https://ik.imagekit.io/krr3p3joi/tr:w-500,h-500,fo-auto/IMG_6345.jpg?updatedAt=1707566632571" loading='lazy' />
+                </Carousel.Item>
+              </Carousel>
+            </div>
+            <div className='ab-inner desktop'>
+              <Carousel indicators={true}>
+                <Carousel.Item>
+                  <img 
+                  className='d-block'
+                  alt='First slide'
+                  src="https://ik.imagekit.io/krr3p3joi/tr:w-1000,h-700,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" loading='lazy' />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img 
+                  className='d-block'
+                  alt='Second slide'
+                  src="https://ik.imagekit.io/krr3p3joi/tr:w-1000,h-700,fo-auto/IMG_6345.jpg?updatedAt=1707566632571" loading='lazy' />
                 </Carousel.Item>
               </Carousel>
             </div>
@@ -263,7 +277,6 @@ const Home = () => {
           <div className='event box'>
             <div className='event-heading'>
               <h2>Upcoming Events</h2>
-              <div className='bottom-border'></div>
             </div>
             <div className='event-grid'>
               <div className='event-grid-cont'>
@@ -304,7 +317,6 @@ const Home = () => {
           <div className='stories box'>
             <div className='event-heading'>
               <h2>Featured stories</h2>
-              <div className='bottom-border'></div>
             </div>
             <div className='event-grid'>
               <div className='story-grid-cont'>

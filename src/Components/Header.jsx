@@ -87,10 +87,10 @@ const Header = ({scroll}) => {
         </div>
       </div>
       <div className='donate-btn mobil'>
-          <button>
-            Donate
-          </button>
-        </div>
+        <button>
+          Donate
+        </button>
+      </div>
     </div>
   )
 }
