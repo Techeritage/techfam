@@ -1064,6 +1064,8 @@
 
   .volunteer .volunteer-text-cont p {
     width: 100%;
+    color: #333333;
+    font-size: 16px;
   }
 
   .volunteer-img-cont.mobile {

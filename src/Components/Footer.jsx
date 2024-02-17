@@ -75,25 +75,27 @@ const Footer = () => {
           <h4>
             Contact
           </h4>
-          <div className='contact-cont'>
-            <a href="tel:+2347030940388" target="_blank" rel="noopener noreferrer">
-              <img src={Phone} />
-              <p>+234 703 094 0388</p>
-            </a>
-          </div>
-          <div className='contact-cont'>
-            <a href="mailto:hello@techfam.online" target="_blank" rel="noopener noreferrer">
-              <img src={Email} />
-              <p>
-                hello@techfam.online
-              </p>
-            </a>
-          </div>
-          <div className='contact-cont'>
-            <a href="https://www.google.com/maps?q=Lekki, Lagos State, Nigeria" target="_blank" rel="noopener noreferrer">
-              <img src={Location} />
-              <p>Lekki, Lagos State, Nigeria</p>
-            </a>
+          <div>
+            <div className='contact-cont'>
+              <a href="tel:+2347030940388" target="_blank" rel="noopener noreferrer">
+                <img src={Phone} />
+                <p>+234 703 094 0388</p>
+              </a>
+            </div>
+            <div className='contact-cont'>
+              <a href="mailto:hello@techfam.online" target="_blank" rel="noopener noreferrer">
+                <img src={Email} />
+                <p>
+                  hello@techfam.online
+                </p>
+              </a>
+            </div>
+            <div className='contact-cont'>
+              <a href="https://www.google.com/maps?q=Lekki, Lagos State, Nigeria" target="_blank" rel="noopener noreferrer">
+                <img src={Location} />
+                <p>Lekki, Lagos State, Nigeria</p>
+              </a>
+            </div>
           </div>
           <div className='techfam-sm mobile'>
             <a href="" target="_blank" rel="noopener noreferrer">

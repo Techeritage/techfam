@@ -220,6 +220,10 @@
   .newsletter form {
     width: 80%;
   }
+
+  .newsletter .email-cont {
+    margin-top: 5%;
+  }
   
   .footer-copywrite p {
     margin: 0;
