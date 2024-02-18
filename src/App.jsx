@@ -25,7 +25,9 @@ const App = () => {
     <div className='app'>
       {
         loading ?
-        <HashLoader color={'#d52c3f'} loading={loading} size={100}/>
+        <div className='loader'>
+          <HashLoader color={'#d52c3f'} loading={loading} size={100}/>
+        </div>
           :
         <Router>
           <div>
