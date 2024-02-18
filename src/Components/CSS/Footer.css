@@ -5,7 +5,6 @@
 
 .footer-copywrite p {
   font-size: 15px;
-  color: #fff;
 }
 
 .footer-cont {
@@ -32,6 +31,10 @@
   color: #ffffffa6;
   font-size: 15px;
   line-height: 24px;
+}
+
+.footer .newsletter p {
+  color: #ffffffa6;
 }
 
 .techfam-sm {
@@ -93,6 +96,7 @@
 
 .contact-cont a p {
   margin-bottom: 0;
+  color: #ffffffa6;
 }
 
 .contact-cont img {
@@ -144,8 +148,9 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.footer-copywrite p {
+.footer .footer-copywrite p {
   margin: 0;
+  color: #ffffffa6;
 }
 
 .techfam-sm.mobile {
@@ -177,6 +182,7 @@
 
   .contact-cont a p {
     margin: 0;
+    color: #ffffffa6;
   }
 
   .techfam-sm.mobile {
@@ -223,6 +229,7 @@
 
   .newsletter p {
     text-align: center;
+    color: #ffffffa6;
   }
 
   .newsletter form {

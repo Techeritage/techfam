@@ -205,12 +205,12 @@
   outline: none;
   background: #d52c3f;
   color: white;
-  padding: 15px 30px;
+  padding: 12px 24px;
   border-radius: 30px;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 5%;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -542,7 +542,7 @@
   align-items: center;
   position: relative;
   overflow-y: hidden;
-  background: #d6a682c2;
+  background: #d6a682a2;
 }
 
 .about-text-count {
@@ -1114,7 +1114,7 @@
     align-items: center;
     position: relative;
     overflow-y: hidden;
-    background: #d6a682c2;
+    background: #d6a682a2;
   }
 
   .about-text-count {
@@ -1179,13 +1179,14 @@
     font-weight: 600;
     margin-bottom: 10px;
     width: 100%;
+    line-height: 28px;
   }
 
   .about-text-count p {
     color: black;
     text-align: start;
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 16px;
     width: 100%;
   }
 }
