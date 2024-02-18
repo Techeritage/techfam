@@ -227,7 +227,7 @@
     align-items: center;
   }
 
-  .newsletter p {
+  .footer .newsletter p {
     text-align: center;
     color: #ffffffa6;
   }
@@ -240,7 +240,7 @@
     margin-top: 5%;
   }
   
-  .footer-copywrite p {
+  .footer .footer-copywrite p {
     margin: 0;
     text-align: center;
     font-size: 12px;

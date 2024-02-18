@@ -228,21 +228,23 @@ const Home = () => {
               </Carousel>
             </div>
             <div className='about-text-count'>
-              <h2>At TechFam, our journey began with a profound mission...</h2>
-              <p>
-                ...to empower African women with tech skills, bridging industry gaps. As norms evolve, our mission gains significance, 
-                fostering diversity and leadership.
-              </p>
-              <p>
-                Your donation drives our mission to empower female tech leaders and create an inclusive tech community. 
-                Join us in realizing women's full potential in the digital age.
-              </p>
-              <div className='donate atcbtn'>
-                <button>
-                  Donate Now
-                </button>
+              <div className='atc-inner'>
+                <h2>At TechFam, our journey began with a profound mission...</h2>
+                <p>
+                  ...to empower African women with tech skills, bridging industry gaps. As norms evolve, our mission gains significance, 
+                  fostering diversity and leadership.
+                </p>
+                <p>
+                  Your donation drives our mission to empower female tech leaders and create an inclusive tech community. 
+                  Join us in realizing women's full potential in the digital age.
+                </p>
+                <div className='donate atcbtn'>
+                  <button>
+                    Donate Now
+                  </button>
+                </div>
               </div>
-          </div>
+            </div>
           </div>
           
         </div>
