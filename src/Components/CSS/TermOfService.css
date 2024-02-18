@@ -46,3 +46,29 @@
   color: #d6a682;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 576px) {
+  .term-full-cont {
+    padding: 5%;
+  }
+
+  .terms-heading h2 {
+    font-size: 26px;
+  }
+
+  .terms-cont h3 {
+    font-size: 22px;
+    margin-bottom: 3%;
+  }
+
+  .terms-heading {
+    margin: 5% 0;
+  }
+
+  .terms-cont ul {
+    margin: 3% 0 3% 3%;
+  }
+  
+  
+  
+}
