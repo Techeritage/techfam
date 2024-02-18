@@ -6,6 +6,7 @@ import Menubar from '../assets/menu.svg';
 import '../Components/CSS/Header.css';
 
 const Header = ({scroll}) => {
+  const location = useLocation();
   const elementRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {

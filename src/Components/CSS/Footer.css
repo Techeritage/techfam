@@ -1,5 +1,5 @@
 .footer-copywrite {
-  padding: 10px 10%;
+  padding: 10px 3%;
   background: #333333;
 }
 
@@ -61,6 +61,7 @@
 .links ul {
   list-style: none;
   width: max-content;
+  padding-left: 3%;
 }
 
 .links ul a {
@@ -88,6 +89,10 @@
   align-items: center;
   color: #ffffffa6;
   font-size: 15px;
+}
+
+.contact-cont a p {
+  margin-bottom: 0;
 }
 
 .contact-cont img {
@@ -204,6 +209,8 @@
   .links ul a li {
     margin: 3% 0;
     text-align: center;
+    white-space: nowrap;
+
   }
 
   .newsletter {

@@ -1,11 +1,18 @@
 import React from 'react';
 import '../Components/CSS/About.css';
+import Header from './Header';
+import Footer from './Footer';
 import About1 from '../assets/about1.jpg';
 import About2 from '../assets/techfam1.jpg';
 
 const About = () => {
   return (
     <div className='about'>
+      <nav>
+        <div>
+          <Header />
+        </div>
+      </nav>
       <div className='about-cont1'>
         <div className='about-cont1-details'>
           <h4>
@@ -111,6 +118,11 @@ const About = () => {
           </p>
         </div>
       </div>
+      <footer>
+        <div>
+          <Footer />
+        </div>
+      </footer>
     </div>
   )
 }
