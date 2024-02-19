@@ -10,31 +10,42 @@ import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
 import Header from './Header';
 import Footer from './Footer';
+import ScrollHeader from './ScrollHeader';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-    useEffect(() => {
-      const checkBoxes = () => {
-        const trigger = window.innerHeight / 5 * 4.5
-        const sections = document.querySelectorAll('.box');
-  
-        sections.forEach((section) => {
-          const boxTop = section.getBoundingClientRect().top;
-  
-          if (boxTop < trigger) {
-            section.classList.add('show');
-          } else {
-            section.classList.remove('show');
-          }
-        });
-      };
-  
-      window.addEventListener('scroll', checkBoxes);
-  
-      // Cleanup function to remove the event listener when component unmounts
-      return () => {
-        window.removeEventListener('scroll', checkBoxes);
-      };
-    }, []);
+  const [mobileNav, setMobileNav] = useState(false);
+  const showMobileNav = () => {
+    setMobileNav(true);
+  }
+
+  const closeMobileNav = () => {
+    setMobileNav(false);
+  }
+
+  useEffect(() => {
+    const checkBoxes = () => {
+      const trigger = window.innerHeight / 5 * 4.5
+      const sections = document.querySelectorAll('.box');
+
+      sections.forEach((section) => {
+        const boxTop = section.getBoundingClientRect().top;
+
+        if (boxTop < trigger) {
+          section.classList.add('show');
+        } else {
+          section.classList.remove('show');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', checkBoxes);
+
+    // Cleanup function to remove the event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', checkBoxes);
+    };
+  }, []);
 
 
   //hero text animation 
@@ -73,12 +84,53 @@ const Home = () => {
 
   return (
     <div className='home'>
+      {mobileNav && (
+        <div className="mobile-nav">
+          <div className='close-cont'>
+            <div onClick={closeMobileNav}>&times;</div>
+          </div>
+          <div className='mobile-nav-link-cont'>
+            <ul>
+              <Link to="/">
+                <li>
+                  Home
+                </li>
+                <div className={location.pathname === '/' ? 'link-border' : ''}></div>
+              </Link> 
+              <Link to="/events">
+                <li>
+                  Events
+                </li>
+                <div className={location.pathname === '/events' ? 'link-border' : ''}></div>
+              </Link> 
+              <Link to="/blog">
+                <li>
+                  Blog
+                </li>
+                <div className={location.pathname === '/blog' ? 'link-border' : ''}></div>
+              </Link> 
+              <Link to="/about">
+                <li>
+                  About
+                </li>
+                <div className={location.pathname === '/about' ? 'link-border' : ''}></div>
+              </Link> 
+              <Link to="/contact">
+                <li>
+                  Contact
+                </li>  
+                <div className={location.pathname === '/contact' ? 'link-border' : ''}></div>
+              </Link> 
+            </ul>
+          </div>
+        </div>
+      )}
       <nav>
         <div>
-            <Header scroll = {scroll} />
+            <Header scroll = {scroll} showMobileNav = {showMobileNav} />
         </div>
       </nav>
-  
+      <ScrollHeader showMobileNav = {showMobileNav} />
       <section>
         <div className='hero'>
           <div className='side-curve'></div>

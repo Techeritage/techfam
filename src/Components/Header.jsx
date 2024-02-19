@@ -5,7 +5,7 @@ import Search from '../assets/search.svg';
 import Menubar from '../assets/menu.svg';
 import '../Components/CSS/Header.css';
 
-const Header = ({scroll}) => {
+const Header = ({scroll, showMobileNav}) => {
   const location = useLocation();
   const elementRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -39,13 +39,19 @@ const Header = ({scroll}) => {
     
     <div className={`header ${isVisible ? 'visible' : ''}`} ref={elementRef}>
       <div className='logo'>
-        <img src={Menubar} className='menu' />
+        <img src={Menubar} className='menu' onClick={() => {showMobileNav()}} />
         <Link to="/">
           <img src={Logo1} alt="website-logo" />
         </Link>
       </div>
       <div className='header-links'>
         <ul>
+          <Link to="/">
+            <li>
+              Home
+            </li>
+            <div className={location.pathname === '/' ? 'link-border' : ''}></div>
+          </Link> 
           <div className='are-link'>
             <li onClick={() => {scroll()}}>
               Area Of Focus
@@ -53,7 +59,7 @@ const Header = ({scroll}) => {
             <div className={location.pathname === '/areaoffocus' ? 'link-border' : ''}></div>
           </div>
           
-          <Link to="events">
+          <Link to="/events">
             <li>
               Events
             </li>
@@ -83,13 +89,17 @@ const Header = ({scroll}) => {
         <img src={Search} alt="a search icon" />
         <div className='donate-btn'>
           <button>
-            Donate
+            <Link to="/donate">
+              Donate
+            </Link>
           </button>
         </div>
       </div>
       <div className='donate-btn mobil'>
         <button>
-          Donate
+          <Link to="/donate">
+            Donate
+          </Link>
         </button>
       </div>
     </div>
