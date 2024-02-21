@@ -1,6 +1,6 @@
 .ScrollHeader {
   background: transparent;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(50px);
   position: fixed;
   top: 0;
   right: 0;

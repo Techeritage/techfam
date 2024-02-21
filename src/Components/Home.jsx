@@ -366,6 +366,13 @@ const Home = () => {
                   <a href="#">Read More</a>
                 </div>
               </div>
+              <div className='view-more'>
+                <button>
+                  <Link to="/events">
+                    View More
+                  </Link>
+                </button>
+              </div>
             </div>
           </div>
           <div className='stories box'>
@@ -382,6 +389,13 @@ const Home = () => {
                 <div className='story-img'><img src={Story1} loading='lazy' /></div>
                 <p>A.I.S.E Moments with Kelechi</p>
               </div>
+            </div>
+            <div className='view-more'>
+              <button>
+                <Link to="/blog">
+                  View More
+                </Link>
+              </button>
             </div>
           </div>
         </div>

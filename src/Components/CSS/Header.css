@@ -168,3 +168,47 @@
     color: #d52c3f;
   }
 }
+
+@media only screen and (min-width: 577px) {
+  .header-links {
+    display: none;
+  }
+
+  .header-cont3 {
+    display: none;
+  }
+
+  .logo {
+    flex: 50%;
+    display: flex;
+  }
+
+  .logo img {
+    width: 180px;
+    margin-left: -20px;
+  }
+
+  .logo .menu {
+    display: inline;
+    width: 20px;
+    margin: 0 5% 0 3%;
+  }
+
+  .donate-btn.mobil {
+    display: block;
+    margin: 1% 0;
+  }
+
+  .donate-btn.mobil button {
+    font-size: 14px;
+    padding: 12px 24px;
+    background: white;
+    color: #d52c3f;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.151);
+  }
+
+  .donate-btn.mobil button a {
+    text-decoration: none;
+    color: #d52c3f;
+  }
+}
