@@ -47,6 +47,11 @@
 
 .techfam-sm img {
   width: 22px;
+  transition: transform 0.2s;
+}
+
+.techfam-sm a:hover img, .techfam-sm a:active img{
+  transform: scale(1.2);
 }
 
 .links {
@@ -59,6 +64,7 @@
   height: 40px;
   margin-bottom: 25px;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .links ul {
@@ -72,6 +78,10 @@
   color: #ffffffa6;
   font-size: 15px;
   width: 100px;
+}
+
+.links ul a:hover, .contact-cont a:hover p, .links ul a:active, .contact-cont a:active p {
+  color: white;
 }
 
 .links ul a li {
@@ -105,7 +115,7 @@
 }
 
 .newsletter {
-  flex-basis: 20%;
+  flex-basis: 22%;
 }
 
 .newsletter img {
@@ -253,4 +263,27 @@
     display: none;
   }
 
+}
+
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .techfam {
+    display: none;
+  }
+
+  .links, .contact {
+    flex-basis: 30%;
+  }
+
+  .newsletter {
+    flex-basis: 40%;
+  }
+
+  .techfam-sm.mobile {
+    display: flex;
+    margin-top: 5%;
+  }
+
+  .footer {
+    gap: 2%;
+  }
 }

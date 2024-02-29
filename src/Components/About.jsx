@@ -100,7 +100,9 @@ const About = () => {
           </p>
           <div className='donate'>
             <button>
+             <a href="#">
               Apply Here
+             </a>  
             </button>
           </div>
         </div>

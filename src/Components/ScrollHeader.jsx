@@ -27,7 +27,7 @@ const ScrollHeader = ({showMobileNav}) => {
 
   return (
     <div className='ScrollHeader'>
-      <header style={{ display: showHeader ? 'flex' : 'none' }}>
+      <header style={{ top: showHeader ? '0' : '-50%' }}>
         <div className='logo'>
           <img src={Menubar} className='menu' onClick={() => {showMobileNav()}} />
           <Link to="/">

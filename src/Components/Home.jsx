@@ -8,6 +8,7 @@ import Globe from '../assets/globe.svg';
 import Star from '../assets/star.svg';
 import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
+import ask from '../assets/ask.png';
 import Header from './Header';
 import Footer from './Footer';
 import ScrollHeader from './ScrollHeader';
@@ -147,12 +148,14 @@ const Home = () => {
                 acquire digital skills for today's workspaces and tomorrow's needs. We hope to influence the now and set the tone for the future.
               </p>
               <p className='mobile-p'>
-                TechFam aims to reshape Africa's skills landscape, empowering Africans with digital skills for current and future workplaces.
+                TechFam aims to reshape <br></br> Africa's skills landscape,<br></br> empowering Africans <br></br> with digital skills for <br></br> current and future <br></br> workplaces.
               </p>
             </div>
             <div className='donate'>
               <button>
-                Apply Now
+                <a href="#">
+                  Apply Now
+                </a> 
               </button> 
             </div>
           </div>
@@ -171,9 +174,6 @@ const Home = () => {
 
       <section className='box'>
         <div className='about1'>
-          <h2 className='about1-h2-mob'>
-            Who we are
-          </h2>
           <div className='about1-img-cont ab1-desktop'>
             <img src="https://ik.imagekit.io/krr3p3joi/tr:w-280,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385" className='imga' loading='lazy' />
             <div className='about1-inner'>
@@ -193,7 +193,9 @@ const Home = () => {
             </p>
             <div className='donate'>
               <button>
-                About Us
+                <Link to="/about">
+                  About Us
+                </Link>
               </button>
             </div>
           </div>
@@ -292,7 +294,9 @@ const Home = () => {
                 </p>
                 <div className='donate atcbtn'>
                   <button>
-                    Donate Now
+                    <Link to="/donate">
+                      Donate Now
+                    </Link>
                   </button>
                 </div>
               </div>
@@ -316,7 +320,11 @@ const Home = () => {
             Join us in our mission to empower African women through technology education and make a difference in the world.
             </p>
             <div className='donate'>
-              <button>Volunteer</button>
+              <button>
+                <a href="#">
+                  Volunteer
+                </a>
+                </button>
             </div>
             
           </div>

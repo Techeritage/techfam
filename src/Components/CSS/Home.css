@@ -50,7 +50,7 @@
 
 .text-cont {
   flex-basis: 50%;
-  padding: 0 20px 0 10%;
+  padding: 0 0 0 7%;
   position: relative;
 }
 
@@ -88,8 +88,8 @@
 }
 
 .text-cont-heading h1 {
-  font-size: 60px;
-  width: 90%;
+  font-size: 57px;
+  width: 100%;
   font-weight: 600;
 }
 
@@ -129,12 +129,12 @@
 
 .image-cont-inner {
   position: relative;
-  background: #f0d9bf;
-  width: 85%;
+  background: none;
+  width: 70%;
   height: 85%;
   border-radius: 50% 0 0 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
   opacity: 0;
   animation: opp 1.5s ease-in forwards;
@@ -151,8 +151,8 @@
 
 .in-border {
   position: absolute;
-  width: 95%;
-  height: 90%;
+  width: 90%;
+  height: 80%;
   background: #d6a682;
   bottom: 0;
   right: 0;
@@ -183,8 +183,8 @@
 
 .image-cont-inner .name-title {
   position: absolute;
-  bottom: 25%;
-  right: 2%;
+  left: -5%;
+  bottom: 0;
 }
 
 .image-cont-inner .name-title h3 {
@@ -204,7 +204,6 @@
   border: none;
   outline: none;
   background: #d52c3f;
-  color: white;
   padding: 12px 24px;
   border-radius: 30px;
   font-weight: 600;
@@ -214,14 +213,25 @@
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.donate button:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 5px #333333;
+.donate button a {
+  color: white;
+  text-decoration: none;
+}
+
+.donate button:hover, .donate button:active {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 10px #42424275;
 }
 
 .hero .donate button {
+  box-shadow: none;
   opacity: 0;
+  transition: background 0.2s, border 0.2s;
   animation: displayBtn 0.5s ease-in 2s forwards;
+}
+
+.hero .donate button a {
+  transition: color 0.2s;
 }
 
 @keyframes displayBtn {
@@ -233,6 +243,15 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+.hero .donate button:hover, .hero .donate button:active {
+  background: transparent;
+  padding: 11px 24px;
+  border: 1px solid #d52c3f;
+}
+
+.hero .donate button:hover a, .hero .donate button:active a {
+  color: #d52c3f;
 }
 
 .curve {
@@ -255,7 +274,7 @@
 
 .about1 {
   display: flex;
-  padding: 70px 10%;
+  padding: 70px 7%;
   justify-content: space-between;
   background: #f0d9bf;
   overflow-x: hidden;
@@ -336,12 +355,12 @@
   line-height: 24px;
 }
 
-.about1-text-cont p, .about-text-count p, .grid-cont:nth-child(3) {
+.about1-text-cont p, .about-text-count p, .volunteer .volunteer-text-cont p, .grid-cont:nth-child(3) {
   transform: translateX(400%);
   transition: transform 0.5s;
 }
 
-.volunteer .volunteer-text-cont p, .grid-cont:nth-child(1) {
+.grid-cont:nth-child(1) {
   transform: translateX(-400%);
   transition: transform 0.5s;
 }
@@ -512,7 +531,7 @@
 .about-home-bk {
   overflow-x: hidden;
   width: 100%;
-  height: 550px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,8 +542,8 @@
 
 .about-text-count {
   position: absolute;
-  margin: 0 10%;
-  padding: 2% 3% 5%;
+  margin: 0 5%;
+  padding: 2% 0 5%;
   z-index: 10;
   height: 90%;
 }
@@ -584,8 +603,9 @@
 }
 
 .volunteer {
-  padding: 70px 10% 50px;
+  padding: 70px 7% 50px;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
@@ -631,7 +651,7 @@
 .stories-event {
   background: #f5f5f5;
   margin-top: 30px;
-  padding: 70px 10%;
+  padding: 70px 7%;
   display: flex;
   justify-content: space-between;
 }
@@ -784,6 +804,7 @@
     left: 0;
     height: 100vh;
     z-index: 500;
+    padding: 1%;
   }
 
   .close-cont {
@@ -827,13 +848,11 @@
     position: absolute;
     width: 100%;
     height: 85%;
-    right: -28%;
     z-index: -1;
     bottom: 0;
   }
 
   .image-cont img {
-    margin-right: 25%;
     height: 100%;
   }
 
@@ -843,8 +862,8 @@
   }
 
   .text-cont-text p {
-    width: 50%;
     font-size: 16px;
+    width: fit-content;
     font-weight: 500;
     color: #555555;
     line-height: 26px;
@@ -871,20 +890,26 @@
     margin-top: 10%;
   }
 
-  .image-cont-inner {
-    background: none;
+  .hero .donate button:hover, .hero .donate button:active {
+    padding: 9px 20px;
   }
 
+  .image-cont-inner {
+    background: none;
+    width: 65%;
+    height: 78%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+ 
   .image-cont-inner .name-title {
-    width: max-content;
-    position: absolute;
-    bottom: -2%;
     left: -25%;
   }
 
   .in-border {
-    width: 100%;
-    height: 80%;
+    width: 90%;
+    height: 70%;
   }
 
   .side-curve {
@@ -904,16 +929,15 @@
   }
   
   
-  .about1 {
+  /*.about1 {
     flex-direction: column;
     padding: 0;
-    margin: 30px 3%;
     padding-bottom: 20px;
     overflow-y: hidden;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #77777736;
-    background: none;
+    background: #f0d9bf;
   }
 
   .about1-text-cont {
@@ -922,7 +946,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right,#e5d5c1, #d6a682);
+    background: linear-gradient(to bottom right,#f0d9bf, #d6a6827e);
     padding: 20px 10px 10px;
     margin-bottom: 20px;
     border-radius: 20px 0px;
@@ -992,6 +1016,47 @@
 
   .ab1-desktop {
     display: none;
+  } */
+
+  .about1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 7% 4%;
+    margin-bottom: 5%;
+  }
+
+  .about1-text-cont {
+    padding: 4% 3%;
+  }
+
+  .about1 h2 {
+    font-size: 24px;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .about1 .about1-text-cont p {
+    color: #333333;
+    font-size: 16px;
+  }
+
+  .about1-text-cont .str-text {
+    font-size: 16px;
+    color: #000000dc;
+  }
+
+  .about1-img-cont {
+    display: none;
+  }
+
+  .about1-text-cont .donate button{
+    margin-top: 5%;
   }
 
   .area-of-focus {
@@ -1281,7 +1346,7 @@
 }
 
 @media only screen and (min-width: 395px) and (max-width: 576px) {
-  .image-cont {
+  /*.image-cont {
     right: -34%;
   }
 
@@ -1292,15 +1357,15 @@
 
   .image-cont-inner .name-title {
     left: -22%;
-  }
+  } */
 }
 
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 577px) and (max-width: 1150px) {
   .home {
     position: relative;
   }
 
-  .desktop-p {
+  .text-cont-text .mobile-p {
     display: none;
   }
 
@@ -1321,10 +1386,11 @@
     bottom: 0;
     left: 0;
     z-index: 500;
+    padding: 3%;
   }
 
   .close-cont {
-    padding: 0 4%;
+    padding: 0 2%;
   }
 
   .close-cont div {
@@ -1363,15 +1429,13 @@
   .image-cont {
     position: absolute;
     width: 100%;
-    height: 85%;
-    right: -28%;
+    height: 90%;
     z-index: -1;
     bottom: 0;
   }
 
   .image-cont img {
-    margin-right: 25%;
-    height: 100%;
+    height: 110%;
   }
 
   .text-cont {
@@ -1389,7 +1453,7 @@
 
   .text-cont-heading h1 {
     font-size: 48px;
-    width: 70%;
+    width: 60%;
     white-space: wrap;
     margin-bottom: 5%;
   }
@@ -1410,17 +1474,10 @@
 
   .image-cont-inner {
     background: none;
-  }
-
-  .image-cont-inner .name-title {
-    width: max-content;
-    position: absolute;
-    bottom: -2%;
-    left: -25%;
-  }
-
-  .in-border {
-    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
   }
 
   .side-curve {
@@ -1473,6 +1530,10 @@
     margin-top: 5%;
   }
 
+  .about-home-bk {
+    height: 450px;
+  }
+
   .about-text-count {
     margin: 0 3%;
     padding: 2% 0 3%;
@@ -1486,6 +1547,12 @@
     padding: 7% 3%;
   }
 
+  .volunteer-img-cont img  {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+
   .volunteer .volunteer-text-cont h2 {
     width: 95%;
   }
@@ -1495,8 +1562,49 @@
   }
 }
 
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .about1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about1-text-cont {
+    max-width: 70%;
+    padding: 3%;
+  }
+
+  .about1-img-cont {
+    display: none;
+  }
+
+  .area-of-focus {
+    padding: 7% 3%;
+  }
+
+  .area-of-focus-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .grid-cont {
+    padding: 5%;
+  }
+
+  .in-border {
+    width: 100%;
+    height: 80%;
+  }
+
+  .image-cont-inner .name-title {
+    left: -22%;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .area-of-focus {
     padding: 7% 5%;
   }
+
 }

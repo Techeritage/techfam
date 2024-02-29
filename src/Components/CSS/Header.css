@@ -114,11 +114,24 @@
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
+  transition: background 0.2s, color 0.2s,  border 0.2s;
+}
+
+.donate-btn button:hover, .donate-btn button:active {
+  padding: 11px 24px;
+  background: transparent;
+  border: 1px solid #d52c3f;
+  color: #d52c3f;
 }
 
 .donate-btn button a {
   text-decoration: none;
   color: white;
+  transition: color 0.2s;
+}
+
+.donate-btn button:hover a, .donate-btn button:active a {
+  color: #d52c3f;
 }
 
 .donate-btn.mobil {
@@ -161,15 +174,30 @@
     background: white;
     color: #d52c3f;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.151);
+    transition: background 0.2s;
   }
 
   .donate-btn.mobil button a {
     text-decoration: none;
     color: #d52c3f;
+    transition: color 0.2s;
   }
+
+  .donate-btn.mobil button:hover, .donate-btn.mobil button:active {
+    background: #d52c3f;
+    color: white;
+    box-shadow: none;
+    padding: 9.2px 20px;
+  }
+  
+  .donate-btn.mobil button:hover a, .donate-btn.mobil button:active a {
+    color: white;
+    padding: 0;
+  }
+  
 }
 
-@media only screen and (min-width: 577px) {
+@media only screen and (min-width: 577px) and (max-width: 1150px) {
   .header-links {
     display: none;
   }
@@ -210,5 +238,17 @@
   .donate-btn.mobil button a {
     text-decoration: none;
     color: #d52c3f;
+  }
+
+  .donate-btn.mobil button:hover, .donate-btn.mobil button:active {
+    background: #d52c3f;
+    color: white;
+    box-shadow: none;
+    padding: 11.2px 24px;
+  }
+  
+  .donate-btn.mobil button:hover a, .donate-btn.mobil button:active a {
+    color: white;
+    padding: 0;
   }
 }

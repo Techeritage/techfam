@@ -1,6 +1,7 @@
 .about-cont1, .about-cont2{
   display: flex;
   padding: 50px 10%;
+  gap: 2%;
 }
 
 .about-cont4 {
@@ -141,4 +142,34 @@
     padding: 3%;
   }
   
+}
+
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .about-cont1 {
+    flex-direction: column;
+    padding: 5% 3%;
+  }
+
+  .about-cont2 {
+    flex-direction: column-reverse;
+    padding: 5% 3%;
+  }
+
+  .about-cont3, .about-cont4 {
+    padding: 5% 3%;
+  }
+
+  .about-cont4 {
+    margin: 0;
+  }
+
+  .about-cont1-img {
+    justify-content: flex-start;
+    padding: 2%;
+  }
+  
+  .about-cont2-img {
+    justify-content: end;
+    padding: 3% 2% 2%;
+  }
 }
