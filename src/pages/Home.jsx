@@ -163,7 +163,7 @@ const Home = () => {
           <div className='image-cont'>
             <div className='image-cont-inner'>
               <div className='in-border'>
-                <img src={hero}  />
+                <img src="https://ik.imagekit.io/krr3p3joi/IMG_9516-removebg-preview%20(1).png?updatedAt=1710541760641"  />
               </div>
               
               <div className='name-title'>
