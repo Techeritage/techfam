@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../Components/CSS/TermOfService.css';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom';
-import ScrollHeader from './ScrollHeader';
+import ScrollHeader from '../Components/ScrollHeader';
 
 const TermsOfService = () => {
   const [mobileNav, setMobileNav] = useState(false);

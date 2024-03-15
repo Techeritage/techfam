@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Header from './Header';
-import ScrollHeader from './ScrollHeader';
+import Header from '../Components/Header';
+import ScrollHeader from '../Components/ScrollHeader';
 
-const Blog = () => {
+const Donate = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const showMobileNav = () => {
     setMobileNav(true);
@@ -13,7 +13,7 @@ const Blog = () => {
     setMobileNav(false);
   }
   return (
-    <div className='Blog'>
+    <div className='Donate'>
       {mobileNav && (
         <div className="mobile-nav">
           <div className='close-cont'>
@@ -55,7 +55,6 @@ const Blog = () => {
           </div>
         </div>
       )}
-
       <nav>
         <div>
           <Header showMobileNav = {showMobileNav} />
@@ -66,4 +65,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Donate

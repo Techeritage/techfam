@@ -1,6 +1,5 @@
 .ScrollHeader header {
-  background: rgba(0, 0, 0, 0.116);
-  backdrop-filter: blur(50px);
+  background: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   position: fixed;
@@ -9,5 +8,6 @@
   left: 0;
   z-index: 400;
   padding: 3px 3%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
   transition: top 0.3s;
 }

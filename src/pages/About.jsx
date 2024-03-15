@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../Components/CSS/About.css';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../Components/Header';
+import Footer from '../Components/Footer';
 import About1 from '../assets/about1.jpg';
 import About2 from '../assets/techfam1.jpg';
 import { Link } from 'react-router-dom';
-import ScrollHeader from './ScrollHeader';
+import ScrollHeader from '../Components/ScrollHeader';
 
 const About = () => {
   const [mobileNav, setMobileNav] = useState(false);

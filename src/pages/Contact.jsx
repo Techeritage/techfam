@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Header from './Header';
-import ScrollHeader from './ScrollHeader';
+
+import ScrollHeader from '../Components/ScrollHeader';
+import Header from '../Components/Header';
 
 
 const Contact = () => {

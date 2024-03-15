@@ -8,11 +8,12 @@ import Globe from '../assets/globe.svg';
 import Star from '../assets/star.svg';
 import Event1 from '../assets/event1.webp';
 import Story1 from '../assets/story1.png';
-import ask from '../assets/ask.png';
-import Header from './Header';
-import Footer from './Footer';
-import ScrollHeader from './ScrollHeader';
+import hero from '../assets/hero.png';
+import Footer from '../Components/Footer';
+import ScrollHeader from '../Components/ScrollHeader';
 import { Link } from 'react-router-dom';
+import { events } from '../Components/constants/event';
+import Header from '../Components/Header';
 
 const Home = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -50,7 +51,7 @@ const Home = () => {
 
 
   //hero text animation 
-  const textToType = 'Raising Tech Giants From Among <span class="text-color">African Women</span>';
+  const textToType = 'African Women <span class="text-color">Digital Skills <br /> Acquisition <br /> </span>Initiative';
 
   const [displayedText, setDisplayedText] = useState('');
 
@@ -161,11 +162,16 @@ const Home = () => {
           </div>
           <div className='image-cont'>
             <div className='image-cont-inner'>
-              <div className='in-border'></div>
-              <img src="https://ik.imagekit.io/krr3p3joi/tr:w-300,h-600,fo-auto/ceo%20(1)%20(1).webp?updatedAt=1707346997256" />
+              <div className='in-border'>
+                <img src={hero}  />
+              </div>
+              
               <div className='name-title'>
-                <h3>Miss Kelechi Udeh</h3>
-                <p>CEO, TechFam.</p>
+                <div>
+                  <h3>Kelechi C Udeh</h3>
+                  <p>CEO, TechFam.</p>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -341,46 +347,28 @@ const Home = () => {
               <h2>Upcoming Events</h2>
             </div>
             <div className='event-grid'>
-              <div className='event-grid-cont'>
-                <div className='event-img'>
-                  <img src={Event1} loading='lazy' />
-                </div>
-                <div className='event-info'>
-                  <h4>Training for women</h4>
-                  <p className='date'>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
-                  <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-              <div className='event-grid-cont'>
-                <div className='event-img'>
-                  <img src={Event1} loading='lazy' />
-                </div>
-                <div className='event-info'>
-                  <h4>Training for women</h4>
-                  <p className='date'>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
-                  <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-              <div className='event-grid-cont'>
-                <div className='event-img'>
-                  <img src={Event1} loading='lazy' />
-                </div>
-                <div className='event-info'>
-                  <h4>Training for women</h4>
-                  <p className='date'>Aug 25, 2018 <span> | </span> Surulere, Lagos</p>
-                  <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-              <div className='view-more'>
-                <button>
-                  <Link to="/events">
-                    View More
-                  </Link>
-                </button>
-              </div>
+              {events.map(event => (
+                <Link className='event-link' to={`/eventPage`} key={event.title} state={{ eventData: event }}>
+                  <div className='event-grid-cont'>
+                    <div className='event-img'>
+                      <img src={Event1} />
+                    </div>
+                    <div className='event-info'>
+                      <h4>{event.title}</h4>
+                      <p className='date'>{event.date} <span> | </span> {event.address}</p>
+                      <p className='text'>{event.description}</p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+              
+            </div>
+            <div className='view-more'>
+              <button>
+                <Link to="/events">
+                  View More
+                </Link>
+              </button>
             </div>
           </div>
           <div className='stories box'>

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Header from './Header';
-import ScrollHeader from './ScrollHeader';
+import Header from '../Components/Header';
+import '../Components/CSS/Event.css';
+import ScrollHeader from '../Components/ScrollHeader';
+import { events } from '../Components/constants/event';
 
 const Events = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -12,6 +14,7 @@ const Events = () => {
   const closeMobileNav = () => {
     setMobileNav(false);
   }
+
   return (
     <div className='Events'>
       {mobileNav && (
@@ -61,6 +64,16 @@ const Events = () => {
         </div>
       </nav>
       <ScrollHeader showMobileNav = {showMobileNav} />
+      <main>
+        {events.map(event => (
+          <Link to="/eventPage" key={event.id} state={{ eventData:event }}>
+            <div className='e-card'>
+            <h2>{event.title}</h2>
+            </div>
+            
+          </Link>
+        ))}
+      </main>
     </div>
   )
 }

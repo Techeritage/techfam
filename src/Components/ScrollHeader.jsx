@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo1 from '../assets/logo1.png';
-import Search from '../assets/search.svg';
 import Menubar from '../assets/menu.svg';
 import '../Components/CSS/ScrollHeader.css';
 
@@ -76,7 +75,6 @@ const ScrollHeader = ({showMobileNav}) => {
           </ul>
         </div>
         <div className='header-cont3'>
-          <img src={Search} alt="a search icon" />
           <div className='donate-btn'>
             <button>
               <Link to="/donate">
