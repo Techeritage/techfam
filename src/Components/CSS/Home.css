@@ -703,7 +703,7 @@
 
 .event-img {
   width: 500px;
-  height: 220px;
+  height: 170px;
 }
 
 .event-img img {
@@ -793,7 +793,8 @@
   justify-content: center;
   align-items: center;
   bottom: 20px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .view-more button {
@@ -801,7 +802,7 @@
   padding: 12px 24px;
   border-radius: 40px;
   outline: none;
-  background: transparent;
+  background: white;
 }
 
 .view-more button a {

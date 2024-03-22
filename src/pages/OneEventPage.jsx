@@ -6,6 +6,7 @@ import clock from "../assets/clock.png";
 import date from "../assets/notepad.png";
 import { useState } from "react";
 import ScrollHeader from "../Components/ScrollHeader";
+import Footer from "../Components/Footer";
 
 const OneEventPage = () => {
   const location = useLocation();
@@ -78,7 +79,7 @@ const OneEventPage = () => {
         </div>
       </nav>
       <ScrollHeader showMobileNav = {showMobileNav} />
-      <div className="oneEvent-grid">
+      <main className="oneEvent-grid">
         <div className="oeg-1">
           <img src={renderIcon(eventData.image)} alt={eventData.title} />
         </div>
@@ -89,7 +90,8 @@ const OneEventPage = () => {
           <p className="desc">{eventData.description}</p>
           <p className="link">To participate in this event, click the link: <span><a href="#">Training for children</a></span> </p>
         </div>
-      </div>
+      </main>
+      <Footer />
     </div>
   )
 }
