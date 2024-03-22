@@ -1,0 +1,64 @@
+.oneEvent {
+  background-color: #f3f3f33d;
+}
+
+p{
+  margin: 0;
+}
+
+.desc, .link {
+  margin-top: 10px;
+}
+
+.link {
+  font-weight: 600;
+}
+
+.link a {
+  color: #d52c3f;
+}
+
+.time {
+  padding: 5px 0;
+  color: #555555;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.time span {
+  margin-right: 5px;
+}
+
+.oneEvent-grid {
+  padding: 30px 3%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1.8fr;
+}
+
+.oeg-1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 640px) {
+  .oneEvent-grid {
+    grid-template-columns: 1fr;
+    padding: 0 0;
+    height: 100%;
+  }
+
+  .oeg-1 {
+    border-bottom: 1px solid black;
+  }
+
+  .oeg-1 img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .oeg-2 {
+    padding: 0 5% 40px;
+  }
+}
+

@@ -37,8 +37,12 @@
   font-size: 40px;
   font-weight: 500;
 }
+
+.about-cont2-details p {
+  color: #333333;
+}
  
-.about-cont1-details p, .about-cont2-details p, .about-cont3-1 p, .about-cont3-2 p, .about-cont4-details p {
+.about-cont1-details p, .about-cont3-1 p, .about-cont3-2 p, .about-cont4-details p {
   text-align: start;
   color: #555555;
   font-size: 16px;
@@ -152,7 +156,7 @@
 
   .about-cont2 {
     flex-direction: column-reverse;
-    padding: 5% 3%;
+    padding: 5% 3% 3%;
   }
 
   .about-cont3, .about-cont4 {
@@ -164,12 +168,12 @@
   }
 
   .about-cont1-img {
-    justify-content: flex-start;
+    justify-content: center;
     padding: 2%;
   }
   
   .about-cont2-img {
-    justify-content: end;
-    padding: 3% 2% 2%;
+    justify-content: center;
+    padding: 5% 2% 0;
   }
 }

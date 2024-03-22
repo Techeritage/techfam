@@ -10,6 +10,7 @@
 .footer-cont {
   display: flex;
   padding: 30px 3%;
+  gap: 15px;
   justify-content: space-between;
   background: #333;
 }
@@ -270,7 +271,11 @@
     display: none;
   }
 
-  .links, .contact {
+  .links {
+    flex-basis: 20%;
+  }
+
+  .contact {
     flex-basis: 30%;
   }
 

@@ -7,8 +7,6 @@ import Book from '../assets/book.svg';
 import Globe from '../assets/globe.svg';
 import Star from '../assets/star.svg';
 import Event1 from '../assets/event1.webp';
-import Story1 from '../assets/story1.png';
-import hero from '../assets/hero.png';
 import Footer from '../Components/Footer';
 import ScrollHeader from '../Components/ScrollHeader';
 import { Link } from 'react-router-dom';
@@ -51,7 +49,7 @@ const Home = () => {
 
 
   //hero text animation 
-  const textToType = 'African Women <span class="text-color">Digital Skills <br /> Acquisition <br /> </span>Initiative';
+  const textToType = 'African Women <span class="text-color">Digital <br />  Skills Acquisition <br /> </span>Initiative';
 
   const [displayedText, setDisplayedText] = useState('');
 
@@ -83,6 +81,8 @@ const Home = () => {
       behavior: 'smooth'
     });
   }
+
+  const threeEvents = events.slice(0,4);
 
   return (
     <div className='home'>
@@ -347,8 +347,8 @@ const Home = () => {
               <h2>Upcoming Events</h2>
             </div>
             <div className='event-grid'>
-              {events.map(event => (
-                <Link className='event-link' to={`/eventPage`} key={event.title} state={{ eventData: event }}>
+              {threeEvents.map((event, index) => (
+                <Link className='event-link' to={`/eventPage`} key={index} state={{ eventData: event }}>
                   <div className='event-grid-cont'>
                     <div className='event-img'>
                       <img src={Event1} />
@@ -357,6 +357,7 @@ const Home = () => {
                       <h4>{event.title}</h4>
                       <p className='date'>{event.date} <span> | </span> {event.address}</p>
                       <p className='text'>{event.description}</p>
+                      <p className='see-more'><Link to={"/eventPage"}></Link>See more</p>
                     </div>
                   </div>
                 </Link>
@@ -371,6 +372,7 @@ const Home = () => {
               </button>
             </div>
           </div>
+          {/*
           <div className='stories box'>
             <div className='event-heading'>
               <h2>Featured stories</h2>
@@ -394,6 +396,7 @@ const Home = () => {
               </button>
             </div>
           </div>
+          */}
         </div>
       </section>
 

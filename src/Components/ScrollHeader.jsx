@@ -54,12 +54,6 @@ const ScrollHeader = ({showMobileNav}) => {
               </li>
               <div className={location.pathname === '/events' ? 'link-border' : ''}></div>
             </Link> 
-            <Link to="/blog">
-              <li>
-                Blog
-              </li>
-              <div className={location.pathname === '/blog' ? 'link-border' : ''}></div>
-            </Link> 
             <Link to="/about">
               <li>
                 About

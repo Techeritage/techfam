@@ -5,7 +5,6 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
-import Blog from './pages/Blog';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Donate from './pages/Donate';
@@ -35,7 +34,6 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />}/>
               <Route path="/about" element={<About />} />
-              <Route path="/blog" element={<Blog />} />
               <Route path="/events" element={<Events />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/donate" element={<Donate />} />

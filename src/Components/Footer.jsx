@@ -44,11 +44,6 @@ const Footer = () => {
             Quick Links
           </h4>
           <ul>
-            <Link to="/blog">
-              <li>
-                Blog
-              </li>
-            </Link>
             <Link to="/apply">
               <li>
                 Apply

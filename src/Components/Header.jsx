@@ -57,18 +57,11 @@ const Header = ({scroll, showMobileNav}) => {
             </li>  
             <div className={location.pathname === '/areaoffocus' ? 'link-border' : ''}></div>
           </div>
-          
           <Link to="/events">
             <li>
               Events
             </li>
             <div className={location.pathname === '/events' ? 'link-border' : ''}></div>
-          </Link> 
-          <Link to="/blog">
-            <li>
-              Blog
-            </li>
-            <div className={location.pathname === '/blog' ? 'link-border' : ''}></div>
           </Link> 
           <Link to="/about">
             <li>
