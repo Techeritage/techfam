@@ -1087,6 +1087,7 @@
 
   .event-grid {
     max-width: 340px;
+    grid-template-columns: 1fr;
   }
 
   .event-link {
