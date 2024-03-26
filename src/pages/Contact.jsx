@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Phone from '../assets/call.svg';
+import Email from '../assets/mail.svg';
+import Location from '../assets/location.svg';
+import Facebook from '../assets/fb-contact.svg';
+import Instagram from '../assets/insta-contact.svg';
+import Twitter from '../assets/x-contact.svg';
+import Youtube from '../assets/whats-contact.svg';
 
 import ScrollHeader from '../Components/ScrollHeader';
 import Header from '../Components/Header';
+import Footer from '../Components/Footer';
+
+import '../Components/CSS/Contact.css';
 
 
 const Contact = () => {
@@ -64,6 +74,53 @@ const Contact = () => {
         </div>
       </nav>
       <ScrollHeader showMobileNav = {showMobileNav} />
+      <main className='cc'>
+        <div className='contact-wrapper'>
+          <h1>
+            Contact Us
+          </h1>
+          <div className='cont-grid'>
+            <div className='contact-cont-w'>
+              <a href="tel:+2347030940388" target="_blank" rel="noopener noreferrer">
+                <img src={Phone} width={35} />
+                <p>+234 703 094 0388</p>
+              </a>
+            </div>
+            <div className='contact-cont-w'>
+              <a href="mailto:hello@techfam.online" target="_blank" rel="noopener noreferrer">
+                <img src={Email} width={35} />
+                <p>
+                  hello@techfam.online
+                </p>
+              </a>
+            </div>
+            <div className='contact-cont-w'>
+              <a href="https://www.google.com/maps?q=Lekki, Lagos State, Nigeria" target="_blank" rel="noopener noreferrer">
+                <img src={Location} width={35} />
+                <p>Lekki, Lagos State, Nigeria</p>
+              </a>
+            </div>
+          </div>
+          <h4>
+            or Chat With Us On:
+          </h4>
+          <div className='contact-sm-w'>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src={Facebook} width={25}/>
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src={Instagram} width={25} />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src={Twitter} width={25} />
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              <img src={Youtube} width={25} />
+            </a>
+          </div>
+        </div>
+      </main>
+      <Footer />
     </div>
   )
 }
