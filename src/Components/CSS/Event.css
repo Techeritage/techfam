@@ -3,6 +3,10 @@
   text-decoration: none;
 }
 
+.eve {
+  margin: 20px 3% 0;
+}
+
 .eventOne-grid-cont {
   width: 100%;
   cursor: pointer;

@@ -4,6 +4,7 @@ import '../Components/CSS/OneEventPage.css';
 import Header from "../Components/Header";
 import clock from "../assets/clock.png";
 import date from "../assets/notepad.png";
+import venue from "../assets/venue.png";
 import { useState } from "react";
 import ScrollHeader from "../Components/ScrollHeader";
 import Footer from "../Components/Footer";
@@ -85,8 +86,8 @@ const OneEventPage = () => {
         </div>
         <div className="oeg-2">
           <h1>{eventData.title}</h1>
-          <p className="time"><span><img src={clock} alt="clock icon" width={20} /></span>{eventData.date}</p>
-          <p className="time"><span><img src={date} alt="clock icon" width={20} /></span>{eventData.time}</p>
+          <p className="time"><span><img src={clock} alt="clock icon" width={20} /></span>{eventData.date}, {eventData.time}</p>
+          <p className="time"><span><img src={venue} alt="clock icon" width={20} /></span>{eventData.address}</p>
           <p className="desc">{eventData.description}</p>
           <p className="link">To participate in this event, click the link: <span><a href="#">Training for children</a></span> </p>
         </div>
