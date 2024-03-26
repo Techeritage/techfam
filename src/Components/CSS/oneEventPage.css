@@ -2,8 +2,8 @@
   background-color: #f3f3f33d;
 }
 
-p{
-  margin: 0;
+.oeg-1 h1 {
+  font-weight: 500;
 }
 
 .desc, .link {
@@ -16,8 +16,17 @@ p{
 
 .oeg-2 h4 {
   font-size: 17px;
-  margin: 0;
-  padding: 0;
+  letter-spacing: 0.2px;
+}
+
+.det-e {
+  padding: 10px 5% 0;
+}
+
+.eee {
+  font-weight: 500;
+  font-size: 15px;
+  color: #d6a682;
 }
 
 .link a {
@@ -25,10 +34,10 @@ p{
 }
 
 .time {
-  padding: 5px 0;
   color: #555555;
   font-weight: 600;
   font-size: 14px;
+  letter-spacing: 0.2px;
 }
 
 .time span {
@@ -36,15 +45,18 @@ p{
 }
 
 .oneEvent-grid {
-  padding: 30px 3%;
+  padding: 50px 5%;
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1.8fr;
+  grid-template-columns: 1fr;
 }
 
-.oeg-1 img {
+.oeg-2 .img {
   width: 100%;
-  border-radius: 10px;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 640px) {
@@ -55,17 +67,26 @@ p{
     margin: 0;
   }
 
-  .oeg-1 {
-    border-bottom: 1px solid black;
+  .oeg-2 {
+    padding-bottom: 30px;
   }
 
-  .oeg-1 img {
+  .oeg-2 .img {
     width: 100%;
     border-radius: 0;
   }
 
-  .oeg-2 {
-    padding: 0 5% 40px;
+  .oeg-1 h1 {
+    padding: 0 3%;
+  }
+
+  .det-e {
+    padding: 0 3% ;
+  }
+
+  .eee {
+    margin-top: 20px;
+    padding: 0 3%;
   }
 }
 

@@ -4,7 +4,7 @@
 }
 
 .eve {
-  margin: 20px 3% 0;
+  margin: 20px 5% 0;
 }
 
 .eventOne-grid-cont {
@@ -40,6 +40,12 @@
   color: #555555;
   margin-bottom: 0;
   letter-spacing: 0.8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: wrap;
+  width: 100%;
 }
 
 .eventOne-info .date span {
@@ -68,7 +74,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   margin: 0 5%;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .eventOne-grid-cont:hover {

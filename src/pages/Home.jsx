@@ -412,7 +412,7 @@ const Home = () => {
                       <p className="date">
                         {event.date} <span> | </span> {event.address}
                       </p>
-                      <p className="text" dangerouslySetInnerHTML={{ __html: event.description }}></p>
+                      <p className="text">{event.highlight}</p>
                       <p className="see-more">
                         <Link to={"/eventPage"}></Link>See more
                       </p>

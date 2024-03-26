@@ -79,32 +79,29 @@ const OneEventPage = () => {
       <ScrollHeader showMobileNav={showMobileNav} />
       <main className="oneEvent-grid">
         <div className="oeg-1">
-          <img src={eventData.image} alt={eventData.title} />
+          <h4 className="eee">EVENTS</h4>
+          <h1>{eventData.title}</h1>
         </div>
         <div className="oeg-2">
-          <h1>{eventData.title}</h1>
-          <p className="time">
-            <span>
-              <img src={clock} alt="clock icon" width={20} />
-            </span>
-            {eventData.date}, {eventData.time}
-          </p>
-          <p className="time">
-            <span>
-              <img src={venue} alt="clock icon" width={20} />
-            </span>
-            {eventData.address}
-          </p>
-          <div
-            className="desc"
-            dangerouslySetInnerHTML={{ __html: eventData.description }}
-          ></div>
-          <p className="link">
-            To participate in this event, click the link:{" "}
-            <span>
-              <a href="#">Training for children</a>
-            </span>{" "}
-          </p>
+          <img className="img" src={eventData.image} alt={eventData.title} />
+          <div className="det-e">
+            <p className="time">
+              <span>
+                <img src={clock} alt="clock icon" width={20} />
+              </span>
+              {eventData.date}, {eventData.time}
+            </p>
+            <p className="time">
+              <span>
+                <img src={venue} alt="clock icon" width={20} />
+              </span>
+              {eventData.address}
+            </p>
+            <div
+              className="desc"
+              dangerouslySetInnerHTML={{ __html: eventData.description }}
+            ></div>
+          </div>
         </div>
       </main>
       <Footer />

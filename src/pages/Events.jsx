@@ -91,7 +91,7 @@ const Events = () => {
                 <p className="date">
                   {event.date} <span> | </span> {event.address}
                 </p>
-                <div className="text" dangerouslySetInnerHTML={{ __html: event.description }}></div>
+                <div className="text">{event.highlight}</div>
                 <p className="see-more">See more</p>
               </div>
             </div>
