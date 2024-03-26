@@ -4,7 +4,6 @@ import Header from "../Components/Header";
 import "../Components/CSS/Event.css";
 import ScrollHeader from "../Components/ScrollHeader";
 import { events } from "../Components/constants/event";
-import Event1 from "../assets/event1.webp";
 import Footer from "../Components/Footer";
 
 const Events = () => {
@@ -85,14 +84,14 @@ const Events = () => {
           >
             <div className="eventOne-grid-cont">
               <div className="eventOne-img">
-                <img src={Event1} />
+                <img src={event.image} loading="lazy" />
               </div>
               <div className="eventOne-info">
                 <h4>{event.title}</h4>
                 <p className="date">
                   {event.date} <span> | </span> {event.address}
                 </p>
-                <p className="text">{event.description}</p>
+                <div className="text" dangerouslySetInnerHTML={{ __html: event.description }}></div>
                 <p className="see-more">See more</p>
               </div>
             </div>
