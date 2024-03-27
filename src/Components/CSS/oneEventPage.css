@@ -17,7 +17,6 @@
 .oeg-2 h4 {
   font-size: 17px;
   letter-spacing: 0.2px;
-  font-weight: 500;
 }
 
 .det-e {
@@ -88,6 +87,11 @@
   .eee {
     margin-top: 20px;
     padding: 0 3%;
+  }
+
+  .oeg-2 h4 {
+    font-size: 15px;
+    color: #333333;
   }
 }
 

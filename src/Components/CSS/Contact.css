@@ -31,7 +31,7 @@
 
 .cont-grid {
   display: grid;
-  gap: 20px;
+  gap: 25px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.288);
   padding: 0 70px;
   padding-bottom: 40px; 
@@ -62,6 +62,10 @@
 .contact-sm-w a {
   box-shadow: 0 10px 10px rgba(128, 128, 128, 0.26);
   transition: transform 0.3s;
+}
+
+.contact-cont-w a p {
+  margin-bottom: 0px;
 }
 
 .contact-sm-w .fb {
@@ -108,5 +112,11 @@
 
   .cont-grid {
     padding: 0 30px 25px;
+  }
+
+  .cc {
+    margin: 50px auto;
+    height: fit-content;
+    display: flex;
   }
 }

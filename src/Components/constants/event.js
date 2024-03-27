@@ -12,7 +12,7 @@ export const events = [
     highlight:
       "Thrilled to share a groundbreaking partnership: TechFam and RSL Solutions join forces to bring you TechFam SkillHub in Lagos, Nigeria!",
     date: "Dec 07th, 2023",
-    address: "Oriental Hotel, Vitoria Island, Lagos",
+    address: "Oriental Hotel, Victoria Island, Lagos",
     image: "https://ik.imagekit.io/krr3p3joi/e1.jpg?updatedAt=1711465415781",
     time: "5:00PM",
   },
