@@ -39,12 +39,6 @@ const Events = () => {
                   }
                 ></div>
               </Link>
-              <Link to="/blog">
-                <li>Blog</li>
-                <div
-                  className={location.pathname === "/blog" ? "link-border" : ""}
-                ></div>
-              </Link>
               <Link to="/about">
                 <li>About</li>
                 <div

@@ -5,6 +5,7 @@
 
 .eve {
   margin: 20px 5% 0;
+  font-weight: 500;
 }
 
 .eventOne-grid-cont {
@@ -26,7 +27,7 @@
 }
 
 .eventOne-info h4 {
-  color: black;
+  color: #333333;
   font-size: 17px;
   margin: 0;
   font-weight: 600;

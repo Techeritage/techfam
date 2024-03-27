@@ -27,7 +27,7 @@ export const events = [
     `,
     highlight:
       "TechFam extends heartfelt appreciation to Honorable Commissioner for Basic and Secondary Education Lagos State Mr. Jamiu Ali Balogun for gracing our Femme Interdistrict Robotics Competition with his presence on the International Day of the Girl Child, October 11, 2023.",
-    date: "October 11th, 2023.",
+    date: "October 11th, 2023",
     address: "Coming Soon",
     image: "https://ik.imagekit.io/krr3p3joi/e2.jpg?updatedAt=1711465416050",
     time: "Coming Soon",
@@ -171,7 +171,7 @@ export const events = [
     `,
     highlight:
       "We at TechFam would like to express our heartfelt gratitude for the opportunity to host the Femme Robotics Competition in your district. This all-girls robotics competition has been a tremendous success so far, and we are thrilled to have been able to work with the schools and students in your district.",
-      date: "April 26th, 2023.",
+      date: "April 26th, 2023",
       address: "New Era Girls Secondary School, Surulere, Lagos",
     image: "https://ik.imagekit.io/krr3p3joi/e8.jpg?updatedAt=1711465415925",
     time: "10:00AM",

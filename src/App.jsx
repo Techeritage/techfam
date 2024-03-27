@@ -11,6 +11,7 @@ import Donate from './pages/Donate';
 import TermsOfService from './pages/TermsOfService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import OneEventPage from './pages/OneEventPage';
+import Refresh from './Components/Refresh';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ const App = () => {
           :
         <Router>
           <div>
+            <Refresh />
             <Routes>
               <Route path="/" element={<Home />}/>
               <Route path="/about" element={<About />} />

@@ -1,8 +1,6 @@
 .contact-wrapper {
   box-shadow: 0 10px 10px rgba(128, 128, 128, 0.089);
   border: 1px solid rgba(128, 128, 128, 0.212);
-  width: fit-content;
-  height: fit-content;
   border-radius: 20px;
   padding: 50px 30px;
   margin: auto;
@@ -26,7 +24,6 @@
 }
 
 .cc {
-  max-width: 70%;
   margin: 0 auto;
   height: 90vh;
   display: flex;
@@ -63,13 +60,53 @@
 }
 
 .contact-sm-w a {
-  padding: 5px;
-  border-radius: 50%;
   box-shadow: 0 10px 10px rgba(128, 128, 128, 0.26);
   transition: transform 0.3s;
+}
+
+.contact-sm-w .fb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-sm-w .fb img{
+  width: 39px;
+  height: 39px;
+}
+
+.contact-sm-w .insta {
+  background: linear-gradient(135deg, #F58529, #DD2A7B);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.contact-sm-w .what {
+  background: #25D366;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.contact-sm-w .twit {
+  background: #1DA1F2;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .contact-sm-w a:hover,
 .contact-cont-w a:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 576px) {
+  .contact-wrapper {
+    padding: 30px 20px;
+  }
+
+  .cont-grid {
+    padding: 0 30px 25px;
+  }
 }

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Phone from '../assets/call.svg';
-import Email from '../assets/mail.svg';
-import Location from '../assets/location.svg';
+import Phone from '../assets/call-outline.svg';
+import Email from '../assets/mail-outline.svg';
+import Location from '../assets/location-outline.svg';
 import Facebook from '../assets/fb-contact.svg';
 import Instagram from '../assets/insta-contact.svg';
 import Twitter from '../assets/x-contact.svg';
@@ -44,12 +44,6 @@ const Contact = () => {
                   Events
                 </li>
                 <div className={location.pathname === '/events' ? 'link-border' : ''}></div>
-              </Link> 
-              <Link to="/blog">
-                <li>
-                  Blog
-                </li>
-                <div className={location.pathname === '/blog' ? 'link-border' : ''}></div>
               </Link> 
               <Link to="/about">
                 <li>
@@ -105,16 +99,16 @@ const Contact = () => {
             or Chat With Us On:
           </h4>
           <div className='contact-sm-w'>
-            <a href="" target="_blank" rel="noopener noreferrer">
-              <img src={Facebook} width={25}/>
+            <a href="" className='fb' target="_blank" rel="noopener noreferrer">
+              <img src={Facebook} />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a className='insta' href="" target="_blank" rel="noopener noreferrer">
               <img src={Instagram} width={25} />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a className='twit' href="" target="_blank" rel="noopener noreferrer">
               <img src={Twitter} width={25} />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a className='what' href="" target="_blank" rel="noopener noreferrer">
               <img src={Youtube} width={25} />
             </a>
           </div>
