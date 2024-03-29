@@ -65,8 +65,8 @@ const Events = () => {
         </div>
       </nav>
       <ScrollHeader showMobileNav={showMobileNav} />
-      <div className="">
-        <h2 className="event-heading eve">Events</h2>
+      <div className="terms-heading">
+        <h2 className="eve">Events</h2>
       </div>
       <main>
         {events.map((event, index) => (
