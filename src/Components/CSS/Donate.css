@@ -25,15 +25,19 @@
   flex-basis: 50%;
 }
 
+.form-group label {
+  color: #333333;
+}
+
 .dm-cont1 {
   padding-top: 50px;
 }
 
 .dm-cont2 {
- border-left: 1px solid rgba(128, 128, 128, 0.315);
- display: flex;
- justify-content: center;
- align-items: center;
+  border-left: 1px solid rgba(128, 128, 128, 0.315);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-group {
@@ -50,7 +54,7 @@
   padding: 10px;
   border-radius: 5px;
   margin-top: 5px;
-  background-color: #f5f5f5a1;
+  background-color: #f5f5f5ce;
 }
 
 .form-cont {
@@ -81,30 +85,40 @@
 .secure p {
   margin-bottom: 0;
   font-size: 14px;
+  color: #555555;
 }
 
 @media only screen and (max-width: 576px) {
   .donate-main {
     display: flex;
     height: fit-content;
-   flex-direction: column;
-   padding: 0 3% 50px;
+    flex-direction: column;
+    padding: 0 0 50px;
+    margin: 0;
   }
 
   .dm-cont1 {
-    padding-top: 30px;
+    padding: 30px 5% 0;
+
   }
 
   .dm-cont2 {
     margin-top: 20px;
     border: none;
+    border-top: 1px solid rgba(128, 128, 128, 0.199);
+    padding: 30px 5% 0;
   }
-  
+
   .pay-cont {
     padding: 15px;
     border-radius: 10px;
   }
-  
+
+  .form-group input {
+    padding: 8px 10px;
+  }
+
+  .pay-cont button {
+    padding: 8px;
+  }
 }
-
-
