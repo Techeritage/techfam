@@ -95,7 +95,7 @@ Error generating stack: `+o.message+`
     <p>To learn more about sponsorship opportunities and how you can make a meaningful impact, please contact us at [sponsorship email address].</p>
     <p>Together, let's bridge horizons, empower girls, and inspire a future where every individual, regardless of ability, can thrive in the world of technology!</p>
     <p>For more information and updates on EnergizeHER, visit our website [Techfam website] and follow us on social media.</p>
-    <p>Let's #EnergizeHER and pave the way for a brighter, more inclusive tomorrow!</p>
+    <p>Let's <i>#EnergizeHER</i> and pave the way for a brighter, more inclusive tomorrow!</p>
     <h4>About Techfam:</h4>
     <p>Techfam is a nonprofit organization dedicated to promoting tech skills among African women and girls. Through various initiatives and programs, we strive to bridge the gender gap in STEM fields and empower women and girls to pursue careers in technology. Learn more about us and our mission at <a href="www.techfam.online">www.techfam.online</a></p>
     `,highlight:"Techfam, in collaboration with the Lagos State Ministry of Education, is proud to announce EnergizeHER, the first-ever robotics competition in Nigeria specifically designed for girls with disabilities. ",date:"Coming Soon",address:"Coming Soon",image:"https://ik.imagekit.io/krr3p3joi/e10.jpeg?updatedAt=1712488357370",time:"Coming Soon"},{title:"Exciting Collaboration Announcement!",description:`<h4>Thrilled to share a groundbreaking partnership: TechFam and RSL Solutions join forces to bring you TechFam SkillHub in Lagos, Nigeria!</h4>
