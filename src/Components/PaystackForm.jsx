@@ -1,13 +1,91 @@
-import React from 'react'
+import React, { useState } from "react";
+import PaystackPop from "@paystack/inline-js";
+import Lock from "../assets/lock.svg";
 
 const PaystackForm = () => {
+  const [email, setEmail] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [amount, setAmount] = useState();
+
+  const handlePayment = (e) => {
+    e.preventDefault();
+
+    const paystack = new PaystackPop();
+    paystack.newTransaction({
+      key: "pk_test_f4308392c10581333564f84ea82394cfddced7c7",
+      amount: amount * 100,
+      email,
+      firstName,
+      lastName,
+      onSuccess(transaction) {
+        let message = `Payment Complete! Reference ${transaction.reference}`;
+        alert(message);
+        setAmount("");
+        setEmail("");
+        setFirstName("");
+        setLastName("");
+      },
+      onCancel() {
+        alert("payment cancelled");
+      },
+    });
+  };
+
   return (
-    <div>
-      <form>
-        <input type="text" />
+    <div className="pay-cont">
+      <form onSubmit={handlePayment}>
+        <div className="form-cont">
+          <div className="form-group">
+            <label htmlFor="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="fname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+            />
+          </div>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="fname">Email</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="amt">Amount</label>
+          <input
+            type="number"
+            id="amt"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+          />
+        </div>
+
+        <button type="submit">Pay</button>
+        <div className="secure">
+          <img src={Lock} />
+
+          <div className="p">
+            <p>This is a secure, encrypted payment.</p>
+          </div>
+        </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default PaystackForm
+export default PaystackForm;

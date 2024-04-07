@@ -1,9 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import Event1 from "../assets/event1.webp";
-import "../Components/CSS/OneEventPage.css";
 import Header from "../Components/Header";
 import clock from "../assets/clock.png";
-import date from "../assets/notepad.png";
 import venue from "../assets/venue.png";
 import { useState } from "react";
 import ScrollHeader from "../Components/ScrollHeader";
