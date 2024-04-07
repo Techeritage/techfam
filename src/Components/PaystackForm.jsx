@@ -35,6 +35,7 @@ const PaystackForm = () => {
   return (
     <div className="pay-cont">
       <form onSubmit={handlePayment}>
+        <h5>Invest in Her Future: Donate Today</h5>
         <div className="form-cont">
           <div className="form-group">
             <label htmlFor="fname">First Name</label>
@@ -75,7 +76,7 @@ const PaystackForm = () => {
           />
         </div>
 
-        <button type="submit">Pay</button>
+        <button type="submit">Donate</button>
         <div className="secure">
           <img src={Lock} />
 

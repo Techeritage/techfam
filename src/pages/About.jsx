@@ -75,12 +75,12 @@ const About = () => {
           <p>But that is about to change…</p>
         </div>
         <div className='about-cont1-img'>
-          <img src={About1} />
+          <img src="https://ik.imagekit.io/krr3p3joi/IMG_6345.jpg?updatedAt=1707566632571"/>
         </div>
       </div>
       <div className='about-cont2'>
         <div className='about-cont2-img'>
-          <img src={About2} />
+          <img src="https://ik.imagekit.io/krr3p3joi/IMG_6208%20(1).webp?updatedAt=1712523306145"/>
         </div>
         <div className='about-cont2-details'>
           <h4>AIM & OBJECTIVE</h4>

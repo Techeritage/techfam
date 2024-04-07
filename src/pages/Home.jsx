@@ -290,7 +290,7 @@ const Home = () => {
                   <img
                     className="d-block"
                     alt="First slide"
-                    src="https://ik.imagekit.io/krr3p3joi/tr:w-700,h-800,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385"
+                    src="https://ik.imagekit.io/krr3p3joi/tr:w-700,h-800,fo-auto/IMG_6202%20(1)%20(1).webp?updatedAt=1707429462023"
                     loading="lazy"
                   />
                 </Carousel.Item>
@@ -302,6 +302,22 @@ const Home = () => {
                     loading="lazy"
                   />
                 </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block"
+                    alt="Third slide"
+                    src="https://ik.imagekit.io/krr3p3joi/tr:w-700,h-800,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385"
+                    loading="lazy"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block"
+                    alt="Fourth slide"
+                    src="https://ik.imagekit.io/krr3p3joi/tr:w-700,h-800,fo-auto/IMG_6363%20(1).webp?updatedAt=1707429460862"
+                    loading="lazy"
+                  />
+                </Carousel.Item>
               </Carousel>
             </div>
             <div className="ab-inner desktop">
@@ -310,7 +326,7 @@ const Home = () => {
                   <img
                     className="d-block"
                     alt="First slide"
-                    src="https://ik.imagekit.io/krr3p3joi/tr:w-1000,h-700,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385"
+                    src="https://ik.imagekit.io/krr3p3joi/tr:w-1000,h-700,fo-auto/IMG_6202%20(1)%20(1).webp?updatedAt=1707429462023"
                     loading="lazy"
                   />
                 </Carousel.Item>
@@ -319,6 +335,22 @@ const Home = () => {
                     className="d-block"
                     alt="Second slide"
                     src="https://ik.imagekit.io/krr3p3joi/tr:w-1000,h-700,fo-auto/IMG_6345.jpg?updatedAt=1707566632571"
+                    loading="lazy"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block"
+                    alt="Third slide"
+                    src="https://ik.imagekit.io/krr3p3joi/tr:w-1000,h-700,fo-auto/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385"
+                    loading="lazy"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block"
+                    alt="Fourth slide"
+                    src="https://ik.imagekit.io/krr3p3joi/tr:w-1000,h-700,fo-auto/IMG_6363%20(1).webp?updatedAt=1707429460862"
                     loading="lazy"
                   />
                 </Carousel.Item>
@@ -421,31 +453,6 @@ const Home = () => {
               </button>
             </div>
           </div>
-          {/*
-          <div className='stories box'>
-            <div className='event-heading'>
-              <h2>Featured stories</h2>
-            </div>
-            <div className='event-grid'>
-              <div className='story-grid-cont'>
-                <div className='story-img'><img src={Story1} loading='lazy' /></div>
-                <p>A.I.S.E Moments with Kelechi</p>
-              </div>
-
-              <div className='story-grid-cont'>
-                <div className='story-img'><img src={Story1} loading='lazy' /></div>
-                <p>A.I.S.E Moments with Kelechi</p>
-              </div>
-            </div>
-            <div className='view-more'>
-              <button>
-                <Link to="/blog">
-                  View More
-                </Link>
-              </button>
-            </div>
-          </div>
-          */}
         </div>
       </section>
 

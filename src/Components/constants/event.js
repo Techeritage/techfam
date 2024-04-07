@@ -27,7 +27,7 @@ export const events = [
       date: "Coming Soon",
       address: "Coming Soon",
     image: "https://ik.imagekit.io/krr3p3joi/e10.jpeg?updatedAt=1712488357370",
-    time: "Coming Soon",
+    time: "",
   },
   {
     title: "Exciting Collaboration Announcement!",

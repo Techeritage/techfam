@@ -145,7 +145,7 @@
 }
 
 @media only screen and (max-width: 576px) {
-  main {
+  .main {
     grid-template-columns: 1fr;
     margin: 0 3%;
     padding: 20px 0;
