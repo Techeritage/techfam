@@ -1,5 +1,35 @@
 export const events = [
   {
+    title: "EnergizeHER: Nigeria's First Robotics Competition for Girls with Disabilities",
+    description: `
+    <p>Techfam, in collaboration with the Lagos State Ministry of Education, is proud to announce "EnergizeHER," the first-ever robotics competition in Nigeria specifically designed for girls with disabilities. This pioneering event is a significant leap forward in promoting inclusivity and empowerment within the technology sector, as we strive to remove barriers and provide equal opportunities for all.</p>
+    <h4>About EnergizeHER:</h4>
+    <p>EnergizeHER is not just a competition; it's a catalyst for change and inspiration. For the first time in Nigeria, girls with disabilities will have the chance to showcase their ingenuity and talents in robotics, demonstrating that their abilities know no bounds. Through collaborative teamwork and hands-on learning, participants will not only acquire valuable technical skills but also cultivate confidence and self-assurance.</p>
+    <h4>Why Sponsor EnergizeHER:</h4>
+    <p>Sponsoring EnergizeHER is an opportunity to make a tangible difference in the lives of girls with disabilities across Nigeria. By supporting this historic event, your organization will:</p>
+    <ul>
+    <li><b>Empower Girls:</b> Provide girls with disabilities the opportunity to explore robotics and STEM fields, empowering them to pursue their passions and aspirations.</li>
+    <li><b>Promote Inclusivity:</b> Lead by example in promoting diversity, inclusion, and accessibility within the technology sector, setting a precedent for others to follow.</li>
+    <li><b>Inspire Confidence:</b> Inspire girls with disabilities to believe in themselves and their capabilities, fostering a sense of pride and achievement.</li>
+    <li><b>Drive Change:</b> Drive positive change by advocating for equal opportunities and breaking down barriers that hinder participation and inclusion.</li>
+    </ul>
+    <h4>How to Sponsor:</h4>
+    <p>We invite businesses, organizations, and individuals who share our commitment to inclusivity and empowerment to join us as sponsors of EnergizeHER. Your support will not only make this event possible but also pave the way for future initiatives that champion diversity and accessibility in technology.</p>
+    <p>To learn more about sponsorship opportunities and how you can make a meaningful impact, please contact us at [sponsorship email address].</p>
+    <p>Together, let's bridge horizons, empower girls, and inspire a future where every individual, regardless of ability, can thrive in the world of technology!</p>
+    <p>For more information and updates on EnergizeHER, visit our website [Techfam website] and follow us on social media.</p>
+    <p>Let's #EnergizeHER and pave the way for a brighter, more inclusive tomorrow!</p>
+    <h4>About Techfam:</h4>
+    <p>Techfam is a nonprofit organization dedicated to promoting tech skills among African women and girls. Through various initiatives and programs, we strive to bridge the gender gap in STEM fields and empower women and girls to pursue careers in technology. Learn more about us and our mission at <a href="www.techfam.online">www.techfam.online</a></p>
+    `,
+    highlight:
+      "Techfam, in collaboration with the Lagos State Ministry of Education, is proud to announce EnergizeHER, the first-ever robotics competition in Nigeria specifically designed for girls with disabilities. ",
+      date: "Coming Soon",
+      address: "Coming Soon",
+    image: "https://ik.imagekit.io/krr3p3joi/e10.jpeg?updatedAt=1712488357370",
+    time: "Coming Soon",
+  },
+  {
     title: "Exciting Collaboration Announcement!",
     description: `<h4>Thrilled to share a groundbreaking partnership: TechFam and RSL Solutions join forces to bring you TechFam SkillHub in Lagos, Nigeria!</h4>
     <p>In collaboration with Rotary International District 9110 and District 3131, we embark on a transformative journey to empower African women and youths through tech education.</p>
@@ -190,5 +220,5 @@ export const events = [
       address: "Teslim Balogun Stadium in Surulere, Lagos",
     image: "https://ik.imagekit.io/krr3p3joi/e9.jpg?updatedAt=1711465415695",
     time: "10:00AM",
-  },
+  }
 ];

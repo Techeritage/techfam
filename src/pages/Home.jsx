@@ -170,7 +170,7 @@ const Home = () => {
               <div className="name-title">
                 <div>
                   <h3>Kelechi C Udeh</h3>
-                  <p>CEO, TechFam.</p>
+                  <p>Founder, TechFam.</p>
                 </div>
               </div>
             </div>
@@ -387,7 +387,7 @@ const Home = () => {
         <div className="stories-event">
           <div className="event box">
             <div className="event-heading">
-              <h2>Upcoming Events</h2>
+              <h2>Events</h2>
             </div>
             <div className="event-grid">
               {threeEvents.map((event, index) => (

@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.contact-wrapper .terms-heading {
+  margin-top: 0px;
+}
+
 .contact-wrapper h1 {
   margin-bottom: 30px;
   letter-spacing: 1px;

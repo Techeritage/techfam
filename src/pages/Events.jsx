@@ -68,7 +68,7 @@ const Events = () => {
       <div className="terms-heading">
         <h2 className="eve">Events</h2>
       </div>
-      <main>
+      <main className="main">
         {events.map((event, index) => (
           <Link
             className="eventOne-link"
