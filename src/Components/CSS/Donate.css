@@ -4,6 +4,12 @@
   height: 90vh;
 }
 
+.gc {
+  font-weight: 500;
+  font-style: italic;
+  margin-right: 5px;
+}
+
 .pay-cont {
   padding: 40px 20px;
   border: 1px solid rgba(128, 128, 128, 0.212);

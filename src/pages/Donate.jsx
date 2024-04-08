@@ -15,6 +15,7 @@ const Donate = () => {
   const closeMobileNav = () => {
     setMobileNav(false);
   };
+
   return (
     <div className="Donate">
       {mobileNav && (
@@ -66,7 +67,7 @@ const Donate = () => {
       <ScrollHeader showMobileNav={showMobileNav} />
       <main className="donate-main">
         <div className="dm-cont1">
-          <h1>Sponsor a Girl Child in Tech, Today</h1>
+          <h1>Sponsor a <span className="gc">Girl Child</span> in Tech, Today</h1>
           <p>
             At Techfam, we're on a mission to make a positive change in Africa
             by empowering women and the girl child with essential digital skills
@@ -77,7 +78,7 @@ const Donate = () => {
             giant, and we're taking action to make it happen.
           </p>
           <p>
-            We're thrilled to introduce our "Sponsor a Girl Child in Tech"
+            We're thrilled to introduce our <i>"Sponsor a Girl Child in Tech"</i>
             initiative, and we'd love for you to join us. Your support can help
             transform not only a single life but also the future of an entire
             continent.
