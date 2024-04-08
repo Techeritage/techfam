@@ -150,8 +150,8 @@ const Home = () => {
                 hope to influence the now and set the tone for the future.
               </p>
               <p className="mobile-p">
-                TechFam aims to reshape <br></br> Africa's skills landscape,
-                <br></br> empowering Africans <br></br> with digital skills for{" "}
+                TechFam aims to reshape Africa's <br></br>skills landscape,
+                empowering<br></br> Africans women and Girls<br></br> with digital skills for{" "}
                 <br></br> current and future <br></br> workplaces.
               </p>
             </div>
