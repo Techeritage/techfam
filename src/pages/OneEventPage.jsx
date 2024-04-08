@@ -1,14 +1,21 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import Header from "../Components/Header";
 import clock from "../assets/clock.png";
 import venue from "../assets/venue.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ScrollHeader from "../Components/ScrollHeader";
 import Footer from "../Components/Footer";
+import { events } from "../Components/constants/event";
 
 const OneEventPage = () => {
-  const location = useLocation();
-  const eventData = location.state.eventData;
+  const [event, setEvent] = useState();
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const eventId = parseInt(searchParams.get("eventId"));
+    const selectedEvent = events.find((event) => event.id === eventId);
+    setEvent(selectedEvent);
+  }, [searchParams]);
 
   const [mobileNav, setMobileNav] = useState(false);
   const showMobileNav = () => {
@@ -68,33 +75,37 @@ const OneEventPage = () => {
         </div>
       </nav>
       <ScrollHeader showMobileNav={showMobileNav} />
-      <main className="oneEvent-grid">
-        <div className="oeg-1">
-          <h4 className="eee">EVENTS</h4>
-          <h1>{eventData.title}</h1>
-        </div>
-        <div className="oeg-2">
-          <img className="img" src={eventData.image} alt={eventData.title} />
-          <div className="det-e">
-            <p className="time">
-              <span>
-                <img src={clock} alt="clock icon" width={20} />
-              </span>
-              {eventData.date}, {eventData.time}
-            </p>
-            <p className="time">
-              <span>
-                <img src={venue} alt="clock icon" width={20} />
-              </span>
-              {eventData.address}
-            </p>
-            <div
-              className="desc"
-              dangerouslySetInnerHTML={{ __html: eventData.description }}
-            ></div>
+
+      {event && (
+        <main className="oneEvent-grid">
+          <div className="oeg-1">
+            <h4 className="eee">EVENTS</h4>
+            <h1>{event.title}</h1>
           </div>
-        </div>
-      </main>
+          <div className="oeg-2">
+            <img className="img" src={event.image} alt={event.title} />
+            <div className="det-e">
+              <p className="time">
+                <span>
+                  <img src={clock} alt="clock icon" width={20} />
+                </span>
+                {event.date}, {event.time}
+              </p>
+              <p className="time">
+                <span>
+                  <img src={venue} alt="clock icon" width={20} />
+                </span>
+                {event.address}
+              </p>
+              <div
+                className="desc"
+                dangerouslySetInnerHTML={{ __html: event.description }}
+              ></div>
+            </div>
+          </div>
+        </main>
+      )}
+
       <Footer />
     </div>
   );

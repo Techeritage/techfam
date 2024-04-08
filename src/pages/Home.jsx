@@ -422,12 +422,11 @@ const Home = () => {
               <h2>Events</h2>
             </div>
             <div className="event-grid">
-              {threeEvents.map((event, index) => (
+              {threeEvents.map((event) => (
                 <Link
                   className="event-link"
-                  to={`/eventPage`}
-                  key={index}
-                  state={{ eventData: event }}
+                  to={`/event?eventId=${event.id}`}
+                  key={event.id}
                 >
                   <div className="event-grid-cont">
                     <div className="event-img">

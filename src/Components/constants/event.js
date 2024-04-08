@@ -1,6 +1,8 @@
 export const events = [
   {
-    title: "EnergizeHER: Nigeria's First Robotics Competition for Girls with Disabilities",
+    id: 1,
+    title:
+      "EnergizeHER: Nigeria's First Robotics Competition for Girls with Disabilities",
     description: `
     <p>Techfam, in collaboration with the Lagos State Ministry of Education, is proud to announce "EnergizeHER," the first-ever robotics competition in Nigeria specifically designed for girls with disabilities. This pioneering event is a significant leap forward in promoting inclusivity and empowerment within the technology sector, as we strive to remove barriers and provide equal opportunities for all.</p>
     <h4>About EnergizeHER:</h4>
@@ -24,12 +26,13 @@ export const events = [
     `,
     highlight:
       "Techfam, in collaboration with the Lagos State Ministry of Education, is proud to announce EnergizeHER, the first-ever robotics competition in Nigeria specifically designed for girls with disabilities. ",
-      date: "Coming Soon",
-      address: "Coming Soon",
+    date: "Coming Soon",
+    address: "Coming Soon",
     image: "https://ik.imagekit.io/krr3p3joi/e10.jpeg?updatedAt=1712488357370",
     time: "",
   },
   {
+    id: 2,
     title: "Exciting Collaboration Announcement!",
     description: `<h4>Thrilled to share a groundbreaking partnership: TechFam and RSL Solutions join forces to bring you TechFam SkillHub in Lagos, Nigeria!</h4>
     <p>In collaboration with Rotary International District 9110 and District 3131, we embark on a transformative journey to empower African women and youths through tech education.</p>
@@ -47,6 +50,7 @@ export const events = [
     time: "5:00PM",
   },
   {
+    id: 3,
     title: "Celebrating Success and Support for Girl Child Education!",
     description: `
     <h4>TechFam extends heartfelt appreciation to Honorable Commissioner for Basic and Secondary Education Lagos State Mr. Jamiu Ali Balogun for gracing our Femme Interdistrict Robotics Competition with his presence on the International Day of the Girl Child, October 11, 2023.</h4>
@@ -63,6 +67,7 @@ export const events = [
     time: "Coming Soon",
   },
   {
+    id: 4,
     title: "A.I.S.E Moments with Kelechi",
     description: `<h4>
     In this enlightening episode of the AISE Podcast Series, Dr. Emilomo Ogbe, the visionary founder of AISE Consulting, sits down with Kelechi Cynthia Udeh, a dynamic force in the world of communications at AISE and the mastermind behind Techfam, a groundbreaking nonprofit organization.</h4>
@@ -79,6 +84,7 @@ export const events = [
     time: "Coming Soon",
   },
   {
+    id: 5,
     title: "Here is your Winner!!!",
     description: `
     <h4>Femme Robotics Dance Challenge</h4>
@@ -93,6 +99,7 @@ export const events = [
     time: "10:00AM",
   },
   {
+    id: 6,
     title:
       "The Femme Inter-District Robotics Competition – Celebrating The International Day of The Girl Child",
     description: `
@@ -132,6 +139,7 @@ export const events = [
     time: "10:00AM",
   },
   {
+    id: 7,
     title:
       "Celebrating the Success of The Femme Robotics Competition in Education District IV",
     description: `
@@ -158,6 +166,7 @@ export const events = [
     time: "10:00AM",
   },
   {
+    id: 8,
     title:
       "The preliminary round of the Femme Robotics Competition was a big success!",
     description: `
@@ -189,6 +198,7 @@ export const events = [
     time: "10:00AM",
   },
   {
+    id: 9,
     title: "Thank You Education District IV!!",
     description: `
     <h4>Dear Education District 4,</h4>
@@ -201,12 +211,13 @@ export const events = [
     `,
     highlight:
       "We at TechFam would like to express our heartfelt gratitude for the opportunity to host the Femme Robotics Competition in your district. This all-girls robotics competition has been a tremendous success so far, and we are thrilled to have been able to work with the schools and students in your district.",
-      date: "April 26th, 2023",
-      address: "New Era Girls Secondary School, Surulere, Lagos",
+    date: "April 26th, 2023",
+    address: "New Era Girls Secondary School, Surulere, Lagos",
     image: "https://ik.imagekit.io/krr3p3joi/e8.jpg?updatedAt=1711465415925",
     time: "10:00AM",
   },
   {
+    id: 10,
     title: "Just one day before the long anticipated competition",
     description: `
     <p>The Femme Robotics Competition is a great way to encourage girls in junior and senior secondary schools to develop an interest in robotics and related tech skills.</p>
@@ -216,9 +227,9 @@ export const events = [
     `,
     highlight:
       "The Femme Robotics Competition is a great way to encourage girls in junior and senior secondary schools to develop an interest in robotics and related tech skills.",
-      date: "May 10th, 2023",
-      address: "Teslim Balogun Stadium in Surulere, Lagos",
+    date: "May 10th, 2023",
+    address: "Teslim Balogun Stadium in Surulere, Lagos",
     image: "https://ik.imagekit.io/krr3p3joi/e9.jpg?updatedAt=1711465415695",
     time: "10:00AM",
-  }
+  },
 ];

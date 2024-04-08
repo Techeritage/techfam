@@ -69,12 +69,11 @@ const Events = () => {
         <h2 className="eve">Events</h2>
       </div>
       <main className="main">
-        {events.map((event, index) => (
+        {events.map((event) => (
           <Link
             className="eventOne-link"
-            to={`/eventPage`}
-            key={index}
-            state={{ eventData: event }}
+            to={`/event?eventId=${event.id}`}
+            key={event.id}
           >
             <div className="eventOne-grid-cont">
               <div className="eventOne-img">
