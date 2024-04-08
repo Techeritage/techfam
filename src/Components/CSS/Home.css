@@ -1224,7 +1224,7 @@
     align-items: center;
     position: relative;
     overflow-y: hidden;
-    background: #d6a6828f;
+    background: #d6a682b6;
   }
 
   .about-text-count {
@@ -1304,7 +1304,6 @@
     margin-bottom: 5px;
     font-size: 16px;
     width: 100%;
-    background: #d6a682a8;
   }
 
   .atc-inner {
