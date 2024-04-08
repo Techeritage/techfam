@@ -145,7 +145,7 @@ const Home = () => {
             <div className="text-cont-text">
               <p className="desktop-p">
                 TechFam aims to change the skills landscape in Africa through
-                various initiatives with objective to help African acquire
+                various initiatives with objective to help African women and Girls acquire
                 digital skills for today's workspaces and tomorrow's needs. We
                 hope to influence the now and set the tone for the future.
               </p>

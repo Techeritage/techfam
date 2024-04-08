@@ -113,12 +113,17 @@ const Contact = () => {
           </div>
           <h4>or Chat With Us On:</h4>
           <div className="contact-sm-w">
-            <a href="" className="fb" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/groups/techfamonline/?ref=share"
+              className="fb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={Facebook} />
             </a>
             <a
               className="insta"
-              href=""
+              href="https://www.instagram.com/techfamonline?igsh=ZDdyam92YWl6bXpx&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -126,7 +131,7 @@ const Contact = () => {
             </a>
             <a
               className="twit"
-              href=""
+              href="https://twitter.com/HelloTechfam"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -134,7 +139,7 @@ const Contact = () => {
             </a>
             <a
               className="what"
-              href=""
+              href=" https://wa.me/+2347030940388"
               target="_blank"
               rel="noopener noreferrer"
             >

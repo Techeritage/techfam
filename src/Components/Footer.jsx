@@ -8,7 +8,7 @@ import Location from '../assets/location.svg';
 import Facebook from '../assets/facebook.svg';
 import Instagram from '../assets/instagram.svg';
 import Twitter from '../assets/twitter.svg';
-import Youtube from '../assets/youtube.svg';
+import Youtube from '../assets/linkedin.svg';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -25,16 +25,16 @@ const Footer = () => {
             women acquire digital skills for today's workspaces and tomorrow's needs. We hope to influence the now and set the tone for the future.
           </p>
           <div className='techfam-sm desktop'>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/groups/techfamonline/?ref=share" target="_blank" rel="noopener noreferrer">
               <img src={Facebook} />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/techfamonline?igsh=ZDdyam92YWl6bXpx&utm_source=qr" target="_blank" rel="noopener noreferrer">
             <img src={Instagram} />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/HelloTechfam" target="_blank" rel="noopener noreferrer">
             <img src={Twitter} />
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/techfam-african-women-digital-skills-acquisition-initiative/" target="_blank" rel="noopener noreferrer">
               <img src={Youtube} />
             </a>
           </div>

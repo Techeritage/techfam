@@ -69,7 +69,7 @@ const Donate = () => {
           <h1>Sponsor a Girl Child in Tech, Today</h1>
           <p>
             At Techfam, we're on a mission to make a positive change in Africa
-            by empowering womenand the girl child with essential digital skills
+            by empowering women and the girl child with essential digital skills
             for today's job market and the opportunities of tomorrow.
           </p>
           <p>
