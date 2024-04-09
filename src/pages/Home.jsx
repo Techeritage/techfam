@@ -145,14 +145,16 @@ const Home = () => {
             <div className="text-cont-text">
               <p className="desktop-p">
                 TechFam aims to change the skills landscape in Africa through
-                various initiatives with objective to help African women and Girls acquire
-                digital skills for today's workspaces and tomorrow's needs. We
-                hope to influence the now and set the tone for the future.
+                various initiatives with objective to help African women and
+                Girls acquire digital skills for today's workspaces and
+                tomorrow's needs. We hope to influence the now and set the tone
+                for the future.
               </p>
               <p className="mobile-p">
                 TechFam aims to reshape Africa's <br></br>skills landscape,
-                empowering<br></br> Africans women and Girls<br></br> with digital skills for{" "}
-                <br></br> current and future <br></br> workplaces.
+                empowering<br></br> Africans women and Girls<br></br> with
+                digital skills for <br></br> current and future <br></br>{" "}
+                workplaces.
               </p>
             </div>
             <div className="donate">
@@ -182,13 +184,13 @@ const Home = () => {
         <div className="about1">
           <div className="about1-img-cont ab1-desktop">
             <img
-              src="https://ik.imagekit.io/krr3p3joi/tr:w-280,h-180/IMG_6168%20(1)%20(1).webp?updatedAt=1707475767385"
+              src="https://ik.imagekit.io/krr3p3joi/tr:w-280,h-180/WhatsApp%20Image%202024-04-08%20at%2011.05.32%20PM.jpeg?updatedAt=1712648785744"
               className="imga"
               loading="lazy"
             />
             <div className="about1-inner">
               <img
-                src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-300/IMG_6345.jpg?updatedAt=1707566632571"
+                src="https://ik.imagekit.io/krr3p3joi/tr:w-410,h-300/WhatsApp%20Image%202024-04-08%20at%2011.04.23%20PM.jpeg?updatedAt=1712648785572"
                 className="imgb"
                 loading="lazy"
               />
