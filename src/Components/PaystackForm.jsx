@@ -44,6 +44,7 @@ const PaystackForm = () => {
               id="fname"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
+              required
             />
           </div>
           <div className="form-group">
@@ -53,6 +54,7 @@ const PaystackForm = () => {
               id="lname"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
+              required
             />
           </div>
         </div>
@@ -64,6 +66,7 @@ const PaystackForm = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
         <div className="form-group">
@@ -73,6 +76,7 @@ const PaystackForm = () => {
             id="amt"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
+            required
           />
         </div>
 
