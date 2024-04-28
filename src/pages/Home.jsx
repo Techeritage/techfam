@@ -159,7 +159,7 @@ const Home = () => {
             </div>
             <div className="donate">
               <button>
-                <a href="#">Apply Now</a>
+              <Link to="/donate">Donate Now</Link>
               </button>
             </div>
           </div>

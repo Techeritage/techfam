@@ -4,6 +4,12 @@
   height: 90vh;
 }
 
+.gratitude {
+  position: absolute;
+  background-color: #333333;
+  color: white;
+}
+
 .gc {
   font-weight: 500;
   font-style: italic;
