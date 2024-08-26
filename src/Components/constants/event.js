@@ -17,17 +17,17 @@ export const events = [
     </ul>
     <h4>How to Sponsor:</h4>
     <p>We invite businesses, organizations, and individuals who share our commitment to inclusivity and empowerment to join us as sponsors of EnergizeHER. Your support will not only make this event possible but also pave the way for future initiatives that champion diversity and accessibility in technology.</p>
-    <p>To learn more about sponsorship opportunities and how you can make a meaningful impact, please contact us at [sponsorship email address].</p>
+    <p>To learn more about sponsorship opportunities and how you can make a meaningful impact, please contact us at <a href="mailto:hello@techfam.online">hello@techfam.online</a>.</p>
     <p>Together, let's bridge horizons, empower girls, and inspire a future where every individual, regardless of ability, can thrive in the world of technology!</p>
-    <p>For more information and updates on EnergizeHER, visit our website [Techfam website] and follow us on social media.</p>
+    <p>For more information and updates on EnergizeHER, visit our website <a href="www.techfam.online">www.techfam.online</a> and follow us on social media.</p>
     <p>Let's <i>#EnergizeHER</i> and pave the way for a brighter, more inclusive tomorrow!</p>
     <h4>About Techfam:</h4>
     <p>Techfam is a nonprofit organization dedicated to promoting tech skills among African women and girls. Through various initiatives and programs, we strive to bridge the gender gap in STEM fields and empower women and girls to pursue careers in technology. Learn more about us and our mission at <a href="www.techfam.online">www.techfam.online</a></p>
     `,
     highlight:
       "Techfam, in collaboration with the Lagos State Ministry of Education, is proud to announce EnergizeHER, the first-ever robotics competition in Nigeria specifically designed for girls with disabilities. ",
-    date: "Coming Soon",
-    address: "Coming Soon",
+    date: "Jul 03rd, 2024",
+    address: "10:00AM",
     image: "https://ik.imagekit.io/krr3p3joi/e10.jpeg?updatedAt=1712488357370",
     time: "",
   },
